@@ -1,0 +1,582 @@
+// 게임 상태 변수
+let score = 0;
+let timeLeft = 300; // 5분(초)
+let isPaused = false; // 게임 일시정지 상태
+let isMuted = false; // 소리 상태
+
+// UFO 단어 데이터
+let ufoWordsData = [];
+let currentWord = null;
+
+// 단어 출현 풀: 모든 단어 3회씩 복제 후 셔플
+let wordPool = [];
+
+let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
+
+function refillWordPool() {
+  wordPool = [];
+  for (let i = 0; i < 3; i++) {
+    wordPool = wordPool.concat(ufoWordsData);
+  }
+  // 셔플
+  for (let i = wordPool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [wordPool[i], wordPool[j]] = [wordPool[j], wordPool[i]];
+  }
+}
+
+// UFO 주기적 생성 (타이머 변수)
+let ufoInterval = null;
+let timerInterval = null;
+
+// 문제(상단 박스)용 단어를 랜덤하게 선택
+function pickNewProblemWord() {
+  if (!wordPool.length) refillWordPool();
+  currentWord = wordPool.pop();
+  let posKo = '';
+  switch (currentWord.pos.trim()) {
+    case 'n.': posKo = '(명사)'; break;
+    case 'v.': posKo = '(동사)'; break;
+    case 'adj.': posKo = '(형용사)'; break;
+    case 'adv.': posKo = '(부사)'; break;
+    default: posKo = '';
+  }
+  document.getElementById('word-ko').textContent = currentWord.ko;
+  document.getElementById('word-pos').innerHTML = `${currentWord.pos} <span style="font-size: 0.9em;">${posKo}</span>`;
+  answeredThisProblem = false;
+  // 오답 UFO 피격 플래그 초기화
+  const ufos = document.querySelectorAll('.ufo');
+  ufos.forEach(ufo => { ufo._wrongHitForThisProblem = false; });
+}
+
+// UFO 겹침 방지용 Y좌표 관리
+let recentUfoYs = [];
+const UFO_MIN_Y_DIST = 90;
+const UFO_MAX_RECENT = 6;
+
+let recentUfoWords = [];
+const UFO_WORD_MAX_RECENT = 5;
+
+function getNonOverlappingY(areaHeight) {
+  let y, tryCount = 0;
+  do {
+    y = 100 + Math.random() * (areaHeight - 300);
+    tryCount++;
+  } while (recentUfoYs.some(yy => Math.abs(yy - y) < UFO_MIN_Y_DIST) && tryCount < 20);
+  recentUfoYs.push(y);
+  if (recentUfoYs.length > UFO_MAX_RECENT) recentUfoYs.shift();
+  return y;
+}
+
+let ufoSinceLastAnswer = 0; // 정답 UFO가 없을 때 카운트
+
+function spawnUFO(forceAnswerUFO = false) {
+  const gameArea = document.getElementById('game-area');
+  const areaWidth = gameArea.offsetWidth;
+  const areaHeight = gameArea.offsetHeight;
+
+  // 현재 화면에 정답 UFO가 있는지 확인
+  const ufos = document.querySelectorAll('.ufo');
+  let answerUfoExists = false;
+  ufos.forEach(ufo => {
+    if (ufo.wordData && ufo.wordData.en === currentWord.en) answerUfoExists = true;
+  });
+
+  let wordData;
+  if (forceAnswerUFO || (!answerUfoExists && ufoSinceLastAnswer >= 2 + Math.floor(Math.random() * 2))) {
+    // 정답 UFO 강제 등장
+    wordData = currentWord;
+    ufoSinceLastAnswer = 0;
+  } else {
+    wordData = getRandomWord();
+    // 혹시 랜덤으로 정답이 뽑히면 카운트 리셋
+    if (wordData.en === currentWord.en) {
+      ufoSinceLastAnswer = 0;
+    } else {
+      ufoSinceLastAnswer++;
+    }
+  }
+
+  const ufo = document.createElement('div');
+  ufo.className = 'ufo';
+  ufo.wordData = wordData;
+
+  const ufoImg = document.createElement('img');
+  ufoImg.className = 'ufo-img';
+  ufoImg.src = 'assets/ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
+  ufo.appendChild(ufoImg);
+
+  const ufoWord = document.createElement('div');
+  ufoWord.className = 'ufo-word';
+  ufoWord.textContent = wordData.en;
+  ufo.appendChild(ufoWord);
+
+  const ufoWidth = 110;
+  let x = -ufoWidth;
+  let y = getNonOverlappingY(areaHeight);
+
+  ufo.style.left = x + 'px';
+  ufo.style.top = y + 'px';
+
+  ufo.addEventListener('click', function () {
+    handleUfoClick(ufo);
+  });
+
+  gameArea.appendChild(ufo);
+
+  let amplitude = 30 + Math.random() * 20;
+  let freq = 0.015 + Math.random() * 0.01;
+  let t = 0;
+  let speed = 2 + Math.random();
+
+  function animate() {
+    if (!ufo.parentNode) return;
+    t += 1;
+    x += speed;
+    ufo.style.left = x + 'px';
+    ufo.style.top = (y + Math.sin(t * freq) * amplitude) + 'px';
+    if (x > areaWidth + ufoWidth) {
+      ufo.remove();
+      return;
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
+}
+
+function getRandomWord() {
+  if (!wordPool.length) refillWordPool();
+  return wordPool.pop();
+}
+
+function updateScore() {
+  document.getElementById('score').textContent = score;
+}
+
+function updateTimer() {
+  const min = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const sec = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById('timer').textContent = `${min}:${sec}`;
+}
+
+function showFeedback(text, scoreText, type) {
+  const feedbackEl = document.createElement('div');
+  feedbackEl.className = 'feedback ' + type;
+  feedbackEl.innerHTML = `<div class="feedback-text">${text}</div><div class="feedback-score">${scoreText}</div>`;
+  document.getElementById('game-area').appendChild(feedbackEl);
+  setTimeout(() => feedbackEl.remove(), 2000);
+}
+
+function createExplosion(x, y) {
+  // 기존 파티클 제거, 이미지로 대체
+  const explosion = document.createElement('img');
+  explosion.src = 'assets/explosion.png';
+  explosion.className = 'explosion-effect';
+  explosion.style.position = 'absolute';
+  explosion.style.left = (x - 90) + 'px'; // 이미지 중심 정렬 (180px 기준)
+  explosion.style.top = (y - 90) + 'px';
+  explosion.style.width = '180px';
+  explosion.style.height = '180px';
+  explosion.style.pointerEvents = 'none';
+  explosion.style.zIndex = 200;
+  document.getElementById('game-area').appendChild(explosion);
+  setTimeout(() => explosion.remove(), 700);
+}
+
+function handleUfoClick(ufoElement) {
+  if (isPaused) return;
+  const clickedWord = ufoElement.wordData.en;
+  if (clickedWord === currentWord.en) {
+    if (!answeredThisProblem) {
+      score += 10;
+      updateScore();
+      showFeedback('Bingo', '+10', 'correct');
+      document.getElementById('sound-bingo')?.play();
+      const rect = ufoElement.getBoundingClientRect();
+      const gameAreaRect = document.getElementById('game-area').getBoundingClientRect();
+      const explosionX = rect.left - gameAreaRect.left + rect.width / 2;
+      const explosionY = rect.top - gameAreaRect.top + rect.height / 2;
+      createExplosion(explosionX, explosionY);
+      ufoElement.remove();
+      answeredThisProblem = true;
+      bullet.remove(); // 반드시 소멸
+      pauseGameAndStartChallenge(currentWord.en);
+    }
+  } else {
+    score -= 5;
+    updateScore();
+    showFeedback('Nope', '-5', 'incorrect');
+    document.getElementById('sound-nope')?.play();
+  }
+}
+
+function showBonusFeedback() {
+  const feedbackEl = document.createElement('div');
+  feedbackEl.className = 'feedback correct';
+  feedbackEl.innerHTML = `<div class="feedback-text">Bonus</div><div class="feedback-score">+5</div>`;
+  const challengeBox = document.getElementById('challenge-box');
+  if (challengeBox && challengeBox.parentNode) {
+    challengeBox.parentNode.insertBefore(feedbackEl, challengeBox);
+  } else {
+    document.getElementById('game-area').appendChild(feedbackEl);
+  }
+  setTimeout(() => feedbackEl.remove(), 2000);
+}
+
+function pauseGameAndStartChallenge(word) {
+  isPaused = true;
+  let wordToChallenge = word;
+  clearInterval(timerInterval);
+  clearInterval(ufoInterval);
+  const challengeBox = document.createElement('div');
+  challengeBox.className = 'challenge-box';
+  challengeBox.style.background = 'none';
+  challengeBox.style.border = 'none';
+  challengeBox.id = 'challenge-box';
+  challengeBox.innerHTML = `
+    <div class="challenge-row"><p>${word}</p><div id="challenge-timer-display">10</div></div>
+    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="url">
+  `;
+  document.getElementById('game-area').appendChild(challengeBox);
+  const challengeInput = document.getElementById('challenge-input');
+  challengeInput.focus();
+  let challengeTimeLeft = 10;
+  const timerDisplay = document.getElementById('challenge-timer-display');
+  let challengeTimerInterval = setInterval(() => {
+    challengeTimeLeft--;
+    timerDisplay.textContent = challengeTimeLeft;
+    if (challengeTimeLeft <= 0) {
+      endChallenge(false);
+    }
+  }, 1000);
+  challengeInput.addEventListener('input', () => {
+    if (challengeInput.value.trim().toLowerCase() === wordToChallenge) {
+      endChallenge(true);
+    }
+  });
+  function endChallenge(success) {
+    clearInterval(challengeTimerInterval);
+    challengeBox.remove();
+    if (success) {
+      score += 5;
+      updateScore();
+      showBonusFeedback();
+    }
+    resumeGame();
+  }
+}
+
+function resumeGame() {
+  isPaused = false;
+  clearInterval(timerInterval);
+  clearInterval(ufoInterval);
+  if (timeLeft <= 0) {
+    endGame();
+    return;
+  }
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    updateTimer();
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      endGame();
+    }
+  }, 1000);
+  ufoInterval = setInterval(spawnUFO, 1800);
+  document.getElementById('top-bar').style.display = 'flex';
+  document.getElementById('word-box').style.display = 'block';
+  document.getElementById('input-area').style.display = 'flex';
+  document.getElementById('sound-toggle-btn').style.display = 'flex';
+  timeLeft = 300;
+  recentUfoYs = [];
+  recentUfoWords = [];
+  isPaused = false;
+  const challengeBox = document.getElementById('challenge-box');
+  if (challengeBox) {
+      challengeBox.remove();
+  }
+  updateScore();
+  updateTimer();
+  pickNewProblemWord();
+  const bgm = document.getElementById('bgm');
+  if (bgm) {
+    // BGM이 이미 재생 중이면 play()를 호출하지 않음
+    if (bgm.paused) {
+      bgm.currentTime = 0;
+      bgm.volume = 0.2;
+      bgm.play();
+    }
+  }
+}
+
+function endGame() {
+  clearInterval(ufoInterval);
+  clearInterval(timerInterval);
+  isPaused = true;
+  document.getElementById('bgm')?.pause();
+  const ufos = document.querySelectorAll('.ufo');
+  ufos.forEach(ufo => ufo.remove());
+  const bullets = document.querySelectorAll('.bullet');
+  bullets.forEach(bullet => bullet.remove());
+  document.getElementById('top-bar').style.display = 'none';
+  document.getElementById('word-box').style.display = 'none';
+  document.getElementById('input-area').style.display = 'none';
+  const gameOverEl = document.createElement('div');
+  gameOverEl.id = 'game-over-screen';
+  gameOverEl.innerHTML = `
+    <div class="title" style="font-size:3em; margin-bottom:20px;">Game Over!</div>
+    <div class="final-score" style="font-size:2em; margin-bottom:30px;">Score : <span class="score-value">${score}</span></div>
+    <button id="restart-btn" style="font-size:1.5em; padding:15px 40px; border-radius:10px; background:#4e8cff; color:white; border:none; cursor:pointer;">Start again</button>
+  `;
+  document.getElementById('game-area').appendChild(gameOverEl);
+}
+
+function resetGame() {
+  const gameOverScreen = document.getElementById('game-over-screen');
+  if (gameOverScreen) {
+      gameOverScreen.remove();
+  }
+  document.getElementById('top-bar').style.display = 'flex';
+  document.getElementById('word-box').style.display = 'block';
+  document.getElementById('input-area').style.display = 'flex';
+  score = 0;
+  timeLeft = 300;
+  recentUfoYs = [];
+  recentUfoWords = [];
+  isPaused = false;
+  const challengeBox = document.getElementById('challenge-box');
+  if (challengeBox) {
+      challengeBox.remove();
+  }
+  updateScore();
+  updateTimer();
+  pickNewProblemWord();
+  const bgm = document.getElementById('bgm');
+  if (bgm) {
+    bgm.currentTime = 0;
+    bgm.volume = 0.2;
+    bgm.play();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const startScreen = document.getElementById('start-screen');
+  const startGameBtn = document.getElementById('start-game-btn');
+  const topBar = document.getElementById('top-bar');
+  const wordBox = document.getElementById('word-box');
+  const inputArea = document.getElementById('input-area');
+  const timerEl = document.getElementById('timer');
+  const scoreEl = document.getElementById('score');
+  const fireBtn = document.getElementById('fire-btn');
+  const bgm = document.getElementById('bgm');
+  const soundToggleBtn = document.getElementById('sound-toggle-btn');
+  const bgmVolumeSlider = document.getElementById('bgm-volume-slider');
+  const allSounds = [
+    bgm,
+    document.getElementById('sound-shoot'),
+    document.getElementById('sound-bingo'),
+    document.getElementById('sound-nope')
+  ];
+  scoreEl.textContent = '0';
+  soundToggleBtn.addEventListener('click', () => {
+    isMuted = !isMuted;
+    allSounds.forEach(sound => {
+      if (sound) sound.muted = isMuted;
+    });
+    soundToggleBtn.textContent = isMuted ? '🔇' : '🔊';
+  });
+  bgm.volume = 0.1;
+  bgmVolumeSlider.value = 0.1;
+  bgmVolumeSlider.addEventListener('input', (e) => {
+    bgm.volume = parseFloat(e.target.value);
+  });
+  function tryStartBGM() {
+    if (!bgm || bgm.currentTime > 0) return;
+    bgm.volume = parseFloat(bgmVolumeSlider.value);
+    bgm.play().catch(() => console.log("BGM auto-play failed."));
+  }
+  function initializeGame() {
+    startScreen.style.display = 'none';
+    topBar.style.display = 'flex';
+    wordBox.style.display = 'block';
+    inputArea.style.display = 'flex';
+    soundToggleBtn.style.display = 'flex';
+    tryStartBGM();
+    isPaused = false;
+    updateTimer();
+    timerInterval = setInterval(() => {
+      timeLeft--;
+      updateTimer();
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        endGame();
+      }
+    }, 1000);
+    loadWords();
+    bgm.volume = parseFloat(bgmVolumeSlider.value);
+  }
+  startGameBtn.addEventListener('click', initializeGame);
+  let fireInterval = null;
+  let isFiring = false;
+  function fireBulletsBurst() {
+    // 연속 발사 시 소리 한 번만 재생
+    const shootSound = document.getElementById('sound-shoot');
+    if (shootSound) {
+      shootSound.currentTime = 0;
+      shootSound.volume = 0.5;
+      shootSound.play();
+    }
+    let shots = 0;
+    const maxShots = 3;
+    function shoot() {
+      fireBullet(false); // 소리 재생 X
+      shots++;
+      if (shots < maxShots) {
+        setTimeout(shoot, 200);
+      }
+    }
+    shoot();
+  }
+  function fireBullet(playSound = true) {
+    // playSound가 true일 때만 소리 재생
+    if (playSound) {
+      const shootSound = document.getElementById('sound-shoot');
+      if (shootSound) {
+        shootSound.currentTime = 0;
+        shootSound.volume = 0.5;
+        shootSound.play();
+      }
+    }
+    // bullet div 대신 이미지 사용
+    const bullet = document.createElement('img');
+    bullet.className = 'bullet';
+    bullet.src = 'assets/bullet.png';
+    bullet.style.position = 'absolute';
+    bullet.style.width = '18px';
+    bullet.style.height = '40px';
+    const fireBtnRect = fireBtn.getBoundingClientRect();
+    const gameAreaRect = document.getElementById('game-area').getBoundingClientRect();
+    bullet.style.left = `${fireBtnRect.left - gameAreaRect.left + fireBtnRect.width / 2 - 9}px`;
+    bullet.style.top = `${fireBtnRect.top - gameAreaRect.top}px`;
+    bullet.style.zIndex = 5;
+    document.getElementById('game-area').appendChild(bullet);
+
+    let y = parseFloat(bullet.style.top);
+    function moveBullet() {
+      y -= 8;
+      bullet.style.top = y + 'px';
+      // 충돌 판정
+      const ufos = document.querySelectorAll('.ufo');
+      for (let ufo of ufos) {
+        const ufoRect = ufo.getBoundingClientRect();
+        const bulletRect = bullet.getBoundingClientRect();
+        if (
+          bulletRect.left < ufoRect.right &&
+          bulletRect.right > ufoRect.left &&
+          bulletRect.top < ufoRect.bottom &&
+          bulletRect.bottom > ufoRect.top
+        ) {
+          if (ufo.wordData && ufo.wordData.en === currentWord.en) {
+            // 정답: 한 번만 점수 획득
+            if (!answeredThisProblem) {
+              score += 10;
+              updateScore();
+              showFeedback('Bingo', '+10', 'correct');
+              document.getElementById('sound-bingo')?.play();
+              const rect = ufo.getBoundingClientRect();
+              const gameAreaRect = document.getElementById('game-area').getBoundingClientRect();
+              const explosionX = rect.left - gameAreaRect.left + rect.width / 2;
+              const explosionY = rect.top - gameAreaRect.top + rect.height / 2;
+              createExplosion(explosionX, explosionY);
+              ufo.remove();
+              answeredThisProblem = true;
+              bullet.remove(); // 반드시 소멸
+              pauseGameAndStartChallenge(currentWord.en);
+              return;
+            }
+          } else {
+            // 오답: 한 문제당 한 번만 -5점
+            if (!ufo._wrongHitForThisProblem) {
+              score -= 5;
+              updateScore();
+              showFeedback('Nope', '-5', 'incorrect');
+              document.getElementById('sound-nope')?.play();
+              ufo._wrongHitForThisProblem = true;
+            }
+          }
+          bullet.remove(); // 명중/오발 모두 소멸 (항상 한 번만 실행)
+          return;
+        }
+      }
+      // word-box 바로 위에서 소멸
+      const wordBox = document.getElementById('word-box');
+      if (wordBox) {
+        const wordBoxRect = wordBox.getBoundingClientRect();
+        const gameAreaRect = document.getElementById('game-area').getBoundingClientRect();
+        const wordBoxBottom = wordBoxRect.bottom - gameAreaRect.top;
+        if (y < wordBoxBottom) {
+          bullet.remove();
+          return;
+        }
+      }
+      if (y < -40) {
+        bullet.remove();
+        return;
+      }
+      requestAnimationFrame(moveBullet);
+    }
+    moveBullet();
+  }
+  const handleFireStart = (e) => {
+    e.preventDefault();
+    if (isPaused || isFiring) return;
+    tryStartBGM();
+    isFiring = true;
+    fireBulletsBurst();
+    fireInterval = setInterval(fireBulletsBurst, 150);
+  };
+  const handleFireEnd = (e) => {
+    e.preventDefault();
+    isFiring = false;
+    clearInterval(fireInterval);
+  };
+  fireBtn.addEventListener('mousedown', handleFireStart);
+  window.addEventListener('mouseup', handleFireEnd);
+  fireBtn.addEventListener('touchstart', handleFireStart);
+  window.addEventListener('touchend', handleFireEnd);
+  window.addEventListener('keydown', (e) => {
+    if (e.code === 'Space' && !isFiring) {
+      e.preventDefault();
+      handleFireStart(e);
+    }
+  });
+  window.addEventListener('keyup', (e) => {
+    if (e.code === 'Space') {
+      e.preventDefault();
+      handleFireEnd(e);
+    }
+  });
+  requestAnimationFrame(gameLoop);
+});
+
+function gameLoop() {
+  requestAnimationFrame(gameLoop);
+}
+
+function loadWords() {
+  fetch('data/unit1.json')
+    .then(res => res.json())
+    .then(data => {
+      ufoWordsData = data;
+      refillWordPool();
+      pickNewProblemWord();
+      updateScore();
+      updateTimer();
+      if (ufoInterval) clearInterval(ufoInterval);
+      ufoInterval = setInterval(spawnUFO, 1800);
+    })
+    .catch(err => {
+      alert('단어 데이터를 불러오지 못했습니다.');
+      console.error(err);
+    });
+} 
