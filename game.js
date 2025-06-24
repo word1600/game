@@ -199,8 +199,13 @@ function handleUfoClick(ufoElement) {
       createExplosion(explosionX, explosionY);
       ufoElement.remove();
       answeredThisProblem = true;
-      bullet.remove(); // 반드시 소멸
+      
+      // 정답을 맞힌 순간, 화면의 모든 총알을 제거합니다.
+      const allBullets = document.querySelectorAll('.bullet');
+      allBullets.forEach(b => b.remove());
+
       pauseGameAndStartChallenge(currentWord.en);
+      return;
     }
   } else {
     score -= 5;
@@ -211,9 +216,10 @@ function handleUfoClick(ufoElement) {
 }
 
 function showBonusFeedback() {
+  document.getElementById('sound-goodjob')?.play();
   const feedbackEl = document.createElement('div');
   feedbackEl.className = 'feedback correct';
-  feedbackEl.innerHTML = `<div class="feedback-text">Bonus</div><div class="feedback-score">+5</div>`;
+  feedbackEl.innerHTML = `<div class="feedback-text">Good job</div><div class="feedback-score">+5</div>`;
   const challengeBox = document.getElementById('challenge-box');
   if (challengeBox && challengeBox.parentNode) {
     challengeBox.parentNode.insertBefore(feedbackEl, challengeBox);
@@ -226,7 +232,7 @@ function showBonusFeedback() {
 function pauseGameAndStartChallenge(word) {
   isPaused = true;
   let wordToChallenge = word;
-  clearInterval(timerInterval);
+  // clearInterval(timerInterval); // 타이머 멈추지 않음
   clearInterval(ufoInterval);
   const challengeBox = document.createElement('div');
   challengeBox.className = 'challenge-box';
@@ -269,25 +275,29 @@ function pauseGameAndStartChallenge(word) {
 function resumeGame() {
   isPaused = false;
   clearInterval(timerInterval);
+  timerInterval = null;
   clearInterval(ufoInterval);
   if (timeLeft <= 0) {
     endGame();
     return;
   }
-  timerInterval = setInterval(() => {
-    timeLeft--;
-    updateTimer();
-    if (timeLeft <= 0) {
-      clearInterval(timerInterval);
-      endGame();
-    }
-  }, 1000);
+  // 타이머가 이미 동작 중이면 새로 시작하지 않음
+  if (!timerInterval) {
+    timerInterval = setInterval(() => {
+      timeLeft--;
+      updateTimer();
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        endGame();
+      }
+    }, 1000);
+  }
   ufoInterval = setInterval(spawnUFO, 1800);
   document.getElementById('top-bar').style.display = 'flex';
   document.getElementById('word-box').style.display = 'block';
   document.getElementById('input-area').style.display = 'flex';
   document.getElementById('sound-toggle-btn').style.display = 'flex';
-  timeLeft = 300;
+  // timeLeft = 300; // 시간 리셋 금지
   recentUfoYs = [];
   recentUfoWords = [];
   isPaused = false;
@@ -324,11 +334,16 @@ function endGame() {
   const gameOverEl = document.createElement('div');
   gameOverEl.id = 'game-over-screen';
   gameOverEl.innerHTML = `
-    <div class="title" style="font-size:3em; margin-bottom:20px;">Game Over!</div>
-    <div class="final-score" style="font-size:2em; margin-bottom:30px;">Score : <span class="score-value">${score}</span></div>
-    <button id="restart-btn" style="font-size:1.5em; padding:15px 40px; border-radius:10px; background:#4e8cff; color:white; border:none; cursor:pointer;">Start again</button>
+    <div class="title">Game over</div>
+    <div class="final-score">Score : <span class="score-value">${score}</span></div>
+    <button id="restart-btn">Start Again</button>
   `;
   document.getElementById('game-area').appendChild(gameOverEl);
+
+  const restartBtn = document.getElementById('restart-btn');
+  // 버튼이 확실히 클릭되도록 스타일 직접 지정
+  restartBtn.style.pointerEvents = 'auto'; 
+  restartBtn.onclick = () => location.reload();
 }
 
 function resetGame() {
@@ -351,6 +366,25 @@ function resetGame() {
   updateScore();
   updateTimer();
   pickNewProblemWord();
+
+  // 타이머 재시작
+  if (timerInterval) clearInterval(timerInterval);
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    updateTimer();
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      endGame();
+    }
+  }, 1000);
+
+  // UFO 생성 재시작
+  if (ufoInterval) clearInterval(ufoInterval);
+  ufoInterval = setInterval(spawnUFO, 1800);
+
+  // 단어 데이터가 비어있으면 로드
+  if (!ufoWordsData.length) loadWords();
+
   const bgm = document.getElementById('bgm');
   if (bgm) {
     bgm.currentTime = 0;
@@ -375,7 +409,8 @@ document.addEventListener('DOMContentLoaded', () => {
     bgm,
     document.getElementById('sound-shoot'),
     document.getElementById('sound-bingo'),
-    document.getElementById('sound-nope')
+    document.getElementById('sound-nope'),
+    document.getElementById('sound-goodjob')
   ];
   scoreEl.textContent = '0';
   soundToggleBtn.addEventListener('click', () => {
@@ -438,8 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
     shoot();
   }
   function fireBullet(playSound = true) {
-    // playSound가 true일 때만 소리 재생
-    if (playSound) {
+    if (playSound && !isMuted) {
       const shootSound = document.getElementById('sound-shoot');
       if (shootSound) {
         shootSound.currentTime = 0;
@@ -450,7 +484,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // bullet div 대신 이미지 사용
     const bullet = document.createElement('img');
     bullet.className = 'bullet';
-    bullet.src = 'assets/bullet.png';
+    bullet.src = 'assets/bullet2.png';
     bullet.style.position = 'absolute';
     bullet.style.width = '18px';
     bullet.style.height = '40px';
@@ -490,7 +524,11 @@ document.addEventListener('DOMContentLoaded', () => {
               createExplosion(explosionX, explosionY);
               ufo.remove();
               answeredThisProblem = true;
-              bullet.remove(); // 반드시 소멸
+              
+              // 정답을 맞힌 순간, 화면의 모든 총알을 제거합니다.
+              const allBullets = document.querySelectorAll('.bullet');
+              allBullets.forEach(b => b.remove());
+
               pauseGameAndStartChallenge(currentWord.en);
               return;
             }
