@@ -8,14 +8,16 @@ let isMuted = false; // 소리 상태
 let ufoWordsData = [];
 let currentWord = null;
 
-// 단어 출현 풀: 모든 단어 3회씩 복제 후 셔플
+// 단어 출현 풀: 모든 단어 5회씩 복제 후 셔플 (최소 3회 보장)
 let wordPool = [];
+let usedWords = new Set(); // 이미 사용된 단어 추적
 
 let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 
 function refillWordPool() {
   wordPool = [];
-  for (let i = 0; i < 3; i++) {
+  // 각 단어를 5회씩 복제 (최소 3회 보장)
+  for (let i = 0; i < 5; i++) {
     wordPool = wordPool.concat(ufoWordsData);
   }
   // 셔플
@@ -32,7 +34,18 @@ let timerInterval = null;
 // 문제(상단 박스)용 단어를 랜덤하게 선택
 function pickNewProblemWord() {
   if (!wordPool.length) refillWordPool();
-  currentWord = wordPool.pop();
+  
+  // 아직 사용되지 않은 단어 우선 선택
+  let availableWords = wordPool.filter(word => !usedWords.has(word.en));
+  if (availableWords.length === 0) {
+    // 모든 단어가 사용되었으면 usedWords 초기화
+    usedWords.clear();
+    availableWords = wordPool;
+  }
+  
+  currentWord = availableWords[Math.floor(Math.random() * availableWords.length)];
+  usedWords.add(currentWord.en);
+  
   let posKo = '';
   switch (currentWord.pos.trim()) {
     case 'n.': posKo = '(명사)'; break;
@@ -44,6 +57,10 @@ function pickNewProblemWord() {
   document.getElementById('word-ko').textContent = currentWord.ko;
   document.getElementById('word-pos').innerHTML = `${currentWord.pos} <span style="font-size: 0.9em;">${posKo}</span>`;
   answeredThisProblem = false;
+  // 새로운 문제 시작 시 카운터 리셋
+  ufoSinceLastAnswer = 0;
+  answerUfoSpawnCount = 0;
+  problemWordCount = 0;
   // 오답 UFO 피격 플래그 초기화
   const ufos = document.querySelectorAll('.ufo');
   ufos.forEach(ufo => { ufo._wrongHitForThisProblem = false; });
@@ -69,6 +86,8 @@ function getNonOverlappingY(areaHeight) {
 }
 
 let ufoSinceLastAnswer = 0; // 정답 UFO가 없을 때 카운트
+let answerUfoSpawnCount = 0; // 정답 UFO 스폰 카운트
+let problemWordCount = 0; // 현재 문제 단어 출현 횟수
 
 function spawnUFO(forceAnswerUFO = false) {
   const gameArea = document.getElementById('game-area');
@@ -83,15 +102,24 @@ function spawnUFO(forceAnswerUFO = false) {
   });
 
   let wordData;
-  if (forceAnswerUFO || (!answerUfoExists && ufoSinceLastAnswer >= 2 + Math.floor(Math.random() * 2))) {
+  // 정답 UFO 등장 조건: 1~5개 범위에서 랜덤하게 등장
+  const shouldSpawnAnswer = forceAnswerUFO || 
+                           (!answerUfoExists && ufoSinceLastAnswer >= 1 + Math.floor(Math.random() * 5)) ||
+                           (problemWordCount >= 3 && ufoSinceLastAnswer >= 1); // 최소 3번 출현 후 강제 등장
+  
+  if (shouldSpawnAnswer) {
     // 정답 UFO 강제 등장
     wordData = currentWord;
     ufoSinceLastAnswer = 0;
+    answerUfoSpawnCount++;
+    problemWordCount++;
   } else {
     wordData = getRandomWord();
     // 혹시 랜덤으로 정답이 뽑히면 카운트 리셋
     if (wordData.en === currentWord.en) {
       ufoSinceLastAnswer = 0;
+      answerUfoSpawnCount++;
+      problemWordCount++;
     } else {
       ufoSinceLastAnswer++;
     }
@@ -358,6 +386,9 @@ function resetGame() {
   timeLeft = 300;
   recentUfoYs = [];
   recentUfoWords = [];
+  ufoSinceLastAnswer = 0;
+  answerUfoSpawnCount = 0;
+  problemWordCount = 0;
   isPaused = false;
   const challengeBox = document.getElementById('challenge-box');
   if (challengeBox) {
@@ -438,6 +469,9 @@ document.addEventListener('DOMContentLoaded', () => {
     soundToggleBtn.style.display = 'flex';
     tryStartBGM();
     isPaused = false;
+    ufoSinceLastAnswer = 0;
+    answerUfoSpawnCount = 0;
+    problemWordCount = 0;
     updateTimer();
     timerInterval = setInterval(() => {
       timeLeft--;

@@ -491,6 +491,7 @@ body {
 
 .game-title .unit-text {
   font-size: 0.84em; /* 3.2em * 0.84 = 2.69em (약 5포인트 작음) */
+  color: #ffeb3b;
 }
 
 .instructions {
