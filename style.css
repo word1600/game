@@ -111,13 +111,15 @@ body {
 }
 
 #fire-btn {
-  background: url('assets/FIRE2.png') no-repeat center center;
+  background: url('assets/FIRE0.png') no-repeat center center;
   background-size: contain;
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   border: none;
   cursor: pointer;
   flex-shrink: 0;
+  position: relative;
+  top: -15px;
 }
 
 .input-controls {
@@ -252,8 +254,8 @@ body {
 
 .bullet {
   position: absolute;
-  width: 18px;
-  height: 40px;
+  width: 36px;
+  height: 80px;
   z-index: 5;
   pointer-events: none;
 }
@@ -268,8 +270,8 @@ body {
     padding: 10px;
   }
   #fire-btn {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -392,7 +394,7 @@ body {
 
 #start-game-btn,
 #restart-btn {
-  font-size: 2em;
+  font-size: 2.6em;
   padding: 15px 40px;
   border: none;
   border-radius: 10px;
@@ -410,7 +412,9 @@ body {
 }
 
 #restart-btn {
-  background-color: skyblue;
+  background-color: transparent;
+  font-size: 2.6em;
+  color: #ff8c00;
 }
 
 #start-game-btn:hover,
@@ -483,6 +487,10 @@ body {
   margin-bottom: 40px;
   text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px rgba(0, 255, 102, 0.7);
   transform: translateY(20px);
+}
+
+.game-title .unit-text {
+  font-size: 0.84em; /* 3.2em * 0.84 = 2.69em (약 5포인트 작음) */
 }
 
 .instructions {

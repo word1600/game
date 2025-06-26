@@ -455,26 +455,17 @@ document.addEventListener('DOMContentLoaded', () => {
   let isFiring = false;
   function fireBulletsBurst() {
     // 연속 발사 시 소리 한 번만 재생
-    const shootSound = document.getElementById('sound-shoot');
+    const shootSound = document.getElementById('sound-shoot3');
     if (shootSound) {
       shootSound.currentTime = 0;
       shootSound.volume = 0.5;
       shootSound.play();
     }
-    let shots = 0;
-    const maxShots = 3;
-    function shoot() {
-      fireBullet(false); // 소리 재생 X
-      shots++;
-      if (shots < maxShots) {
-        setTimeout(shoot, 200);
-      }
-    }
-    shoot();
+    fireBullet(false); // 소리 재생 X
   }
   function fireBullet(playSound = true) {
     if (playSound && !isMuted) {
-      const shootSound = document.getElementById('sound-shoot');
+      const shootSound = document.getElementById('sound-shoot3');
       if (shootSound) {
         shootSound.currentTime = 0;
         shootSound.volume = 0.5;
@@ -484,13 +475,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // bullet div 대신 이미지 사용
     const bullet = document.createElement('img');
     bullet.className = 'bullet';
-    bullet.src = 'assets/bullet2.png';
+    bullet.src = 'assets/bullet1.png';
     bullet.style.position = 'absolute';
-    bullet.style.width = '18px';
-    bullet.style.height = '40px';
+    bullet.style.width = '36px';
+    bullet.style.height = '80px';
     const fireBtnRect = fireBtn.getBoundingClientRect();
     const gameAreaRect = document.getElementById('game-area').getBoundingClientRect();
-    bullet.style.left = `${fireBtnRect.left - gameAreaRect.left + fireBtnRect.width / 2 - 9}px`;
+    bullet.style.left = `${fireBtnRect.left - gameAreaRect.left + fireBtnRect.width / 2 - 18}px`;
     bullet.style.top = `${fireBtnRect.top - gameAreaRect.top}px`;
     bullet.style.zIndex = 5;
     document.getElementById('game-area').appendChild(bullet);
