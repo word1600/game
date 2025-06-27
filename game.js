@@ -47,15 +47,8 @@ function pickNewProblemWord() {
   usedWords.add(currentWord.en);
   
   let posKo = '';
-  switch (currentWord.pos.trim()) {
-    case 'n.': posKo = '(명사)'; break;
-    case 'v.': posKo = '(동사)'; break;
-    case 'adj.': posKo = '(형용사)'; break;
-    case 'adv.': posKo = '(부사)'; break;
-    default: posKo = '';
-  }
   document.getElementById('word-ko').textContent = currentWord.ko;
-  document.getElementById('word-pos').innerHTML = `${currentWord.pos} <span style="font-size: 0.9em;">${posKo}</span>`;
+  document.getElementById('word-pos').textContent = currentWord.pos;
   answeredThisProblem = false;
   // 새로운 문제 시작 시 카운터 리셋
   ufoSinceLastAnswer = 0;
