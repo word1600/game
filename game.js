@@ -17,7 +17,7 @@ let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 let ttsInterval = null;
 let lastTtsUtterance = null;
 function speakWordTTS(word) {
-  if (!window.speechSynthesis) return;
+  if (!window.speechSynthesis || isPaused) return;
   if (lastTtsUtterance) {
     window.speechSynthesis.cancel();
     lastTtsUtterance = null;
@@ -86,12 +86,16 @@ function pickNewProblemWord() {
   if (ttsInterval) clearInterval(ttsInterval);
   if (window.ttsTimeout1) clearTimeout(window.ttsTimeout1);
   if (window.ttsTimeout2) clearTimeout(window.ttsTimeout2);
-  window.ttsTimeout1 = setTimeout(() => {
-    speakWordTTS(currentWord.en);
-    window.ttsTimeout2 = setTimeout(() => {
-      speakWordTTS(currentWord.en);
-    }, 3000);
-  }, 2000);
+  
+  // 게임이 일시정지 상태가 아닐 때만 TTS 설정
+  if (!isPaused) {
+    window.ttsTimeout1 = setTimeout(() => {
+      if (!isPaused) speakWordTTS(currentWord.en);
+      window.ttsTimeout2 = setTimeout(() => {
+        if (!isPaused) speakWordTTS(currentWord.en);
+      }, 3000);
+    }, 2000);
+  }
 }
 
 // UFO 겹침 방지용 Y좌표 관리
@@ -380,10 +384,30 @@ function endGame() {
   clearInterval(timerInterval);
   isPaused = true;
   document.getElementById('bgm')?.pause();
+  
+  // 모든 TTS 관련 타이머와 음성 정리
+  if (ttsInterval) clearInterval(ttsInterval);
+  if (window.ttsTimeout1) clearTimeout(window.ttsTimeout1);
+  if (window.ttsTimeout2) clearTimeout(window.ttsTimeout2);
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.pause();
+  }
+  if (lastTtsUtterance) {
+    lastTtsUtterance = null;
+  }
+  
   const ufos = document.querySelectorAll('.ufo');
   ufos.forEach(ufo => ufo.remove());
   const bullets = document.querySelectorAll('.bullet');
   bullets.forEach(bullet => bullet.remove());
+  
+  // 보너스 게임 타이핑 박스 제거
+  const challengeBox = document.getElementById('challenge-box');
+  if (challengeBox) {
+    challengeBox.remove();
+  }
+  
   document.getElementById('top-bar').style.display = 'none';
   document.getElementById('word-box').style.display = 'none';
   document.getElementById('input-area').style.display = 'none';
@@ -400,9 +424,6 @@ function endGame() {
   // 버튼이 확실히 클릭되도록 스타일 직접 지정
   restartBtn.style.pointerEvents = 'auto'; 
   restartBtn.onclick = () => location.reload();
-
-  if (ttsInterval) clearInterval(ttsInterval);
-  if (window.speechSynthesis) window.speechSynthesis.cancel();
 }
 
 function resetGame() {
