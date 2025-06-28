@@ -275,6 +275,33 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .game-container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+    padding-bottom: 40px;
+  }
+  .instructions ul li {
+    font-size: 0.95em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #input-area {
+    bottom: 60px !important;
+  }
+  .sound-control-box {
+    bottom: 80px !important;
+  }
+  #start-game-btn {
+    margin-bottom: 30px !important;
+  }
+}
+
 .challenge-box {
   position: absolute;
   top: 68%;

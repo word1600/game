@@ -540,6 +540,11 @@ document.addEventListener('DOMContentLoaded', () => {
     bgm.volume = parseFloat(bgmVolumeSlider.value);
   }
   startGameBtn.addEventListener('click', initializeGame);
+  // 모바일 터치 대응
+  startGameBtn.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+    initializeGame();
+  });
   let fireInterval = null;
   let isFiring = false;
   function fireBulletsBurst() {
