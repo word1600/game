@@ -14,6 +14,33 @@ let usedWords = new Set(); // 이미 사용된 단어 추적
 
 let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 
+let ttsInterval = null;
+let lastTtsUtterance = null;
+function speakWordTTS(word) {
+  if (!window.speechSynthesis) return;
+  if (lastTtsUtterance) {
+    window.speechSynthesis.cancel();
+    lastTtsUtterance = null;
+  }
+  const utter = new SpeechSynthesisUtterance(word);
+  utter.lang = 'en-US';
+  // 여성 목소리 우선 선택
+  const voices = window.speechSynthesis.getVoices();
+  let voice = voices.find(v =>
+    (v.lang === 'en-US' || v.lang.startsWith('en')) &&
+    (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem'))
+  );
+  if (!voice) {
+    // 그래도 없으면 영어 음성 아무거나
+    voice = voices.find(v => v.lang === 'en-US' || v.lang.startsWith('en'));
+  }
+  if (voice) utter.voice = voice;
+  utter.pitch = 1.2; // 여성스럽게, 약간 높게
+  utter.rate = 1.0;
+  lastTtsUtterance = utter;
+  window.speechSynthesis.speak(utter);
+}
+
 function refillWordPool() {
   wordPool = [];
   // 각 단어를 5회씩 복제 (최소 3회 보장)
@@ -34,7 +61,6 @@ let timerInterval = null;
 // 문제(상단 박스)용 단어를 랜덤하게 선택
 function pickNewProblemWord() {
   if (!wordPool.length) refillWordPool();
-  
   // 아직 사용되지 않은 단어 우선 선택
   let availableWords = wordPool.filter(word => !usedWords.has(word.en));
   if (availableWords.length === 0) {
@@ -42,10 +68,8 @@ function pickNewProblemWord() {
     usedWords.clear();
     availableWords = wordPool;
   }
-  
   currentWord = availableWords[Math.floor(Math.random() * availableWords.length)];
   usedWords.add(currentWord.en);
-  
   let posKo = '';
   document.getElementById('word-ko').textContent = currentWord.ko;
   document.getElementById('word-pos').textContent = currentWord.pos;
@@ -57,6 +81,17 @@ function pickNewProblemWord() {
   // 오답 UFO 피격 플래그 초기화
   const ufos = document.querySelectorAll('.ufo');
   ufos.forEach(ufo => { ufo._wrongHitForThisProblem = false; });
+
+  // TTS: 단어가 바뀌고 2초 후에 1회, 3초 후에 1회(총 2회)
+  if (ttsInterval) clearInterval(ttsInterval);
+  if (window.ttsTimeout1) clearTimeout(window.ttsTimeout1);
+  if (window.ttsTimeout2) clearTimeout(window.ttsTimeout2);
+  window.ttsTimeout1 = setTimeout(() => {
+    speakWordTTS(currentWord.en);
+    window.ttsTimeout2 = setTimeout(() => {
+      speakWordTTS(currentWord.en);
+    }, 3000);
+  }, 2000);
 }
 
 // UFO 겹침 방지용 Y좌표 관리
@@ -277,7 +312,7 @@ function pauseGameAndStartChallenge(word) {
     }
   }, 1000);
   challengeInput.addEventListener('input', () => {
-    if (challengeInput.value.trim().toLowerCase() === wordToChallenge) {
+    if (challengeInput.value.trim().toLowerCase() === wordToChallenge.trim().toLowerCase()) {
       endChallenge(true);
     }
   });
@@ -365,6 +400,9 @@ function endGame() {
   // 버튼이 확실히 클릭되도록 스타일 직접 지정
   restartBtn.style.pointerEvents = 'auto'; 
   restartBtn.onclick = () => location.reload();
+
+  if (ttsInterval) clearInterval(ttsInterval);
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
 }
 
 function resetGame() {
@@ -415,6 +453,9 @@ function resetGame() {
     bgm.volume = 0.2;
     bgm.play();
   }
+
+  if (ttsInterval) clearInterval(ttsInterval);
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
