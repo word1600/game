@@ -499,20 +499,29 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('sound-goodjob')
   ];
   scoreEl.textContent = '0';
-  soundToggleBtn.addEventListener('click', () => {
-    isMuted = !isMuted;
+  function setMuteState(mute) {
+    isMuted = mute;
     allSounds.forEach(sound => {
       if (sound) sound.muted = isMuted;
     });
     soundToggleBtn.textContent = isMuted ? '🔇' : '🔊';
-  });
+  }
+  soundToggleBtn.addEventListener('click', () => setMuteState(!isMuted));
+  soundToggleBtn.addEventListener('touchstart', (e) => { e.preventDefault(); setMuteState(!isMuted); });
   bgm.volume = 0.1;
   bgmVolumeSlider.value = 0.1;
   bgmVolumeSlider.addEventListener('input', (e) => {
     bgm.volume = parseFloat(e.target.value);
   });
-  function tryStartBGM() {
-    if (!bgm || bgm.currentTime > 0) return;
+  function tryStartBGM(force=false) {
+    if (!bgm) return;
+    if (force) {
+      bgm.currentTime = 0;
+      bgm.volume = parseFloat(bgmVolumeSlider.value);
+      bgm.play().catch(() => console.log("BGM auto-play failed."));
+      return;
+    }
+    if (bgm.currentTime > 0) return;
     bgm.volume = parseFloat(bgmVolumeSlider.value);
     bgm.play().catch(() => console.log("BGM auto-play failed."));
   }
@@ -522,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
     wordBox.style.display = 'block';
     inputArea.style.display = 'flex';
     soundToggleBtn.style.display = 'flex';
-    tryStartBGM();
+    tryStartBGM(true); // 강제 재생
     isPaused = false;
     ufoSinceLastAnswer = 0;
     answerUfoSpawnCount = 0;
@@ -540,7 +549,6 @@ document.addEventListener('DOMContentLoaded', () => {
     bgm.volume = parseFloat(bgmVolumeSlider.value);
   }
   startGameBtn.addEventListener('click', initializeGame);
-  // 모바일 터치 대응
   startGameBtn.addEventListener('touchstart', function(e) {
     e.preventDefault();
     initializeGame();
