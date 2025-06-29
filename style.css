@@ -110,8 +110,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   z-index: 20;
+  position: relative;
+  height: 120px;
 }
 
 #fire-btn {
@@ -122,8 +123,23 @@ body {
   border: none;
   cursor: pointer;
   flex-shrink: 0;
-  position: relative;
-  top: -15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -35%);
+  z-index: 2;
+}
+
+#missile-accessory {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 50%;
+  transform: translate(-100%, -50%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .input-controls {
