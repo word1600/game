@@ -178,8 +178,11 @@ function spawnUFO(forceAnswerUFO = false) {
   ufo.style.left = x + 'px';
   ufo.style.top = y + 'px';
 
-  ufo.addEventListener('click', function () {
-    handleUfoClick(ufo);
+  ufo.addEventListener('click', function (event) {
+    // 클릭된 요소가 UFO 이미지나 단어인지 확인
+    if (event.target.classList.contains('ufo-img') || event.target.classList.contains('ufo-word')) {
+      handleUfoClick(ufo);
+    }
   });
 
   gameArea.appendChild(ufo);
@@ -300,7 +303,18 @@ function pauseGameAndStartChallenge(word) {
   challengeBox.style.border = 'none';
   challengeBox.id = 'challenge-box';
   challengeBox.innerHTML = `
-    <div class="challenge-row"><p>${word}</p><div id="challenge-timer-display">10</div></div>
+    <div class="challenge-timer-container">
+      <div class="timer-row">
+        <div class="clock-face">
+          <div class="clock-hand" id="clock-hand"></div>
+          <div class="clock-center"></div>
+        </div>
+        <div id="challenge-timer-display">10</div>
+      </div>
+    </div>
+    <div class="challenge-word-container">
+      <p>${word}</p>
+    </div>
     <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="url">
   `;
   document.getElementById('game-area').appendChild(challengeBox);
@@ -308,9 +322,13 @@ function pauseGameAndStartChallenge(word) {
   challengeInput.focus();
   let challengeTimeLeft = 10;
   const timerDisplay = document.getElementById('challenge-timer-display');
+  const clockHand = document.getElementById('clock-hand');
   let challengeTimerInterval = setInterval(() => {
     challengeTimeLeft--;
     timerDisplay.textContent = challengeTimeLeft;
+    // 시계 바늘 회전 (10초에서 0초까지 360도 회전)
+    const rotation = ((10 - challengeTimeLeft) / 10) * 360;
+    clockHand.style.transform = `rotate(${rotation}deg)`;
     if (challengeTimeLeft <= 0) {
       endChallenge(false);
     }

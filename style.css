@@ -166,13 +166,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  pointer-events: auto;
+  pointer-events: none;
+  width: 110px;
+  height: 105px;
 }
 
 .ufo-img {
   width: 110px !important;
   height: 80px !important;
   object-fit: contain;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .ufo-word {
@@ -184,6 +188,26 @@ body {
   border: none !important;
   margin-top: -25px;
   font-family: 'Arial Black', 'Orbitron', Arial, sans-serif;
+  pointer-events: auto;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.ufo-word:hover {
+  background: rgba(0, 255, 102, 0.1) !important;
+  text-shadow: 0 0 8px #000, 0 0 15px #000, 0 0 20px #000;
+}
+
+.ufo-img:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }
 
 .feedback {
@@ -277,6 +301,37 @@ body {
     width: 80px;
     height: 80px;
   }
+  .challenge-box {
+    width: 90%;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 16px 20px;
+    gap: 12px;
+  }
+  .challenge-word-container p {
+    font-size: 2.0em;
+  }
+  .challenge-box input {
+    font-size: 1.8em;
+    padding: 10px;
+  }
+  .timer-row {
+    gap: 12px;
+  }
+  .clock-face {
+    width: 25px;
+    height: 25px;
+  }
+  .clock-hand {
+    height: 10px;
+  }
+  .clock-center {
+    width: 3px;
+    height: 3px;
+  }
+  #challenge-timer-display {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 600px) {
@@ -324,19 +379,34 @@ body {
     margin-left: 8px !important;
     padding-right: 0 !important;
   }
+  .challenge-box {
+    width: 88%;
+    min-width: 260px;
+    max-width: 380px;
+    padding: 18px 22px;
+  }
+  .challenge-word-container p {
+    font-size: 2.2em;
+  }
+  .challenge-box input {
+    font-size: 2.0em;
+  }
+  .timer-row {
+    gap: 14px;
+  }
 }
 
 .challenge-box {
   position: absolute;
-  top: 68%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
-  width: 80%;
-  min-width: 260px;
-  max-width: 400px;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  min-width: 280px;
+  max-width: 450px;
   height: auto;
   background-color: rgba(0, 0, 0, 0.85);
-  padding: 18px 24px;
+  padding: 20px 24px;
   border-radius: 15px;
   border: 2px solid #fff;
   z-index: 200;
@@ -344,45 +414,100 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   color: white;
   text-align: center;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
-.challenge-row {
+
+.challenge-timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.timer-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  width: 100%;
+  gap: 15px;
 }
-.challenge-box p {
+
+.clock-face {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #ff4444;
+  border-radius: 50%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-hand {
+  width: 2px;
+  height: 12px;
+  background: #ff4444;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: translateX(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(255, 68, 68, 0.7);
+}
+
+.clock-center {
+  width: 4px;
+  height: 4px;
+  background: #ff4444;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+#challenge-timer-display {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ff4444;
+  text-shadow: 0 0 5px rgba(255, 68, 68, 0.5);
+}
+
+.challenge-word-container {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.challenge-word-container p {
   margin: 0;
-  font-size: 2.8em;
+  font-size: 2.4em;
   font-weight: bold;
   color: white;
-  display: inline-block;
+  word-wrap: break-word;
+  line-height: 1.2;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
-#challenge-timer-display {
-  font-size: 2.6em;
-  font-weight: bold;
-  color: #ffeb3b;
-  margin-left: 12px;
-  display: inline-block;
-}
+
 .challenge-box input {
-  padding: 10px;
-  border-radius: 0;
+  padding: 12px;
+  border-radius: 8px;
   border: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #00ff66;
   text-align: center;
-  font-size: 2.8em;
+  font-size: 2.2em;
   font-weight: bold;
-  width: 80%;
+  width: 90%;
   outline: none;
   caret-color: #00ff66;
+}
+
+.challenge-box input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 #bonus-input {
@@ -455,7 +580,7 @@ body {
   color: #ffeb3b;
   cursor: pointer;
   font-family: 'Arial Black', sans-serif;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px rgba(0,0,0,0.8);
   transition: all 0.2s;
   margin-top: 0;
   margin-bottom: 0;
@@ -468,6 +593,7 @@ body {
   background-color: transparent;
   font-size: 2.6em;
   color: #ff8c00;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px rgba(0,0,0,0.8);
 }
 
 #start-game-btn:hover,
