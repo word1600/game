@@ -16,7 +16,9 @@ let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 
 let ttsInterval = null;
 let lastTtsUtterance = null;
-function speakWordTTS(word) {
+
+// 미국식 발음 TTS
+function speakWordTTSUS(word) {
   if (!window.speechSynthesis || isPaused) return;
   if (lastTtsUtterance) {
     window.speechSynthesis.cancel();
@@ -24,15 +26,41 @@ function speakWordTTS(word) {
   }
   const utter = new SpeechSynthesisUtterance(word);
   utter.lang = 'en-US';
-  // 여성 목소리 우선 선택
+  // 미국식 여성 목소리 우선 선택
   const voices = window.speechSynthesis.getVoices();
   let voice = voices.find(v =>
-    (v.lang === 'en-US' || v.lang.startsWith('en')) &&
+    v.lang === 'en-US' &&
     (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem'))
   );
   if (!voice) {
-    // 그래도 없으면 영어 음성 아무거나
-    voice = voices.find(v => v.lang === 'en-US' || v.lang.startsWith('en'));
+    // 그래도 없으면 미국식 영어 음성 아무거나
+    voice = voices.find(v => v.lang === 'en-US');
+  }
+  if (voice) utter.voice = voice;
+  utter.pitch = 1.2; // 여성스럽게, 약간 높게
+  utter.rate = 1.0;
+  lastTtsUtterance = utter;
+  window.speechSynthesis.speak(utter);
+}
+
+// 영국식 발음 TTS
+function speakWordTTSGB(word) {
+  if (!window.speechSynthesis || isPaused) return;
+  if (lastTtsUtterance) {
+    window.speechSynthesis.cancel();
+    lastTtsUtterance = null;
+  }
+  const utter = new SpeechSynthesisUtterance(word);
+  utter.lang = 'en-GB';
+  // 영국식 여성 목소리 우선 선택
+  const voices = window.speechSynthesis.getVoices();
+  let voice = voices.find(v =>
+    v.lang === 'en-GB' &&
+    (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem'))
+  );
+  if (!voice) {
+    // 그래도 없으면 영국식 영어 음성 아무거나
+    voice = voices.find(v => v.lang === 'en-GB');
   }
   if (voice) utter.voice = voice;
   utter.pitch = 1.2; // 여성스럽게, 약간 높게
@@ -90,9 +118,9 @@ function pickNewProblemWord() {
   // 게임이 일시정지 상태가 아닐 때만 TTS 설정
   if (!isPaused) {
     window.ttsTimeout1 = setTimeout(() => {
-      if (!isPaused) speakWordTTS(currentWord.en);
+      if (!isPaused) speakWordTTSUS(currentWord.en);
       window.ttsTimeout2 = setTimeout(() => {
-        if (!isPaused) speakWordTTS(currentWord.en);
+        if (!isPaused) speakWordTTSGB(currentWord.en);
       }, 3000);
     }, 2000);
   }
@@ -549,6 +577,15 @@ document.addEventListener('DOMContentLoaded', () => {
     wordBox.style.display = 'block';
     inputArea.style.display = 'flex';
     soundToggleBtn.style.display = 'flex';
+    
+    // 효과음 볼륨 설정 (50% 수준으로 더 줄임)
+    const bingoSound = document.getElementById('sound-bingo');
+    const nopeSound = document.getElementById('sound-nope');
+    const goodjobSound = document.getElementById('sound-goodjob');
+    if (bingoSound) bingoSound.volume = 0.5;
+    if (nopeSound) nopeSound.volume = 0.5;
+    if (goodjobSound) goodjobSound.volume = 0.5;
+    
     tryStartBGM(true); // 강제 재생
     isPaused = false;
     ufoSinceLastAnswer = 0;
@@ -578,7 +615,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const shootSound = document.getElementById('sound-shoot3');
     if (shootSound) {
       shootSound.currentTime = 0;
-      shootSound.volume = 0.5;
+      shootSound.volume = 0.7;
       shootSound.play();
     }
     fireBullet(false); // 소리 재생 X
@@ -588,7 +625,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const shootSound = document.getElementById('sound-shoot3');
       if (shootSound) {
         shootSound.currentTime = 0;
-        shootSound.volume = 0.5;
+        shootSound.volume = 0.7;
         shootSound.play();
       }
     }
