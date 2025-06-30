@@ -771,8 +771,13 @@ function gameLoop() {
 }
 
 function loadWords() {
-  fetch('data/unit1.json')
-    .then(res => res.json())
+  fetch('data/Unit2.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('단어 데이터를 불러오지 못했습니다.');
+      }
+      return response.json();
+    })
     .then(data => {
       ufoWordsData = data;
       refillWordPool();

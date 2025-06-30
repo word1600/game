@@ -89,7 +89,7 @@ body {
 #word-ko, #word-pos {
   font-family: 'KCCHanbit', 'Arial Black', 'Orbitron', Arial, sans-serif;
 }
-#word-ko { font-size: 2.1em; font-weight: bold; color: #00ff66; }
+#word-ko { font-size: 2.0em; font-weight: bold; color: #00ff66; }
 #word-pos { font-size: 1.2em; color: #e0e0ff; }
 
 #game-area {
