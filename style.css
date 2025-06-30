@@ -679,7 +679,8 @@ body {
 }
 
 #game-over-screen .title {
-  font-size: 4.2em;
+  font-size: 3.8em;
+  white-space: nowrap;
   margin-bottom: 20px;
   color: #00ff66;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
