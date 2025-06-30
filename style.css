@@ -657,10 +657,14 @@ body {
 }
 
 #start-game-btn:hover,
-#restart-btn:hover {
-  background-color: #6aa7ff;
+#restart-btn:hover,
+#start-game-btn:active,
+#restart-btn:active {
+  background-color: transparent;
+  color: #ffeb3b;
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
 #game-over-screen {

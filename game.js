@@ -373,6 +373,14 @@ function pauseGameAndStartChallenge(word) {
       score += 5;
       updateScore();
       showBonusFeedback();
+    } else {
+      // 시간 초과 시 "삑" 효과음 재생
+      const nopeSound = document.getElementById('sound-nope');
+      if (nopeSound && !isMuted) {
+        nopeSound.currentTime = 0;
+        nopeSound.volume = 0.5;
+        nopeSound.play();
+      }
     }
     resumeGame();
   }
@@ -460,7 +468,7 @@ function endGame() {
   const gameOverEl = document.createElement('div');
   gameOverEl.id = 'game-over-screen';
   gameOverEl.innerHTML = `
-    <div class="title">Game over</div>
+    <div class="title">Game Over</div>
     <div class="final-score">Score : <span class="score-value">${score}</span></div>
     <button id="restart-btn">Start Again</button>
   `;
