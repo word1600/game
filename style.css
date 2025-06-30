@@ -355,7 +355,7 @@ body {
     font-size: 1.5em;
   }
   #game-over-screen {
-    top: 65% !important;
+    top: 50% !important;
     transform: translate(-50%, -50%) !important;
   }
   #game-over-screen .title {
@@ -438,7 +438,7 @@ body {
     gap: 14px;
   }
   #game-over-screen {
-    top: 60% !important;
+    top: 50% !important;
     transform: translate(-50%, -50%) !important;
   }
   #game-over-screen .title {
