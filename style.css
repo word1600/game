@@ -318,11 +318,17 @@ body {
     height: 80px;
   }
   .challenge-box {
-    width: 90%;
-    min-width: 250px;
-    max-width: 350px;
-    padding: 16px 20px;
-    gap: 12px;
+    top: 80% !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 6px !important;
+  }
+  .challenge-timer-container {
+    margin-bottom: 1px !important;
+    gap: 1px !important;
+  }
+  .challenge-word-container {
+    margin-top: 0 !important;
+    margin-bottom: 1px !important;
   }
   .challenge-word-container p {
     font-size: 2.0em;
@@ -396,10 +402,17 @@ body {
     padding-right: 0 !important;
   }
   .challenge-box {
-    width: 88%;
-    min-width: 260px;
-    max-width: 380px;
-    padding: 18px 22px;
+    top: 75% !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 8px !important;
+  }
+  .challenge-timer-container {
+    margin-bottom: 2px !important;
+    gap: 2px !important;
+  }
+  .challenge-word-container {
+    margin-top: 0 !important;
+    margin-bottom: 2px !important;
   }
   .challenge-word-container p {
     font-size: 2.2em;
