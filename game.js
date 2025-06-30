@@ -470,6 +470,12 @@ function endGame() {
   // 버튼이 확실히 클릭되도록 스타일 직접 지정
   restartBtn.style.pointerEvents = 'auto'; 
   restartBtn.onclick = () => location.reload();
+  
+  // 모바일 터치 이벤트 추가
+  restartBtn.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+    location.reload();
+  }, { passive: false });
 }
 
 function resetGame() {

@@ -354,6 +354,19 @@ body {
   #challenge-timer-display {
     font-size: 1.5em;
   }
+  #game-over-screen {
+    top: 65% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  #game-over-screen .title {
+    font-size: 3.0em !important;
+  }
+  #game-over-screen .final-score {
+    font-size: 1.6em !important;
+  }
+  #restart-btn {
+    font-size: 2.0em !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -422,6 +435,19 @@ body {
   }
   .timer-row {
     gap: 14px;
+  }
+  #game-over-screen {
+    top: 60% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  #game-over-screen .title {
+    font-size: 3.5em !important;
+  }
+  #game-over-screen .final-score {
+    font-size: 1.8em !important;
+  }
+  #restart-btn {
+    font-size: 2.2em !important;
   }
 }
 
@@ -608,7 +634,7 @@ body {
   background-color: transparent;
   color: #ffeb3b;
   cursor: pointer;
-  font-family: 'Arial Black', sans-serif;
+  font-family: 'Pretendard Black', Pretendard, 'Arial Black', sans-serif;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px rgba(0,0,0,0.8);
   transition: all 0.2s;
   margin-top: 0;
@@ -623,6 +649,10 @@ body {
   font-size: 2.6em;
   color: #ff8c00;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px rgba(0,0,0,0.8);
+  font-family: 'Pretendard Black', Pretendard, 'Arial Black', sans-serif !important;
+  font-weight: 900 !important;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 #start-game-btn:hover,
@@ -640,7 +670,7 @@ body {
   color: white;
   text-align: center;
   z-index: 300;
-  font-family: 'Arial Black', sans-serif;
+  font-family: 'Pretendard Black', Pretendard, 'Arial Black', sans-serif !important;
 }
 
 #game-over-screen .title {
@@ -648,15 +678,21 @@ body {
   margin-bottom: 20px;
   color: #00ff66;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  font-family: 'Pretendard Black', Pretendard, 'Arial Black', sans-serif !important;
+  font-weight: 900 !important;
 }
 
 #game-over-screen .final-score {
   font-size: 2.2em;
   margin-bottom: 30px;
+  font-family: 'Pretendard Black', Pretendard, 'Arial Black', sans-serif !important;
+  font-weight: 900 !important;
 }
 
 #game-over-screen .final-score .score-value {
   color: #ffeb3b;
+  font-family: 'Pretendard Black', Pretendard, 'Arial Black', sans-serif !important;
+  font-weight: 900 !important;
 }
 
 #start-screen {
