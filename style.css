@@ -393,6 +393,7 @@ body {
   }
   #start-game-btn {
     margin-bottom: 30px !important;
+    margin-top: -3px !important;
   }
   .game-title,
   .game-title .unit-text,
