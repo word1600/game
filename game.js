@@ -357,6 +357,19 @@ function pauseGameAndStartChallenge(word) {
     // 시계 바늘 회전 (10초에서 0초까지 360도 회전)
     const rotation = ((10 - challengeTimeLeft) / 10) * 360;
     clockHand.style.transform = `rotate(${rotation}deg)`;
+
+    // 1초 남았을 때 0.5초 후 경고음 재생
+    if (challengeTimeLeft === 1) {
+      setTimeout(() => {
+        const beepSound = document.getElementById('sound-beep2');
+        if (beepSound && !isMuted) {
+          beepSound.currentTime = 0;
+          beepSound.volume = 0.5;
+          beepSound.play();
+        }
+      }, 500);
+    }
+
     if (challengeTimeLeft <= 0) {
       endChallenge(false);
     }
@@ -374,13 +387,7 @@ function pauseGameAndStartChallenge(word) {
       updateScore();
       showBonusFeedback();
     } else {
-      // 시간 초과 시 "삑" 효과음 재생
-      const nopeSound = document.getElementById('sound-nope');
-      if (nopeSound && !isMuted) {
-        nopeSound.currentTime = 0;
-        nopeSound.volume = 0.5;
-        nopeSound.play();
-      }
+      // 시간 초과 시 사운드 재생 로직 제거 (위에서 처리)
     }
     resumeGame();
   }
