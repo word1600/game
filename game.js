@@ -162,11 +162,25 @@ function spawnUFO(forceAnswerUFO = false) {
   });
 
   let wordData;
-  // 정답 UFO 등장 조건: 1~5개 범위에서 랜덤하게 등장
-  const shouldSpawnAnswer = forceAnswerUFO || 
-                           (!answerUfoExists && ufoSinceLastAnswer >= 1 + Math.floor(Math.random() * 5)) ||
-                           (problemWordCount >= 3 && ufoSinceLastAnswer >= 1); // 최소 3번 출현 후 강제 등장
-  
+  // 정답 UFO 등장 조건: 최소 2개 UFO가 지나간 뒤, 3~6개 UFO 내에서 반드시 등장
+  let shouldSpawnAnswer = false;
+  if (forceAnswerUFO) {
+    shouldSpawnAnswer = true;
+  } else if (!answerUfoExists) {
+    if (ufoSinceLastAnswer < 2) {
+      shouldSpawnAnswer = false; // 최소 2개 UFO가 지나갈 때까지 오답만
+    } else if (ufoSinceLastAnswer >= 2 && ufoSinceLastAnswer < 6) {
+      // 2~5개 지난 뒤 3~6번째 UFO에서 랜덤하게 정답 등장
+      const randomAppear = 2 + Math.floor(Math.random() * 4); // 2,3,4,5
+      if (ufoSinceLastAnswer >= randomAppear) {
+        shouldSpawnAnswer = true;
+      }
+    } else if (ufoSinceLastAnswer >= 6) {
+      // 6번째 UFO에서는 무조건 정답 등장
+      shouldSpawnAnswer = true;
+    }
+  }
+
   if (shouldSpawnAnswer) {
     // 정답 UFO 강제 등장
     wordData = currentWord;
