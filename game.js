@@ -10,12 +10,19 @@ let currentWord = null;
 
 // 단어 출현 풀: 모든 단어 5회씩 복제 후 셔플 (최소 3회 보장)
 let wordPool = [];
-let usedWords = new Set(); // 이미 사용된 단어 추적
+let usedWords = new Set(); // 이미 사용된 단어 추적 (고유키)
 
 let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 
 let ttsInterval = null;
 let lastTtsUtterance = null;
+
+let selectedUnit = 'unit2'; // 기본값: Unit 2
+
+// 유닛 선택 버튼 핸들러
+function setupUnitSelect() {
+  // setupUnitSelect 및 관련 코드 삭제됨
+}
 
 // 미국식 발음 TTS
 function speakWordTTSUS(word) {
@@ -71,8 +78,8 @@ function speakWordTTSGB(word) {
 
 function refillWordPool() {
   wordPool = [];
-  // 각 단어를 5회씩 복제 (최소 3회 보장)
-  for (let i = 0; i < 5; i++) {
+  // 각 단어를 3회씩 복제 (정확히 3회 등장)
+  for (let i = 0; i < 3; i++) {
     wordPool = wordPool.concat(ufoWordsData);
   }
   // 셔플
@@ -86,18 +93,23 @@ function refillWordPool() {
 let ufoInterval = null;
 let timerInterval = null;
 
+// 고유키 생성 함수 (파일 상단에 위치)
+function getWordKey(word) {
+  return `${word.ko}|${word.en}|${word.pos}`;
+}
+
 // 문제(상단 박스)용 단어를 랜덤하게 선택
 function pickNewProblemWord() {
   if (!wordPool.length) refillWordPool();
   // 아직 사용되지 않은 단어 우선 선택
-  let availableWords = wordPool.filter(word => !usedWords.has(word.en));
+  let availableWords = wordPool.filter(word => !usedWords.has(getWordKey(word)));
   if (availableWords.length === 0) {
     // 모든 단어가 사용되었으면 usedWords 초기화
     usedWords.clear();
     availableWords = wordPool;
   }
   currentWord = availableWords[Math.floor(Math.random() * availableWords.length)];
-  usedWords.add(currentWord.en);
+  usedWords.add(getWordKey(currentWord));
   let posKo = '';
   document.getElementById('word-ko').textContent = currentWord.ko;
   document.getElementById('word-pos').textContent = currentWord.pos;
@@ -158,25 +170,19 @@ function spawnUFO(forceAnswerUFO = false) {
   const ufos = document.querySelectorAll('.ufo');
   let answerUfoExists = false;
   ufos.forEach(ufo => {
-    if (ufo.wordData && ufo.wordData.en === currentWord.en) answerUfoExists = true;
+    if (ufo.wordData && getWordKey(ufo.wordData) === getWordKey(currentWord)) answerUfoExists = true;
   });
 
   let wordData;
-  // 정답 UFO 등장 조건: 최소 2개 UFO가 지나간 뒤, 3~6개 UFO 내에서 반드시 등장
+  // 정답 UFO 등장 조건: 반드시 3개 UFO가 지나간 뒤에만 등장
   let shouldSpawnAnswer = false;
   if (forceAnswerUFO) {
     shouldSpawnAnswer = true;
   } else if (!answerUfoExists) {
-    if (ufoSinceLastAnswer < 2) {
-      shouldSpawnAnswer = false; // 최소 2개 UFO가 지나갈 때까지 오답만
-    } else if (ufoSinceLastAnswer >= 2 && ufoSinceLastAnswer < 6) {
-      // 2~5개 지난 뒤 3~6번째 UFO에서 랜덤하게 정답 등장
-      const randomAppear = 2 + Math.floor(Math.random() * 4); // 2,3,4,5
-      if (ufoSinceLastAnswer >= randomAppear) {
-        shouldSpawnAnswer = true;
-      }
-    } else if (ufoSinceLastAnswer >= 6) {
-      // 6번째 UFO에서는 무조건 정답 등장
+    if (ufoSinceLastAnswer < 3) {
+      shouldSpawnAnswer = false; // 최소 3개 UFO가 지나갈 때까지 오답만
+    } else {
+      // 3개 지난 뒤에는 무조건 정답 등장
       shouldSpawnAnswer = true;
     }
   }
@@ -190,7 +196,7 @@ function spawnUFO(forceAnswerUFO = false) {
   } else {
     wordData = getRandomWord();
     // 혹시 랜덤으로 정답이 뽑히면 카운트 리셋
-    if (wordData.en === currentWord.en) {
+    if (getWordKey(wordData) === getWordKey(currentWord)) {
       ufoSinceLastAnswer = 0;
       answerUfoSpawnCount++;
       problemWordCount++;
@@ -291,7 +297,7 @@ function createExplosion(x, y) {
 function handleUfoClick(ufoElement) {
   if (isPaused) return;
   const clickedWord = ufoElement.wordData.en;
-  if (clickedWord === currentWord.en) {
+  if (getWordKey(ufoElement.wordData) === getWordKey(currentWord)) {
     if (!answeredThisProblem) {
       score += 10;
       updateScore();
@@ -693,7 +699,7 @@ document.addEventListener('DOMContentLoaded', () => {
           bulletRect.top < ufoRect.bottom &&
           bulletRect.bottom > ufoRect.top
         ) {
-          if (ufo.wordData && ufo.wordData.en === currentWord.en) {
+          if (ufo.wordData && getWordKey(ufo.wordData) === getWordKey(currentWord)) {
             // 정답: 한 번만 점수 획득
             if (!answeredThisProblem) {
               score += 10;
@@ -784,8 +790,27 @@ function gameLoop() {
   requestAnimationFrame(gameLoop);
 }
 
+function getLatestUnitJsonFile() {
+  // data 폴더 내 unit1.json, unit2.json 중 최신 파일을 선택
+  // 브라우저 환경에서는 파일 시스템 접근이 불가하므로, 두 파일을 모두 fetch해서 최신 파일을 선택
+  // (실제 서버 환경에서는 서버에서 최신 파일을 알려주는 API가 필요)
+  // 여기서는 두 파일을 모두 fetch해서, 더 최근에 수정된 파일을 사용
+  return Promise.all([
+    fetch('data/unit1.json').then(r => r.ok ? r.json().then(data => ({name: 'unit1.json', data})) : null).catch(() => null),
+    fetch('data/unit2.json').then(r => r.ok ? r.json().then(data => ({name: 'unit2.json', data})) : null).catch(() => null)
+  ]).then(results => {
+    // 둘 다 성공하면, 더 많은 단어가 들어있는 파일을 우선 사용 (수정일 비교 불가하므로)
+    const valid = results.filter(Boolean);
+    if (valid.length === 0) throw new Error('단어 데이터를 불러오지 못했습니다.');
+    // 단어 수가 더 많은 파일을 우선 사용
+    valid.sort((a, b) => b.data.length - a.data.length);
+    return valid[0].data;
+  });
+}
+
 function loadWords() {
-  fetch('data/Unit2.json')
+  const file = selectedUnit === 'unit1' ? 'data/unit1.json' : 'data/unit2.json';
+  fetch(file)
     .then(response => {
       if (!response.ok) {
         throw new Error('단어 데이터를 불러오지 못했습니다.');
