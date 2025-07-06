@@ -122,7 +122,7 @@ function pickNewProblemWord() {
   const ufos = document.querySelectorAll('.ufo');
   ufos.forEach(ufo => { ufo._wrongHitForThisProblem = false; });
 
-  // TTS: 단어가 바뀌고 2초 후에 1회, 3초 후에 1회(총 2회)
+  // TTS: 단어가 바뀌고 2초 후에 1회, 2초 후에 1회(총 2회)
   if (ttsInterval) clearInterval(ttsInterval);
   if (window.ttsTimeout1) clearTimeout(window.ttsTimeout1);
   if (window.ttsTimeout2) clearTimeout(window.ttsTimeout2);
@@ -133,7 +133,7 @@ function pickNewProblemWord() {
       if (!isPaused) speakWordTTSUS(currentWord.en);
       window.ttsTimeout2 = setTimeout(() => {
         if (!isPaused) speakWordTTSGB(currentWord.en);
-      }, 3000);
+      }, 2000);
     }, 2000);
   }
 }
