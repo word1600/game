@@ -17,7 +17,7 @@ let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 let ttsInterval = null;
 let lastTtsUtterance = null;
 
-let selectedUnit = 'unit2'; // 기본값: Unit 2
+let selectedUnit = 'unit1'; // 기본값: Unit 1
 
 // 유닛 선택 버튼 핸들러
 function setupUnitSelect() {
@@ -250,7 +250,10 @@ function spawnUFO(forceAnswerUFO = false) {
       ufo.remove();
       return;
     }
-    requestAnimationFrame(animate);
+    // 모바일에서 성능 최적화를 위해 60fps 제한
+    if (typeof window !== 'undefined' && window.requestAnimationFrame) {
+      requestAnimationFrame(animate);
+    }
   }
   animate();
 }
@@ -296,6 +299,13 @@ function createExplosion(x, y) {
 
 function handleUfoClick(ufoElement) {
   if (isPaused) return;
+  
+  // 모바일에서 터치 반응성 향상을 위한 즉시 시각적 피드백
+  ufoElement.style.transform = 'scale(0.9)';
+  setTimeout(() => {
+    ufoElement.style.transform = '';
+  }, 100);
+  
   const clickedWord = ufoElement.wordData.en;
   if (getWordKey(ufoElement.wordData) === getWordKey(currentWord)) {
     if (!answeredThisProblem) {
@@ -648,7 +658,7 @@ document.addEventListener('DOMContentLoaded', () => {
   startGameBtn.addEventListener('touchstart', function(e) {
     e.preventDefault();
     initializeGame();
-  });
+  }, { passive: false });
   let fireInterval = null;
   let isFiring = false;
   function fireBulletsBurst() {
@@ -750,7 +760,10 @@ document.addEventListener('DOMContentLoaded', () => {
         bullet.remove();
         return;
       }
-      requestAnimationFrame(moveBullet);
+      // 모바일에서 성능 최적화를 위해 60fps 제한
+      if (typeof window !== 'undefined' && window.requestAnimationFrame) {
+        requestAnimationFrame(moveBullet);
+      }
     }
     moveBullet();
   }
@@ -761,16 +774,27 @@ document.addEventListener('DOMContentLoaded', () => {
     isFiring = true;
     fireBulletsBurst();
     fireInterval = setInterval(fireBulletsBurst, 150);
+    
+    // 모바일에서 터치 피드백
+    if (e.type === 'touchstart') {
+      fireBtn.style.transform = 'translate(-50%, -35%) scale(0.95)';
+    }
   };
   const handleFireEnd = (e) => {
     e.preventDefault();
     isFiring = false;
     clearInterval(fireInterval);
+    
+    // 모바일에서 터치 피드백 복원
+    if (e.type === 'touchend') {
+      fireBtn.style.transform = 'translate(-50%, -35%)';
+    }
   };
   fireBtn.addEventListener('mousedown', handleFireStart);
   window.addEventListener('mouseup', handleFireEnd);
-  fireBtn.addEventListener('touchstart', handleFireStart);
-  window.addEventListener('touchend', handleFireEnd);
+  fireBtn.addEventListener('touchstart', handleFireStart, { passive: false });
+  window.addEventListener('touchend', handleFireEnd, { passive: false });
+  fireBtn.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
   window.addEventListener('keydown', (e) => {
     if (e.code === 'Space' && !isFiring) {
       e.preventDefault();
@@ -787,7 +811,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function gameLoop() {
-  requestAnimationFrame(gameLoop);
+  // 모바일에서 성능 최적화를 위해 60fps 제한
+  if (typeof window !== 'undefined' && window.requestAnimationFrame) {
+    requestAnimationFrame(gameLoop);
+  }
 }
 
 function getLatestUnitJsonFile() {
