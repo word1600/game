@@ -622,6 +622,16 @@ document.addEventListener('DOMContentLoaded', () => {
     bgm.volume = parseFloat(bgmVolumeSlider.value);
     bgm.play().catch(() => console.log("BGM auto-play failed."));
   }
+  
+  // 배경 음악이 끝나면 자동으로 다시 재생
+  if (bgm) {
+    bgm.addEventListener('ended', () => {
+      if (!isPaused && !isMuted) {
+        bgm.currentTime = 0;
+        bgm.play().catch(() => console.log("BGM loop failed."));
+      }
+    });
+  }
   function initializeGame() {
     startScreen.style.display = 'none';
     topBar.style.display = 'flex';
