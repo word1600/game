@@ -1,142 +1,252 @@
 [
   {
-    "ko":"샀다, 구매했다",
-    "en":"bought",
-    "pos":"v.past(과거 동사)"
+    "ko": "연례의, 해마다의",
+    "en": "annual",
+    "pos": "adj.(형용사)"
   },
   {
-    "ko":"연례의, 해마다의",
-    "en":"annual",
-    "pos":"adj.(형용사)"
+    "ko": "해마다의, 매년의",
+    "en": "yearly",
+    "pos": "adj.(형용사)"
   },
   {
-    "ko":"쌓다, 포개다",
-    "en":"stack",
-    "pos":"v.(동사)"
+    "ko": "가끔의, 이따금의",
+    "en": "occasional",
+    "pos": "adj.(형용사)"
   },
   {
-    "ko":"더미, 무더기",
-    "en":"stack",
-    "pos":"n.(명사)"
+    "ko": "실적, 성과, 공연",
+    "en": "performance",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"쌓았다, 포갰다",
-    "en":"stacked",
-    "pos":"v.past(과거 동사)"
+    "ko": "회의, 만남",
+    "en": "meeting",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"쌓는다, 포갠다",
-    "en":"stacks",
-    "pos":"v.s(3인칭 단수 동사)"
+    "ko": "개최하다, 열다",
+    "en": "hold",
+    "pos": "v.(동사)"
   },
   {
-    "ko":"송장, 청구서",
-    "en":"invoice",
-    "pos":"n.(명사)"
+    "ko": "주최하다, 진행하다",
+    "en": "host",
+    "pos": "v.(동사)"
   },
   {
-    "ko":"삽, 삽날",
-    "en":"shovel",
-    "pos":"n.(명사)"
+    "ko": "축제, 행사",
+    "en": "festival",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"삽질하다, 퍼담다",
-    "en":"shovel",
-    "pos":"v.(동사)"
+    "ko": "샀다, 구매했다",
+    "en": "bought",
+    "pos": "v.past(과거 동사)"
   },
   {
-    "ko":"삽질했다, 퍼담았다",
-    "en":"shoveled",
-    "pos":"v.past(과거 동사)"
+    "ko": "회원권, 회원 자격",
+    "en": "membership",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"삽질한다, 퍼담는다",
-    "en":"shovels",
-    "pos":"v.s(3인칭 단수 동사)"
+    "ko": "쌓다, 더미",
+    "en": "stack",
+    "pos": "v.(동사), n.(명사)"
   },
   {
-    "ko":"재배치하다, 다시 정리하다",
-    "en":"rearrange",
-    "pos":"v.(동사)"
+    "ko": "더미, 무더기",
+    "en": "pile",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"재배치했다, 다시 정리했다",
-    "en":"rearranged",
-    "pos":"v.past(과거 동사)"
+    "ko": "흩뿌리다, 흩어짐(산재)",
+    "en": "scatter",
+    "pos": "v.(동사), n.(명사)"
   },
   {
-    "ko":"재배치한다, 다시 정리한다",
-    "en":"rearranges",
-    "pos":"v.s(3인칭 단수 동사)"
+    "ko": "제거하다, 없애다",
+    "en": "remove",
+    "pos": "v.(동사)"
   },
   {
-    "ko":"참석했다, 출석했다",
-    "en":"attended",
-    "pos":"v.past(과거 동사)"
+    "ko": "몇몇의, 여러",
+    "en": "several",
+    "pos": "adj.(형용사)"
   },
   {
-    "ko":"회의, 만남",
-    "en":"meeting",
-    "pos":"n.(명사)"
+    "ko": "두었다, 놓았다",
+    "en": "placed",
+    "pos": "v.past(과거 동사)"
   },
   {
-    "ko":"마을, 도시",
-    "en":"town",
-    "pos":"n.(명사)"
+    "ko": "더러운, 지저분한",
+    "en": "dirty",
+    "pos": "adj.(형용사)"
   },
   {
-    "ko":"잡다, 개최하다",
-    "en":"hold",
-    "pos":"v.(동사)"
+    "ko": "정갈하게, 깔끔하게",
+    "en": "neatly",
+    "pos": "adv.(부사)"
   },
   {
-    "ko":"축제, 행사",
-    "en":"festival",
-    "pos":"n.(명사)"
+    "ko": "접시, 판",
+    "en": "plate",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"회원권, 회원 자격",
-    "en":"membership",
-    "pos":"n.(명사)"
+    "ko": "송장, 청구서",
+    "en": "invoice",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"장소, 위치",
-    "en":"place",
-    "pos":"n.(명사)"
+    "ko": "청구서, 계산서",
+    "en": "bill",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"몇몇의, 여러",
-    "en":"several",
-    "pos":"adj.(형용사)"
+    "ko": "영수증, 수령",
+    "en": "receipt",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"더러운, 지저분한",
-    "en":"dirty",
-    "pos":"adj.(형용사)"
+    "ko": "세부사항, 상세",
+    "en": "detail",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"싱크대, 세면대",
-    "en":"sink",
-    "pos":"n.(명사)"
+    "ko": "조심스럽게, 신중하게",
+    "en": "carefully",
+    "pos": "adv.(부사)"
   },
   {
-    "ko":"정갈하게, 깔끔하게",
-    "en":"neatly",
-    "pos":"adv.(부사)"
+    "ko": "확인했다, 점검했다",
+    "en": "checked",
+    "pos": "v.past(과거 동사)"
   },
   {
-    "ko":"모퉁이, 구석",
-    "en":"corner",
-    "pos":"n.(명사)"
+    "ko": "받았다, 수령했다",
+    "en": "received",
+    "pos": "v.past(과거 동사)"
   },
   {
-    "ko":"웨이트리스, 여종업원",
-    "en":"waitress",
-    "pos":"n.(명사)"
+    "ko": "지불, 납부",
+    "en": "payment",
+    "pos": "n.(명사)"
   },
   {
-    "ko":"접시, 판",
-    "en":"plate",
-    "pos":"n.(명사)"
+    "ko": "인쇄했다, 출력했다",
+    "en": "printed",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "기록들, 자료",
+    "en": "records",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "삽, 삽질하다",
+    "en": "shovel",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "삽, 가래",
+    "en": "spade",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "없음",
+    "en": "none",
+    "pos": "pron.(대명사)"
+  },
+  {
+    "ko": "삽질했다, 퍼담았다",
+    "en": "shoveled",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "퍼 담다, 국자",
+    "en": "scoop",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "버리다, 쏟다",
+    "en": "dump",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "농부, 농장주",
+    "en": "farmer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "흙, 먼지",
+    "en": "dirt",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "건설, 공사",
+    "en": "construction",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "현장, 장소",
+    "en": "site",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "모래, 사구",
+    "en": "sand",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "양동이, 바가지",
+    "en": "bucket",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~안으로, ~속에",
+    "en": "into",
+    "pos": "전치사"
+  },
+  {
+    "ko": "정리하다, 배열하다",
+    "en": "arrange",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "조직하다, 정리하다",
+    "en": "organize",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "직원, 인원",
+    "en": "staff",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "물건들, 항목들",
+    "en": "items",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "선반, 진열대",
+    "en": "shelf",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "꽃병, 화병",
+    "en": "vase",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "가게, 저장하다",
+    "en": "store",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "사무실, 직장",
+    "en": "office",
+    "pos": "n.(명사)"
   }
 ]

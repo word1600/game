@@ -17,7 +17,7 @@ let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 let ttsInterval = null;
 let lastTtsUtterance = null;
 
-let selectedUnit = 'unit1'; // 기본값: Unit 1
+let selectedUnit = 'unit2'; // 기본값: Unit 2
 
 // 유닛 선택 버튼 핸들러
 function setupUnitSelect() {

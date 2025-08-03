@@ -1,48 +1,143 @@
 [
   {
-    "ko": "감탄하다, 존경하다",
-    "en": "admire",
-    "pos": "v.(동사)"
+    "ko": "차량, 운송수단",
+    "en": "vehicle",
+    "pos": "n.(명사)"
   },
   {
-    "ko": "항공의, 공중의, 하늘의",
+    "ko": "자동차",
+    "en": "automobile",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보행자",
+    "en": "pedestrian",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~의 옆에",
+    "en": "next to ",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "컨테이너선",
+    "en": "container ship ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "중요한, 소중한",
+    "en": "important",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "바다의, 해상의",
+    "en": "maritime",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "공중의, 항공의",
     "en": "aerial",
     "pos": "adj.(형용사)"
   },
   {
-    "ko": "이용 가능한, 사용 가능한",
-    "en": "available",
+    "ko": "여러 가지의",
+    "en": "various",
     "pos": "adj.(형용사)"
   },
   {
-    "ko": "넓은, 폭 넓은",
-    "en": "broad",
-    "pos": "adj.(형용사)"
-  },
-  {
-    "ko": "건축, 건설, 구성",
-    "en": "construction",
+    "ko": "목적들, 용도들",
+    "en": "purposes",
     "pos": "n.(명사)"
   },
   {
-    "ko": "화물 운송용 대형 상자",
-    "en": "container",
+    "ko": "선반/거치대, 괴롭히다",
+    "en": "rack",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "선반",
+    "en": "shelf",
     "pos": "n.(명사)"
   },
   {
-    "ko": "걸려있는, 매달린",
+    "ko": "바닥, 층",
+    "en": "floor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고통, 괴롭히다",
+    "en": "torment",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "위로, 위로하다",
+    "en": "comfort",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "옷, 의류",
+    "en": "clothes",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "걸려 있는",
     "en": "hanging",
     "pos": "adj.(형용사)"
   },
   {
-    "ko": "강조하다, 눈에 띄게 하다",
-    "en": "highlight",
+    "ko": "저장된, 보관된",
+    "en": "stored",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "통증, 아픔",
+    "en": "pain",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "가슴, 상자",
+    "en": "chest",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "괴롭혔다",
+    "en": "racked",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "뇌, 두뇌",
+    "en": "brain",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "해결하다",
+    "en": "solve",
     "pos": "v.(동사)"
   },
   {
-    "ko": "중요한, 중대한",
-    "en": "important",
+    "ko": "문제, 과제",
+    "en": "problem",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "이용 가능한",
+    "en": "available",
     "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "접근 가능한",
+    "en": "accessible",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "이용할 수 없는",
+    "en": "unavailable ",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "좌석, 자리",
+    "en": "seat",
+    "pos": "n.(명사)"
   },
   {
     "ko": "도서관",
@@ -50,39 +145,39 @@
     "pos": "n.(명사)"
   },
   {
-    "ko": "바다의, 해상의, 해양의 ",
-    "en": "maritime",
+    "ko": "예약된",
+    "en": "booked",
     "pos": "adj.(형용사)"
   },
   {
-    "ko": "물질적인, 실질적인",
-    "en": "material",
-    "pos": "adj.(형용사)"
+    "ko": "완전히, 전적으로",
+    "en": "fully",
+    "pos": "adv.(부사)"
   },
   {
-    "ko": "자재, 재료, 물질",
-    "en": "material",
+    "ko": "청소/쓸기, 청소하다",
+    "en": "sweep",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "청소했다, 쓸었다",
+    "en": "swept",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "청소",
+    "en": "cleaning",
     "pos": "n.(명사)"
   },
   {
-    "ko": "통증, 고통",
-    "en": "pain",
+    "ko": "어질러진 상태",
+    "en": "mess",
     "pos": "n.(명사)"
   },
   {
-    "ko": "문제, 문제점",
-    "en": "problem",
-    "pos": "n.(명사)"
-  },
-  {
-    "ko": "제품, 상품",
-    "en": "product",
-    "pos": "n.(명사)"
-  },
-  {
-    "ko": "목적, 용도, 의도, 취지",
-    "en": "purpose",
-    "pos": "n.(명사)"
+    "ko": "솔/붓, 쓸다/닦다",
+    "en": "brush",
+    "pos": "n.(명사), v.(동사)"
   },
   {
     "ko": "빠른, 신속한",
@@ -90,58 +185,68 @@
     "pos": "adj.(형용사)"
   },
   {
-    "ko": "괴롭히다, 짜내다",
-    "en": "rack",
-    "pos": "v.(동사)"
-  },
-  {
-    "ko": "선반, 옷걸이대, 거치대",
-    "en": "rack",
+    "ko": "먼지",
+    "en": "dust",
     "pos": "n.(명사)"
   },
   {
-    "ko": "괴롭혔다, 짜냈다 ",
-    "en": "racked",
-    "pos": "v.past(과거 동사)"
-  },
-  {
-    "ko": "괴롭히다, 짜내다",
-    "en": "racks",
-    "pos": "v.s(3인칭 단수 동사)"
-  },
-  {
-    "ko": "보관되었다, 저장되었다",
-    "en": "stored",
-    "pos": "v.past(과거 동사)"
-  },
-  {
-    "ko": "넓게 퍼짐, 쓸어내기",
-    "en": "sweep",
+    "ko": "빗자루",
+    "en": "broom",
     "pos": "n.(명사)"
   },
   {
-    "ko": "쓸어내다, 청소하다",
-    "en": "sweep",
-    "pos": "v.(동사)"
+    "ko": "상품들, 제품들",
+    "en": "products",
+    "pos": "n.(명사)"
   },
   {
-    "ko": "쓸어내다, 청소하다",
-    "en": "sweeps",
-    "pos": "v.s(3인칭 단수 동사)"
+    "ko": "자재, 재료, 물질",
+    "en": "material(n.)",
+    "pos": "n.(명사)"
   },
   {
-    "ko": "쓸어냈다, 청소했다",
-    "en": "swept",
-    "pos": "v.(과거 동사)"
+    "ko": "물질, 실체",
+    "en": "substance ",
+    "pos": "n.(명사)"
   },
   {
-    "ko": "다양한, 여러가지의",
-    "en": "various",
+    "ko": "비물질성",
+    "en": "immateriality",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "물질적인, 육체적인",
+    "en": "physical",
     "pos": "adj.(형용사)"
   },
   {
-    "ko": "차량, 운송수단",
-    "en": "vehicle",
+    "ko": "정신적인, 영적인",
+    "en": "spiritual",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "물질적인, 실질적인",
+    "en": "material(adj.)",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "건설, 구조물",
+    "en": "construction",
     "pos": "n.(명사)"
+  },
+  {
+    "ko": "강조하다, 하이라이트",
+    "en": "highlight",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "차이, 다름",
+    "en": "difference",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~사이에",
+    "en": "between",
+    "pos": "prep.(전치사)"
   }
 ]
