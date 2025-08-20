@@ -180,14 +180,21 @@ def main():
     else:
         print("❌ Unit 2 데이터를 찾을 수 없습니다.")
     
-    # 테스트: Unit 3 생성 (샘플 데이터)
-    print("\n🧪 Unit 3 테스트 생성 (샘플 데이터)...")
-    sample_data = [
-        {"ko": "샘플 단어 1", "en": "sample word 1", "pos": "n."},
-        {"ko": "샘플 단어 2", "en": "sample word 2", "pos": "v."},
-        {"ko": "샘플 단어 3", "en": "sample word 3", "pos": "adj."}
-    ]
-    generator.generate_unit(3, sample_data)
+    # Unit 3 생성 (실제 unit3.json 사용)
+    print("\n🧪 Unit 3 생성 (실제 unit3.json)...")
+    unit3_data = load_existing_unit_data(3)
+    if unit3_data:
+        generator.generate_unit(3, unit3_data)
+    else:
+        print("❌ Unit 3 데이터를 찾을 수 없습니다.")
+    
+    # Unit 6 생성 (실제 unit6.json 사용)
+    print("\n🧪 Unit 6 생성 (실제 unit6.json)...")
+    unit6_data = load_existing_unit_data(6)
+    if unit6_data:
+        generator.generate_unit(6, unit6_data)
+    else:
+        print("❌ Unit 6 데이터를 찾을 수 없습니다.")
     
     print("\n🎯 자동화 도구 개발 완료!")
     print("이제 generate_unit(unit_number, word_data) 함수를 사용하여")

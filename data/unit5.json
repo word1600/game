@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "시제품, 원형",
+    "en": "prototype",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "원형",
+    "en": "archetype",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "최종 제품",
+    "en": "final-product",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "신발, 구두",
+    "en": "shoe",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "디자인했다, 고안했다",
+    "en": "designed",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "추측하다, 짐작하다",
+    "en": "guess",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "궁금하다, 의아해하다",
+    "en": "wonder",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "발뒤꿈치, (신발) 굽",
+    "en": "heel",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "실제로, 사실은",
+    "en": "actually",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "처방전, 처방약",
+    "en": "prescription",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "약, 의약품",
+    "en": "medicine",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일반의약품",
+    "en": "OTC-drug",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "조제받았다",
+    "en": "filled",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "약국, 조제실",
+    "en": "pharmacy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "식사, 끼니",
+    "en": "meal",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "모금 행사, 모금자",
+    "en": "fund-raiser",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자선 행사",
+    "en": "benefit-event",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자선 목적이 없는 행사",
+    "en": "non-charity-event",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "개최했다, 잡았다",
+    "en": "held",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "계획했다",
+    "en": "planned",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "자선, 구호단체",
+    "en": "charity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "겨냥하는, 지향하는",
+    "en": "aiming",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "사람들, 국민",
+    "en": "people",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "참여했다, 가입했다",
+    "en": "joined",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "증명하다, 입증하다",
+    "en": "prove",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "증명했다, 입증했다",
+    "en": "proved",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "증명한다, 입증한다",
+    "en": "proves",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "확인하다",
+    "en": "verify",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "반박하다",
+    "en": "disprove",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "과학자, 연구자",
+    "en": "scientist",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "이론, 학설",
+    "en": "theory",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "실험, 시도",
+    "en": "experiment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "요점, 주장",
+    "en": "point",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "확실한",
+    "en": "solid",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "증거, 증빙",
+    "en": "evidence",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정책, 방침",
+    "en": "policy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "효과적인",
+    "en": "effective",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "상품기획자, 판매담당자",
+    "en": "merchandiser",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "마케팅 담당자",
+    "en": "marketer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소비자, 고객",
+    "en": "consumer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제품들, 상품들",
+    "en": "products",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "깔끔하게, 가지런히",
+    "en": "neatly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "정리했다, 배열했다",
+    "en": "arranged",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "어쨌든, 아무튼",
+    "en": "anyway",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "확인한다, 점검한다",
+    "en": "checks",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "재고, 물품 목록",
+    "en": "inventory",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전시, 진열",
+    "en": "display",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "가게, 상점",
+    "en": "store",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "꽤, 상당히",
+    "en": "pretty",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "괜찮은, 멋진",
+    "en": "cool",
+    "pos": "adj.(형용사)"
+  }
+]
