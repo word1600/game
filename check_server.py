@@ -40,6 +40,13 @@ def main():
     if check_server(port):
         print(f"✅ 포트 {port}에서 서버가 정상 실행 중입니다!")
         print(f"🌐 접속 가능: http://localhost:{port}/")
+        print("🎮 게임 접속 방법:")
+        print(f"   - Unit 1: http://localhost:{port}/")
+        print(f"   - Unit 2: http://localhost:{port}/unit2/")
+        print(f"   - Unit 3: http://localhost:{port}/unit3/")
+        print(f"   - Unit 4: http://localhost:{port}/unit4/")
+        print(f"   - Unit 5: http://localhost:{port}/unit5/")
+        print(f"   - Unit 6: http://localhost:{port}/unit6/")
     else:
         print(f"❌ 포트 {port}에서 서버가 실행되지 않고 있습니다.")
         print("🔄 서버를 자동으로 시작합니다...")

@@ -36,11 +36,14 @@ echo    - Unit 2: http://localhost:%port%/unit2/
 echo    - Unit 3: http://localhost:%port%/unit3/
 echo    - Unit 4: http://localhost:%port%/unit4/
 echo    - Unit 5: http://localhost:%port%/unit5/
+echo    - Unit 6: http://localhost:%port%/unit6/
 echo.
 echo ⚠️  서버를 중지하려면 이 창을 닫거나 Ctrl+C를 누르세요.
 echo.
 echo 🚀 서버 시작 중...
 python -m http.server %port%
+
+
 
 
 

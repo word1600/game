@@ -55,6 +55,7 @@ class ServerManager:
         print(f"   - Unit 3: http://localhost:{port}/unit3/")
         print(f"   - Unit 4: http://localhost:{port}/unit4/")
         print(f"   - Unit 5: http://localhost:{port}/unit5/")
+        print(f"   - Unit 6: http://localhost:{port}/unit6/")
         print()
         print("⚠️  서버를 중지하려면 Ctrl+C를 누르세요.")
         print()
