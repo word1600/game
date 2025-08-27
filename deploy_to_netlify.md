@@ -43,3 +43,4 @@ Unit 6:   https://[도메인].netlify.app/unit6/    (50개 단어)
 1. GitHub 저장소와 연결
 2. `git push`할 때마다 자동으로 사이트 업데이트
 3. 배포 상태 모니터링 가능
+

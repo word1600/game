@@ -54,3 +54,4 @@ Unit 6:   https://[사용자명].github.io/ufo-word-game/unit6/    (50개 단어
 - ✅ 전 세계 어디서나 접근 가능
 - ✅ 모바일/데스크톱 모두 지원
 - ✅ 자동 배포 (git push 시)
+

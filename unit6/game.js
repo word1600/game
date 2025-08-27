@@ -819,7 +819,7 @@ function gameLoop() {
 
 function getLatestUnitJsonFile() {
   // data 폴더 내 unit6.json 파일을 사용
-  return fetch('/unit6/data/unit6.json')
+  return fetch('./data/unit6.json')
     .then(r => r.ok ? r.json() : null)
     .catch(() => null)
     .then(data => {
@@ -829,15 +829,20 @@ function getLatestUnitJsonFile() {
 }
 
 function loadWords() {
-  const file = '/unit6/data/unit6.json';
+  const file = './data/unit6.json';
+  console.log('🔍 Unit 6: 단어 데이터 로딩 시작:', file);
+  
   fetch(file)
     .then(response => {
+      console.log('📡 Unit 6: 서버 응답:', response.status, response.ok);
       if (!response.ok) {
         throw new Error('단어 데이터를 불러오지 못했습니다.');
       }
       return response.json();
     })
     .then(data => {
+      console.log('✅ Unit 6: 데이터 로드 성공! 단어 수:', data.length);
+      console.log('📝 Unit 6: 첫 번째 단어:', data[0]);
       ufoWordsData = data;
       refillWordPool();
       pickNewProblemWord();
@@ -847,7 +852,7 @@ function loadWords() {
       ufoInterval = setInterval(spawnUFO, 1800);
     })
     .catch(err => {
-      alert('단어 데이터를 불러오지 못했습니다.');
-      console.error(err);
+      console.error('❌ Unit 6: 데이터 로드 실패:', err);
+      alert('Unit 6 단어 데이터를 불러오지 못했습니다: ' + err.message);
     });
 } 
