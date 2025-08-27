@@ -1,61 +1,80 @@
-# 🛸 TOEIC 단어 UFO 게임
+# UFO Word Game - TOEIC 영단어 학습 게임
 
-**TOEIC 영단어를 쉽고 재미있게 외울 수 있는 단어 학습 게임입니다.**  
-사용자는 하늘을 날아다니는 UFO 중에서, 화면에 표시된 한국어 뜻과 일치하는 영단어를 클릭하거나 타이핑하여 점수를 얻습니다!
+## 🎮 게임 소개
+TOEIC 1600 단어를 UFO 게임으로 재미있게 학습할 수 있는 웹 게임입니다.
 
----
+## 🌐 온라인 접속 방법
 
-## 📌 주요 기능
+### GitHub Pages 배포 완료!
+**모든 Unit이 온라인에서 정상 작동합니다!**
 
-- ✅ 9:16 비율의 우주 배경 단어 게임
-- ✅ UFO에 떠 있는 영어 단어 클릭 맞추기
-- ✅ 정답 시 "Bingo" 음성과 효과, 오답 시 "Nope" 효과
-- ✅ 키보드 타이핑 보너스 기능
-- ✅ 점수 시스템 (+10/-5/+5)
-- ✅ 5분 타이머
-- ✅ Excel 또는 CSV 기반 단어 불러오기
+- **Unit 1**: https://vocabvoyager.github.io/ufo-word-game/
+- **Unit 2**: https://vocabvoyager.github.io/ufo-word-game/unit2/
+- **Unit 3**: https://vocabvoyager.github.io/ufo-word-game/unit3/
+- **Unit 4**: https://vocabvoyager.github.io/ufo-word-game/unit4/
+- **Unit 5**: https://vocabvoyager.github.io/ufo-word-game/unit5/
+- **Unit 6**: https://vocabvoyager.github.io/ufo-word-game/unit6/ 🆕
 
----
+## 🚀 로컬 실행 방법
 
-## 📂 폴더 구성
-
-- `unit1/` - Unit 1 게임 (50개 단어)
-- `unit2/` - Unit 2 게임 (50개 단어)  
-- `unit3/` - Unit 3 게임 (50개 단어)
-- `unit4/` - Unit 4 게임 (50개 단어)
-- `unit5/` - Unit 5 게임 (50개 단어)
-
-## 🎮 게임 방법
-
-1. **게임 시작**: 원하는 Unit 폴더의 `index.html` 파일을 브라우저에서 열기
-2. **단어 맞추기**: 화면에 표시된 한국어 뜻과 일치하는 UFO 클릭
-3. **점수 획득**: 정답 시 +10점, 오답 시 -5점
-4. **타이핑 보너스**: 키보드로 정답 입력 시 +5점 추가
-5. **시간 제한**: 5분 내에 최고 점수 달성
-
-## 🚀 빠른 시작
-
+### 1. 서버 시작
 ```bash
-# Unit 1 게임 시작
-cd unit1
-start index.html
-
-# 또는 직접 브라우저에서 열기
-# file:///path/to/unit1/index.html
+python server_manager.py
 ```
 
-## 🌐 온라인 플레이
+### 2. 접속
+- **메인 게임**: http://localhost:8000/
+- **Unit 1**: http://localhost:8000/
+- **Unit 2**: http://localhost:8000/unit2/
+- **Unit 3**: http://localhost:8000/unit3/
+- **Unit 4**: http://localhost:8000/unit4/
+- **Unit 5**: http://localhost:8000/unit5/
+- **Unit 6**: http://localhost:8000/unit6/
 
-GitHub Pages를 통해 온라인에서도 게임을 즐길 수 있습니다:
-- **메인 게임**: https://lby04600612.github.io/ufo-game/
-- **Unit 1**: https://lby04600612.github.io/ufo-game/unit1/
-- **Unit 2**: https://lby04600612.github.io/ufo-game/unit2/
-- **Unit 3**: https://lby04600612.github.io/ufo-game/unit3/
-- **Unit 4**: https://lby04600612.github.io/ufo-game/unit4/
-- **Unit 5**: https://lby04600612.github.io/ufo-game/unit5/
+## 📚 Unit별 단어 구성
+
+| Unit | 주제 | 단어 수 | 상태 |
+|------|------|---------|------|
+| Unit 1 | 기본 생활 단어 | 50개 | ✅ 완성 |
+| Unit 2 | 음식 및 요리 | 50개 | ✅ 완성 |
+| Unit 3 | 교통 및 여행 | 50개 | ✅ 완성 |
+| Unit 4 | 쇼핑 및 상거래 | 50개 | ✅ 완성 |
+| Unit 5 | 건강 및 의료 | 50개 | ✅ 완성 |
+| Unit 6 | 청소 및 업무 | 50개 | ✅ 완성 |
+
+**총 단어 수: 300개** 🎯
+
+## 🛠️ 개발 도구
+
+- **서버 관리**: `server_manager.py`
+- **상태 확인**: `check_server.py`
+- **Unit 생성**: `unit_generator.py`
+- **Windows 실행**: `start_server.bat`
+
+## 🎯 게임 특징
+
+- **UFO 격추 게임**: 날아오는 UFO 중 정답 단어를 찾아 격추
+- **TTS 지원**: 미국식/영국식 발음 제공
+- **보너스 게임**: 정답 후 타자 게임으로 추가 점수 획득
+- **반응형 디자인**: 모바일/데스크톱 모두 지원
+
+## 📱 지원 환경
+
+- **브라우저**: Chrome, Firefox, Safari, Edge
+- **디바이스**: PC, 태블릿, 스마트폰
+- **플랫폼**: Windows, macOS, Linux, Android, iOS
+
+## 🔄 업데이트 내역
+
+- **2025-08-26**: Unit 6 배포 완료 (청소 및 업무 단어)
+- **2025-08-21**: URL 단축 및 배포 시스템 구축
+- **2025-08-20**: Unit 1-5 완성 및 배포
+- **2025-08-19**: 프로젝트 기반 구축
+
+## 📞 문의 및 지원
+
+게임 사용 중 문제가 발생하거나 개선 제안이 있으시면 GitHub Issues에 등록해 주세요.
 
 ---
 
-**개발자**: AI Assistant  
-**프로젝트**: UFO Word Game  
-**버전**: 2.0 (URL 단축 완료)
+**즐거운 영어 단어 학습 되세요! 🚀**
