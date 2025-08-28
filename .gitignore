@@ -1,0 +1,32 @@
+# 중첩된 Git 저장소
+unit6-github/
+
+# Python 캐시 파일
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 임시 파일
+*.tmp
+*.temp
+
+# 로그 파일
+*.log
+
+# 배치 파일 (Windows)
+*.bat
+
+# 환경 변수 파일
+.env
+.env.local
+
+# IDE 설정 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS 생성 파일
+.DS_Store
+Thumbs.db
