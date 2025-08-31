@@ -211,7 +211,7 @@ function spawnUFO(forceAnswerUFO = false) {
 
   const ufoImg = document.createElement('img');
   ufoImg.className = 'ufo-img';
-  ufoImg.src = 'assets/ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
+  ufoImg.src = '/game/unit7/assets/ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
   ufo.appendChild(ufoImg);
 
   const ufoWord = document.createElement('div');
@@ -284,7 +284,7 @@ function showFeedback(text, scoreText, type) {
 function createExplosion(x, y) {
   // 기존 파티클 제거, 이미지로 대체
   const explosion = document.createElement('img');
-  explosion.src = 'assets/explosion.png';
+  explosion.src = '/game/unit7/assets/explosion.png';
   explosion.className = 'explosion-effect';
   explosion.style.position = 'absolute';
   explosion.style.left = (x - 90) + 'px'; // 이미지 중심 정렬 (180px 기준)
@@ -690,7 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // bullet div 대신 이미지 사용
     const bullet = document.createElement('img');
     bullet.className = 'bullet';
-    bullet.src = 'assets/bullet1.png';
+    bullet.src = '/game/unit7/assets/bullet1.png';
     bullet.style.position = 'absolute';
     bullet.style.width = '36px';
     bullet.style.height = '80px';
@@ -826,7 +826,7 @@ function gameLoop() {
 
 function getLatestUnitJsonFile() {
   // data 폴더 내 unit7.json 파일을 사용
-  return fetch('data/unit7.json')
+  return fetch('/game/unit7/data/unit7.json')
     .then(r => r.ok ? r.json() : null)
     .catch(() => null)
     .then(data => {
@@ -836,7 +836,7 @@ function getLatestUnitJsonFile() {
 }
 
 function loadWords() {
-  const file = 'data/unit7.json';
+  const file = '/game/unit7/data/unit7.json';
   console.log('🔍 Unit 7: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
