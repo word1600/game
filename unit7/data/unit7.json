@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "일정에 뒤처진, 예정보다 늦은",
+    "en": "behind-schedule",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "지연된, 늦어진",
+    "en": "delayed",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "정시에, 제시간의",
+    "en": "on-time ",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "건설, 공사",
+    "en": "construction",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "이미, 벌써",
+    "en": "already",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "도착했다, 도달했다",
+    "en": "arrived",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "환대, 친절한 대접",
+    "en": "hospitality",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "친절함, 상냥함",
+    "en": "friendliness",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "적대감, 반감",
+    "en": "hostility",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "환영, 맞이",
+    "en": "welcome",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "마음껏 드세요",
+    "en": "help-yourself",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "그들의, 그 사람들의",
+    "en": "their",
+    "pos": "pron.(대명사)"
+  },
+  {
+    "ko": "~로 잘 알려져 있다",
+    "en": "is-known-for ",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "손님들, 하객들",
+    "en": "guests",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "따뜻한, 다정한",
+    "en": "warm",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기상학, 기상 과학",
+    "en": "meteorology",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기후학, 기후 연구",
+    "en": "climatology",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예측하다, 예견하다",
+    "en": "predict",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "날씨, 기상",
+    "en": "weather",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정확하게, 정밀하게",
+    "en": "accurately",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "모든 사람, 모두",
+    "en": "everyone",
+    "pos": "pron.(대명사)"
+  },
+  {
+    "ko": "기상청",
+    "en": "Meteorological Agency ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "장학금, 학문",
+    "en": "scholarship",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "학기, 반기",
+    "en": "semester ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "폭풍들, 폭우들",
+    "en": "storms",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "등등, 기타",
+    "en": "and-so-on",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "눈보라, 폭설",
+    "en": "blizzard",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "결석한, 부재한",
+    "en": "absent",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "빠진, 누락된",
+    "en": "missing",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "출석한, 현재의",
+    "en": "present",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "의자, 의장",
+    "en": "chair",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "목록, 명단",
+    "en": "list",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "땡땡이 치다",
+    "en": "play-hooky",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "큰 즐거움, 폭발",
+    "en": "blast",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "우표,도장 / 도장 찍다, 발 구르다",
+    "en": "stamp",
+    "pos": "n.(명사) / v.(동사)"
+  },
+  {
+    "ko": "도장 찍었다, 발 구르었다",
+    "en": "stamed",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "도장 찍는다, 발 구른다",
+    "en": "stamps",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "도장, 봉인",
+    "en": "seal",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "찍다, 각인하다",
+    "en": "imprint",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "(발을) 구르다, 쿵쿵 걷다",
+    "en": "stomp",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "지우다, 삭제하다",
+    "en": "erase",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "오랜만이다",
+    "en": "been-a-while",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "~이래로, ~때부터",
+    "en": "since",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "편지, 문자",
+    "en": "letter",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "간부직원, 세관원, 장교",
+    "en": "officer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "여권, 여행 증명서",
+    "en": "passport",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "입장, 기입",
+    "en": "entry",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "승인된, 부여된",
+    "en": "granted",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "여정, 여행",
+    "en": "journey",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "화가 나서, 성나서",
+    "en": "in-anger",
+    "pos": "adv. phr.(부사구)"
+  }
+]
