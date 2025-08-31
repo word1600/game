@@ -819,7 +819,7 @@ function gameLoop() {
 
 function getLatestUnitJsonFile() {
   // data 폴더 내 unit6.json 파일을 사용
-return fetch('/game/unit7/data/unit7.json')
+    return fetch('/game/unit7/data/unit7.json?v=' + Date.now())
     .then(r => r.ok ? r.json() : null)
     .catch(() => null)
     .then(data => {
@@ -829,7 +829,7 @@ return fetch('/game/unit7/data/unit7.json')
 }
 
 function loadWords() {
-  const file = '/game/unit7/data/unit7.json';
+  const file = '/game/unit7/data/unit7.json?v=' + Date.now();
   console.log('🔍 Unit 7: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
