@@ -373,7 +373,7 @@ function pauseGameAndStartChallenge(word) {
     <div class="challenge-word-container">
       <p>${word}</p>
     </div>
-    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="text">
+    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="text" placeholder="Type here...">
   `;
   document.getElementById('game-area').appendChild(challengeBox);
   const challengeInput = document.getElementById('challenge-input');
@@ -414,6 +414,15 @@ function pauseGameAndStartChallenge(word) {
   challengeInput.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
       e.stopPropagation(); // 다른 이벤트 핸들러가 스페이스바를 가로채지 않도록
+      e.preventDefault(); // 기본 동작 방지
+    }
+  });
+  
+  // 추가적인 스페이스바 입력 보장
+  challengeInput.addEventListener('keypress', (e) => {
+    if (e.code === 'Space' || e.key === ' ') {
+      e.stopPropagation();
+      e.preventDefault();
     }
   });
   function endChallenge(success) {
