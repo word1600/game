@@ -1,7 +1,7 @@
 [
   {
     "ko": "일정에 뒤처진, 예정보다 늦은",
-    "en": "behind-schedule",
+    "en": "behind schedule",
     "pos": "adj. phr.(형용사구)"
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "ko": "정시에, 제시간의",
-    "en": "on-time ",
+    "en": "on time",
     "pos": "adj.(형용사)"
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "ko": "마음껏 드세요",
-    "en": "help-yourself",
+    "en": "help yourself",
     "pos": "v. phr.(동사구)"
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "ko": "~로 잘 알려져 있다",
-    "en": "is-known-for ",
+    "en": "is known for",
     "pos": "v. phr.(동사구)"
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "ko": "기상청",
-    "en": "Meteorological Agency ",
+    "en": "Meteorological Agency",
     "pos": "n.(명사)"
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "ko": "학기, 반기",
-    "en": "semester ",
+    "en": "semester",
     "pos": "n.(명사)"
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "ko": "등등, 기타",
-    "en": "and-so-on",
+    "en": "and so on",
     "pos": "adv.(부사)"
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "ko": "땡땡이 치다",
-    "en": "play-hooky",
+    "en": "play hooky",
     "pos": "v. phr.(동사구)"
   },
   {
@@ -206,7 +206,7 @@
   },
   {
     "ko": "오랜만이다",
-    "en": "been-a-while",
+    "en": "been a while",
     "pos": "v. phr.(동사구)"
   },
   {
@@ -246,7 +246,7 @@
   },
   {
     "ko": "화가 나서, 성나서",
-    "en": "in-anger",
+    "en": "in anger",
     "pos": "adv. phr.(부사구)"
   }
 ]

@@ -17,7 +17,7 @@ let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 let ttsInterval = null;
 let lastTtsUtterance = null;
 
-let selectedUnit = 'unit2'; // 기본값: Unit 2
+let selectedUnit = 'unit7'; // 기본값: Unit 7
 
 // 유닛 선택 버튼 핸들러
 function setupUnitSelect() {
@@ -211,7 +211,7 @@ function spawnUFO(forceAnswerUFO = false) {
 
   const ufoImg = document.createElement('img');
   ufoImg.className = 'ufo-img';
-  ufoImg.src = '/game/unit7/assets/ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
+  ufoImg.src = 'assets/ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
   ufo.appendChild(ufoImg);
 
   const ufoWord = document.createElement('div');
@@ -284,7 +284,7 @@ function showFeedback(text, scoreText, type) {
 function createExplosion(x, y) {
   // 기존 파티클 제거, 이미지로 대체
   const explosion = document.createElement('img');
-  explosion.src = '/game/unit7/assets/explosion.png';
+  explosion.src = 'assets/explosion.png';
   explosion.className = 'explosion-effect';
   explosion.style.position = 'absolute';
   explosion.style.left = (x - 90) + 'px'; // 이미지 중심 정렬 (180px 기준)
@@ -373,7 +373,7 @@ function pauseGameAndStartChallenge(word) {
     <div class="challenge-word-container">
       <p>${word}</p>
     </div>
-    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="url">
+    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="text">
   `;
   document.getElementById('game-area').appendChild(challengeBox);
   const challengeInput = document.getElementById('challenge-input');
@@ -407,6 +407,13 @@ function pauseGameAndStartChallenge(word) {
   challengeInput.addEventListener('input', () => {
     if (challengeInput.value.trim().toLowerCase() === wordToChallenge.trim().toLowerCase()) {
       endChallenge(true);
+    }
+  });
+  
+  // 스페이스바 입력을 명시적으로 허용
+  challengeInput.addEventListener('keydown', (e) => {
+    if (e.code === 'Space') {
+      e.stopPropagation(); // 다른 이벤트 핸들러가 스페이스바를 가로채지 않도록
     }
   });
   function endChallenge(success) {
@@ -683,7 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // bullet div 대신 이미지 사용
     const bullet = document.createElement('img');
     bullet.className = 'bullet';
-    bullet.src = '/game/unit7/assets/bullet1.png';
+    bullet.src = 'assets/bullet1.png';
     bullet.style.position = 'absolute';
     bullet.style.width = '36px';
     bullet.style.height = '80px';
@@ -818,8 +825,8 @@ function gameLoop() {
 }
 
 function getLatestUnitJsonFile() {
-  // data 폴더 내 unit6.json 파일을 사용
-    return fetch('/game/unit7/data/unit7.json?v=' + Date.now())
+  // data 폴더 내 unit7.json 파일을 사용
+  return fetch('data/unit7.json')
     .then(r => r.ok ? r.json() : null)
     .catch(() => null)
     .then(data => {
@@ -829,7 +836,7 @@ function getLatestUnitJsonFile() {
 }
 
 function loadWords() {
-  const file = '/game/unit7/data/unit7.json?v=' + Date.now();
+  const file = 'data/unit7.json';
   console.log('🔍 Unit 7: 단어 데이터 로딩 시작:', file);
   
   fetch(file)

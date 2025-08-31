@@ -1,80 +1,63 @@
-# UFO Word Game - TOEIC 영단어 학습 게임
+# UFO Word Game - Unit 7
 
-## 🎮 게임 소개
-TOEIC 1600 단어를 UFO 게임으로 재미있게 학습할 수 있는 웹 게임입니다.
+영어 단어 학습을 위한 UFO 슈팅 게임입니다.
 
-## 🌐 온라인 접속 방법
+## 🎮 게임 특징
 
-### GitHub Pages 배포 완료!
-**모든 Unit이 온라인에서 정상 작동합니다!**
+- **스페이스바 지원**: "play hooky", "behind schedule" 등 복합 단어 입력 가능
+- **TTS 발음**: 미국식/영국식 발음 제공
+- **반응형 디자인**: 모바일/데스크톱 모두 지원
+- **사운드 효과**: BGM 및 효과음 포함
 
-- **Unit 1**: https://vocabvoyager.github.io/ufo-word-game/
-- **Unit 2**: https://vocabvoyager.github.io/ufo-word-game/unit2/
-- **Unit 3**: https://vocabvoyager.github.io/ufo-word-game/unit3/
-- **Unit 4**: https://vocabvoyager.github.io/ufo-word-game/unit4/
-- **Unit 5**: https://vocabvoyager.github.io/ufo-word-game/unit5/
-- **Unit 6**: https://vocabvoyager.github.io/ufo-word-game/unit6/ 🆕
+## 🚀 배포된 게임
 
-## 🚀 로컬 실행 방법
+GitHub Pages를 통해 배포되었습니다:
+- **URL**: `https://[username].github.io/[repository-name]`
 
-### 1. 서버 시작
-```bash
-python server_manager.py
+## 📁 파일 구조
+
+```
+├── index.html          # 메인 HTML 파일
+├── game.js             # 게임 로직
+├── style.css           # 스타일시트
+├── data/
+│   └── unit7.json      # 단어 데이터 (하이픈 제거됨)
+├── assets/
+│   ├── *.png           # 게임 이미지
+│   ├── *.mp3           # 사운드 파일
+│   └── fonts/          # 폰트 파일
+└── unit7/              # Unit 7 전용 파일들
 ```
 
-### 2. 접속
-- **메인 게임**: http://localhost:8000/
-- **Unit 1**: http://localhost:8000/
-- **Unit 2**: http://localhost:8000/unit2/
-- **Unit 3**: http://localhost:8000/unit3/
-- **Unit 4**: http://localhost:8000/unit4/
-- **Unit 5**: http://localhost:8000/unit5/
-- **Unit 6**: http://localhost:8000/unit6/
+## 🔧 최근 업데이트
 
-## 📚 Unit별 단어 구성
+- ✅ 하이픈 제거: "play-hooky" → "play hooky"
+- ✅ 스페이스바 입력 지원
+- ✅ 입력 필드 최적화 (`inputmode="text"`)
+- ✅ 이벤트 핸들러 개선
 
-| Unit | 주제 | 단어 수 | 상태 |
-|------|------|---------|------|
-| Unit 1 | 기본 생활 단어 | 50개 | ✅ 완성 |
-| Unit 2 | 음식 및 요리 | 50개 | ✅ 완성 |
-| Unit 3 | 교통 및 여행 | 50개 | ✅ 완성 |
-| Unit 4 | 쇼핑 및 상거래 | 50개 | ✅ 완성 |
-| Unit 5 | 건강 및 의료 | 50개 | ✅ 완성 |
-| Unit 6 | 청소 및 업무 | 50개 | ✅ 완성 |
+## 🎯 게임 방법
 
-**총 단어 수: 300개** 🎯
+1. **시작**: "Start Game" 버튼 클릭
+2. **UFO 클릭**: 정답 단어가 적힌 UFO 클릭
+3. **타이핑**: 10초 내에 단어 정확히 타이핑
+4. **점수**: 정답 시 +10점, 타이핑 성공 시 +5점
 
-## 🛠️ 개발 도구
+## 📝 단어 예시
 
-- **서버 관리**: `server_manager.py`
-- **상태 확인**: `check_server.py`
-- **Unit 생성**: `unit_generator.py`
-- **Windows 실행**: `start_server.bat`
+- "play hooky" (땡땡이 치다)
+- "behind schedule" (일정에 뒤처진)
+- "help yourself" (마음껏 드세요)
+- "is known for" (~로 잘 알려져 있다)
 
-## 🎯 게임 특징
+## 🛠️ 기술 스택
 
-- **UFO 격추 게임**: 날아오는 UFO 중 정답 단어를 찾아 격추
-- **TTS 지원**: 미국식/영국식 발음 제공
-- **보너스 게임**: 정답 후 타자 게임으로 추가 점수 획득
-- **반응형 디자인**: 모바일/데스크톱 모두 지원
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Web Speech API (TTS)
+- GitHub Pages (배포)
 
-## 📱 지원 환경
+## �� 라이선스
 
-- **브라우저**: Chrome, Firefox, Safari, Edge
-- **디바이스**: PC, 태블릿, 스마트폰
-- **플랫폼**: Windows, macOS, Linux, Android, iOS
-
-## 🔄 업데이트 내역
-
-- **2025-08-26**: Unit 6 배포 완료 (청소 및 업무 단어)
-- **2025-08-21**: URL 단축 및 배포 시스템 구축
-- **2025-08-20**: Unit 1-5 완성 및 배포
-- **2025-08-19**: 프로젝트 기반 구축
-
-## 📞 문의 및 지원
-
-게임 사용 중 문제가 발생하거나 개선 제안이 있으시면 GitHub Issues에 등록해 주세요.
-
----
-
-**즐거운 영어 단어 학습 되세요! 🚀**
+MIT License
