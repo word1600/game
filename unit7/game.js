@@ -410,21 +410,7 @@ function pauseGameAndStartChallenge(word) {
     }
   });
   
-  // 스페이스바 입력을 명시적으로 허용
-  challengeInput.addEventListener('keydown', (e) => {
-    if (e.code === 'Space') {
-      e.stopPropagation(); // 다른 이벤트 핸들러가 스페이스바를 가로채지 않도록
-      // e.preventDefault() 제거 - 스페이스바가 실제로 입력되도록 허용
-    }
-  });
-  
-  // 추가적인 스페이스바 입력 보장
-  challengeInput.addEventListener('keypress', (e) => {
-    if (e.code === 'Space' || e.key === ' ') {
-      e.stopPropagation();
-      // e.preventDefault() 제거 - 스페이스바가 실제로 입력되도록 허용
-    }
-  });
+  // 스페이스바 이벤트 핸들러 완전 제거 - 기본 HTML input 동작 사용
   function endChallenge(success) {
     clearInterval(challengeTimerInterval);
     challengeBox.remove();
