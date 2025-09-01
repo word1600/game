@@ -846,7 +846,11 @@ function getLatestUnitJsonFile() {
 }
 
 function loadWords() {
-  const file = 'data/unit1.json';
+  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const file = isLocal ? './data/unit1.json?v=1.0' : '/game/unit1/data/unit1.json?v=1.0';
+  console.log('🔍 Unit 1: 단어 데이터 로딩 시작:', file);
+  
   fetch(file)
     .then(response => {
       if (!response.ok) {

@@ -827,8 +827,11 @@ function gameLoop() {
 // Unit 3 전용 게임 - getLatestUnitJsonFile 함수 제거됨
 
 function loadWords() {
-  const file = 'data/unit3.json';
-  console.log('Unit 3: 단어 데이터 로딩 시작...');
+  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const file = isLocal ? './data/unit3.json?v=1.0' : '/game/unit3/data/unit3.json?v=1.0';
+  console.log('🔍 Unit 3: 단어 데이터 로딩 시작:', file);
+  
   fetch(file)
     .then(response => {
       console.log('Unit 3: fetch 응답 상태:', response.status, response.ok);
