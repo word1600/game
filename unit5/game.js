@@ -373,7 +373,7 @@ function pauseGameAndStartChallenge(word) {
     <div class="challenge-word-container">
       <p>${word}</p>
     </div>
-    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="url">
+    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="text">
   `;
   document.getElementById('game-area').appendChild(challengeBox);
   const challengeInput = document.getElementById('challenge-input');
@@ -404,6 +404,11 @@ function pauseGameAndStartChallenge(word) {
       endChallenge(false);
     }
   }, 1000);
+  // 스페이스바 지원을 위한 이벤트 핸들러
+  challengeInput.addEventListener('keydown', function(e) {
+    e.stopPropagation(); // 전파만 차단, 입력은 허용
+  });
+
   challengeInput.addEventListener('input', () => {
     if (challengeInput.value.trim().toLowerCase() === wordToChallenge.trim().toLowerCase()) {
       endChallenge(true);
@@ -806,13 +811,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('touchend', handleFireEnd, { passive: false });
   fireBtn.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
   window.addEventListener('keydown', (e) => {
-    if (e.code === 'Space' && !isFiring) {
+    if (e.code === 'Space' && !isFiring && !document.getElementById('challenge-input')) {
       e.preventDefault();
       handleFireStart(e);
     }
   });
   window.addEventListener('keyup', (e) => {
-    if (e.code === 'Space') {
+    if (e.code === 'Space' && !document.getElementById('challenge-input')) {
       e.preventDefault();
       handleFireEnd(e);
     }
@@ -848,7 +853,7 @@ function getLatestUnitJsonFile() {
 function loadWords() {
   // 로컬 환경과 온라인 환경을 구분하여 경로 설정
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const file = isLocal ? './data/unit5.json?v=1.2' : '/game/unit5/data/unit5.json?v=1.2';
+  const file = isLocal ? './data/unit5.json?v=1.3' : '/game/unit5/data/unit5.json?v=1.3';
   console.log('🔍 Unit 5: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
