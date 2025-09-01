@@ -414,7 +414,7 @@ function pauseGameAndStartChallenge(word) {
   challengeInput.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
       e.stopPropagation(); // 다른 이벤트 핸들러가 스페이스바를 가로채지 않도록
-      e.preventDefault(); // 기본 동작 방지
+      // e.preventDefault() 제거 - 스페이스바가 실제로 입력되도록 허용
     }
   });
   
@@ -422,7 +422,7 @@ function pauseGameAndStartChallenge(word) {
   challengeInput.addEventListener('keypress', (e) => {
     if (e.code === 'Space' || e.key === ' ') {
       e.stopPropagation();
-      e.preventDefault();
+      // e.preventDefault() 제거 - 스페이스바가 실제로 입력되도록 허용
     }
   });
   function endChallenge(success) {
@@ -812,13 +812,15 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('touchend', handleFireEnd, { passive: false });
   fireBtn.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
   window.addEventListener('keydown', (e) => {
-    if (e.code === 'Space' && !isFiring) {
+    // 타이핑 챌린지 중에는 총알 발사 비활성화
+    if (e.code === 'Space' && !isFiring && !document.getElementById('challenge-input')) {
       e.preventDefault();
       handleFireStart(e);
     }
   });
   window.addEventListener('keyup', (e) => {
-    if (e.code === 'Space') {
+    // 타이핑 챌린지 중에는 총알 발사 비활성화
+    if (e.code === 'Space' && !document.getElementById('challenge-input')) {
       e.preventDefault();
       handleFireEnd(e);
     }
