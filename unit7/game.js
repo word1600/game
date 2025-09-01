@@ -211,7 +211,10 @@ function spawnUFO(forceAnswerUFO = false) {
 
   const ufoImg = document.createElement('img');
   ufoImg.className = 'ufo-img';
-  ufoImg.src = '/game/unit7/assets/ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
+  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const assetsPath = isLocal ? './assets/' : '/game/unit7/assets/';
+  ufoImg.src = assetsPath + 'ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
   ufo.appendChild(ufoImg);
 
   const ufoWord = document.createElement('div');
@@ -284,7 +287,10 @@ function showFeedback(text, scoreText, type) {
 function createExplosion(x, y) {
   // 기존 파티클 제거, 이미지로 대체
   const explosion = document.createElement('img');
-  explosion.src = '/game/unit7/assets/explosion.png';
+  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const assetsPath = isLocal ? './assets/' : '/game/unit7/assets/';
+  explosion.src = assetsPath + 'explosion.png';
   explosion.className = 'explosion-effect';
   explosion.style.position = 'absolute';
   explosion.style.left = (x - 90) + 'px'; // 이미지 중심 정렬 (180px 기준)
@@ -410,7 +416,14 @@ function pauseGameAndStartChallenge(word) {
     }
   });
   
-  // 스페이스바 이벤트 핸들러 완전 제거 - 기본 HTML input 동작 사용
+  // 스페이스바 입력을 위한 특별한 이벤트 핸들러 추가
+  challengeInput.addEventListener('keydown', (e) => {
+    // 스페이스바가 눌렸을 때 기본 동작을 허용하되, 다른 이벤트와의 충돌 방지
+    if (e.code === 'Space') {
+      // 기본 동작은 허용하되, 이벤트 전파는 중단
+      e.stopPropagation();
+    }
+  });
   function endChallenge(success) {
     clearInterval(challengeTimerInterval);
     challengeBox.remove();
@@ -685,7 +698,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // bullet div 대신 이미지 사용
     const bullet = document.createElement('img');
     bullet.className = 'bullet';
-    bullet.src = '/game/unit7/assets/bullet1.png';
+    // 로컬 환경과 온라인 환경을 구분하여 경로 설정
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const assetsPath = isLocal ? './assets/' : '/game/unit7/assets/';
+    bullet.src = assetsPath + 'bullet1.png';
     bullet.style.position = 'absolute';
     bullet.style.width = '36px';
     bullet.style.height = '80px';
@@ -833,7 +849,9 @@ function getLatestUnitJsonFile() {
 }
 
 function loadWords() {
-  const file = '/game/unit7/data/unit7.json';
+  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const file = isLocal ? './data/unit7.json' : '/game/unit7/data/unit7.json';
   console.log('🔍 Unit 7: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
@@ -846,7 +864,7 @@ function loadWords() {
     })
     .then(data => {
       console.log('✅ Unit 7: 데이터 로드 성공! 단어 수:', data.length);
-console.log('📝 Unit 7: 첫 번째 단어:', data[0]);
+      console.log('📝 Unit 7: 첫 번째 단어:', data[0]);
       ufoWordsData = data;
       refillWordPool();
       pickNewProblemWord();
@@ -857,6 +875,6 @@ console.log('📝 Unit 7: 첫 번째 단어:', data[0]);
     })
     .catch(err => {
       console.error('❌ Unit 7: 데이터 로드 실패:', err);
-alert('Unit 7 단어 데이터를 불러오지 못했습니다: ' + err.message);
+      alert('Unit 7 단어 데이터를 불러오지 못했습니다: ' + err.message);
     });
 } 
