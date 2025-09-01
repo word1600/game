@@ -406,7 +406,15 @@ function pauseGameAndStartChallenge(word) {
   }, 1000);
   // 스페이스바 지원을 위한 이벤트 핸들러
   challengeInput.addEventListener('keydown', function(e) {
-    e.stopPropagation(); // 전파만 차단, 입력은 허용
+    if (e.code === 'Space') {
+      e.stopPropagation(); // 전파만 차단, 입력은 허용
+    }
+  });
+
+  challengeInput.addEventListener('keypress', function(e) {
+    if (e.code === 'Space') {
+      e.stopPropagation(); // 전파만 차단, 입력은 허용
+    }
   });
 
   challengeInput.addEventListener('input', () => {
@@ -853,7 +861,7 @@ function getLatestUnitJsonFile() {
 function loadWords() {
   // 로컬 환경과 온라인 환경을 구분하여 경로 설정
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const file = isLocal ? './data/unit5.json?v=1.3' : '/game/unit5/data/unit5.json?v=1.3';
+  const file = isLocal ? './data/unit5.json?v=1.4' : '/game/unit5/data/unit5.json?v=1.4';
   console.log('🔍 Unit 5: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
