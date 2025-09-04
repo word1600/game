@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "은퇴, 퇴직",
+    "en": "retirement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "퇴직, 노후 연금",
+    "en": "superannuation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "취업, 고용",
+    "en": "employment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "여행했다",
+    "en": "traveled",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "많이, 상당히",
+    "en": "a lot",
+    "pos": "adv. phr.(부사구)"
+  },
+  {
+    "ko": "문화, 교양",
+    "en": "culture",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유일한, 독특한",
+    "en": "unique",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "계획했다",
+    "en": "planned",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "시위하다, 증명하다, 시연하다",
+    "en": "demonstrate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "증명하다, 입증하다",
+    "en": "prove",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "반박하다",
+    "en": "disprove",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "임금, 급여",
+    "en": "wage",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "힘, 강점",
+    "en": "strength",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "들어 올리기, 중량 들기",
+    "en": "lifting",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "역기",
+    "en": "barbell",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "집중하다, 주목하다",
+    "en": "pay attention",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "도구, 연장",
+    "en": "tool",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소형제품, 소형의, 압축하다",
+    "en": "compact",
+    "pos": "n.(명사)/adj.(형용사)/v.(동사)"
+  },
+  {
+    "ko": "압축했다, 다졌다",
+    "en": "compacted",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "압축한다, 다진다",
+    "en": "compacts",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "축소 모형, 소형의",
+    "en": "miniature ",
+    "pos": "n.(명사)/adj.(형용사)"
+  },
+  {
+    "ko": "부피, 대량",
+    "en": "bulk",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부피가 큰, 거대한",
+    "en": "bulky",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "압축하다, 눌러 줄이다",
+    "en": "compress",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "느슨하게 하다, 풀다",
+    "en": "loosen",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "화장",
+    "en": "makeup",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "완벽한, 멋진",
+    "en": "on point ",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "아주 쉬운 일, 식은 죽 먹기",
+    "en": "a breeze ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "등록, 신고",
+    "en": "registration",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "등록, 입학",
+    "en": "enrollment ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "취소, 해지",
+    "en": "cancellation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "신청서, 등록 양식",
+    "en": "registration form ",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "완료된, 끝마친",
+    "en": "completed",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "개인 식별 번호, 비밀번호",
+    "en": "PIN number",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "인하, 감축, 축소",
+    "en": "reduction",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "감소, 하락",
+    "en": "decrease",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "증가, 상승",
+    "en": "increase",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정말 저렴한, 아주 싼",
+    "en": "really cheap ",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "가격 인하, 할인",
+    "en": "price reduction ",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "고객들, 손님들",
+    "en": "customers",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "구조조정 회의",
+    "en": "Restructuring meeting",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "발표했다, 공표했다",
+    "en": "announced",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "줄이다, 감소시키다",
+    "en": "reduce ",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "중요한, 상당한",
+    "en": "significant",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "교통, 통행량",
+    "en": "traffic",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소형차",
+    "en": "compact car",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "공정한 임금, 정당한 보수",
+    "en": "fair wages",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "동일 노동, 동등한 업무",
+    "en": "equal work",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "동일 임금, 동등 보수",
+    "en": "equal pay",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "꽉 채우다, 만땅으로 넣다",
+    "en": "fill it up",
+    "pos": "v. phr.(동사구)"
+  }
+]
