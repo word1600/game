@@ -1,0 +1,267 @@
+[
+  {
+    "ko": "재료, 성분",
+    "en": "ingredient",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "구성 요소",
+    "en": "component",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "마늘, 마늘 조각",
+    "en": "garlic",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "밀가루, 가루",
+    "en": "flour",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "필수의, 본질적인",
+    "en": "essential",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "제빵, 굽기",
+    "en": "baking",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "완벽하게, 완전하게",
+    "en": "perfectly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "논의했다, 토의했다",
+    "en": "discussed",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "도대체, 도무지",
+    "en": "what on earth",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "완전히, 전적으로",
+    "en": "entirely",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "완전히",
+    "en": "completely",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "부분적으로, 일부",
+    "en": "partially",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "책임이 있는, 맡은",
+    "en": "responsible for",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "전부 내 책임이다",
+    "en": "It is all on me",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "바탕으로 한",
+    "en": "based on",
+    "pos": "prep. phr.(전치사구)"
+  },
+  {
+    "ko": "태평양 전쟁",
+    "en": "Pacific war",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "사실 기반 소설, 다큐 소설",
+    "en": "documentary novel",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "완전한 집중, 전념",
+    "en": "total focus",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "집중한, 초점을 맞춘",
+    "en": "focused on",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "문학, 문헌",
+    "en": "literature",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "조사, 수사",
+    "en": "investigation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "조사",
+    "en": "inquiry",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "무지, 모름",
+    "en": "ignorance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "범죄, 범행",
+    "en": "crime",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "아주 작은 단서",
+    "en": "the slightest clue",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "이어졌다, 초래했다",
+    "en": "led to",
+    "pos": "v.past phr.(과거 동사구)"
+  },
+  {
+    "ko": "용의자",
+    "en": "suspect",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "체포하다, 구금하다",
+    "en": "arrest",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "침묵을 지키다",
+    "en": "remain silent",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "권리, 옳음",
+    "en": "right",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수행하는, 진행하는",
+    "en": "conducting",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "오염에 대해, 오염 관련",
+    "en": "on pollution",
+    "pos": "prep. phr.(전치사구)"
+  },
+  {
+    "ko": "매우 심각한, 대단히 중대한",
+    "en": "really serious",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "오염, 공해",
+    "en": "pollution",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부족, 부족하다",
+    "en": "lack",
+    "pos": "n.(명사)/v.(동사)"
+  },
+  {
+    "ko": "부족, 품절",
+    "en": "shortage",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "풍부함, 많은 양",
+    "en": "abundance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "없다, 없이 지내다",
+    "en": "be without",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "풍부하다, 많이 있다",
+    "en": "abound",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "영향을 미치다, 작용하다",
+    "en": "affect",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "수면 부족",
+    "en": "lack of sleep",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "장비, 설비",
+    "en": "equipment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부족한, 모자란",
+    "en": "short on",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "설명, 해명",
+    "en": "explanation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "중요한, 중대한",
+    "en": "important",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "세부 사항, 상세",
+    "en": "detail",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자격 있는, 적합한",
+    "en": "qualified",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "자격 요건을 갖춘, 적격의",
+    "en": "eligible",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "자격이 없는, 무자격의",
+    "en": "unqualified",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "가르칠",
+    "en": "to teach",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "해외에, 해외로",
+    "en": "abroad",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "다년간의 경험을 가진",
+    "en": "with years of experience",
+    "pos": "prep. phr.(전치사구)"
+  },
+  {
+    "ko": "석사 학위",
+    "en": "masters degree",
+    "pos": "n. phr.(명사구)"
+  }
+]
