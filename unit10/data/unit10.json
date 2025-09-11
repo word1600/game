@@ -1,0 +1,272 @@
+[
+  {
+    "ko": "선호, 좋아함",
+    "en": "preference",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "좋아함",
+    "en": "liking",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "싫어함",
+    "en": "dislike",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "무엇보다도",
+    "en": "above all",
+    "pos": "adv. phr.(부사구)"
+  },
+  {
+    "ko": "~해야 한다, ~일 것이다",
+    "en": "should be ",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "분명한, 투명한",
+    "en": "clear",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "정말 좋은, 매우 친절한",
+    "en": "so nice",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "고전적인, 전통적인",
+    "en": "classical",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "채식주의자, 채식주의",
+    "en": "vegetarian",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "강한, 튼튼한",
+    "en": "strong",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "협상하다, 교섭하다",
+    "en": "negotiate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "흥정하다",
+    "en": "bargain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "거부하다",
+    "en": "refuse",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "지도자, 우두머리",
+    "en": "leader",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~동안, ~하는 중에",
+    "en": "during",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "정상 회담, 정상",
+    "en": "summit",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기간, 용어",
+    "en": "term",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "계약 / 계약하다",
+    "en": "contract",
+    "pos": "n.(명사)/v.(동사)"
+  },
+  {
+    "ko": "거래 / 거래하다",
+    "en": "deal",
+    "pos": "n.(명사)/v.(동사)"
+  },
+  {
+    "ko": "더 좋은, 향상된",
+    "en": "better",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "감독하다, 관리하다",
+    "en": "oversee",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "감독했다, 관리했다",
+    "en": "oversaw",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "감독하다, 지휘하다",
+    "en": "supervise",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "소홀히 하다, 무시하다",
+    "en": "neglect",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "이런 세상에",
+    "en": "geez",
+    "pos": "int.(감탄사)"
+  },
+  {
+    "ko": "안전 대책, 안전 조치",
+    "en": "safety measure     ",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "관리자, 감독관",
+    "en": "supervisor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "건설, 공사",
+    "en": "construction",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연구 과제",
+    "en": "research project",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "~을 맡은, ~담당의",
+    "en": "in charge of ",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "전체의, 완전한",
+    "en": "entire",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "마케팅 부서, 영업 부서",
+    "en": "marketing department",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "설명, 묘사",
+    "en": "description",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "설명, 해명",
+    "en": "explanation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "설명 없음, 말하지 않음",
+    "en": "silence",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "담고있다, 함유하다",
+    "en": "contain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "역사, 이력",
+    "en": "history",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "상세한, 정밀한",
+    "en": "detailed",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "인상작의, 외형 묘사",
+    "en": "physical description",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "요청했다, 요구했다",
+    "en": "asked for ",
+    "pos": "v.past phr.(과거 동사구)"
+  },
+  {
+    "ko": "용의자, 의심하다",
+    "en": "suspect",
+    "pos": "n.(명사)/v.(동사)"
+  },
+  {
+    "ko": "합병, 결합",
+    "en": "merger",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "합병, 융합",
+    "en": "amalgamation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "분할, 부서",
+    "en": "division",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "발표했다, 알렸다",
+    "en": "announced",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "지난주, 지난 주간",
+    "en": "last week",
+    "pos": "adv. phr.(부사구)"
+  },
+  {
+    "ko": "만들어졌다",
+    "en": "created",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "경쟁의, 경쟁력 있는",
+    "en": "competitive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "고용 불안정, 직업 불안정",
+    "en": "Job insecurity ",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "경영 효율성, 관리 효율성",
+    "en": "management efficiency",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "~사이에, ~중간에",
+    "en": "between",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "회사 / 단단한",
+    "en": "firm",
+    "pos": "n.(명사)/adj.(형용사)"
+  },
+  {
+    "ko": "증가했다, 높아졌다",
+    "en": "increased",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "시장 점유율, 시장 몫",
+    "en": "market share",
+    "pos": "n. phr.(명사구)"
+  }
+]
