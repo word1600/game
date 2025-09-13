@@ -1,0 +1,242 @@
+[
+  {
+    "ko": "과제, 임무",
+    "en": "assignment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "임무",
+    "en": "task",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "쓰기, 글쓰기",
+    "en": "writing",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정말 어려운",
+    "en": "really hard",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "군인, 병사",
+    "en": "soldier",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "따르다, 수행하다",
+    "en": "follow",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "과제 끝",
+    "en": "assignment done",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "스케치, 밑그림",
+    "en": "sketch",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "미술, 예술",
+    "en": "art",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고장 난, 사용 불가한",
+    "en": "out of service",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "이용 불가한",
+    "en": "unavailable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "운행 중, 사용 가능한",
+    "en": "in service ",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "구, 관용구",
+    "en": "phrase",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "승강기, 엘리베이터",
+    "en": "elevator",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자판기, 판매기",
+    "en": "vending machine ",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "목마른, 갈망하는",
+    "en": "thirsty",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "화장실, 세면실",
+    "en": "restroom",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "오줌 마려워",
+    "en": "have to pee",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "언급하다, 말하다",
+    "en": "mention",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "언급했다, 말했다",
+    "en": "mentioned",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "언급한다, 말한다",
+    "en": "mentions",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "언급하다, 참조하다",
+    "en": "refer",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "무시하다, 못 본 척하다",
+    "en": "ignore",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "연설, 말",
+    "en": "speech",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "날씨, 기상",
+    "en": "weather",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "점심, 점심 식사",
+    "en": "lunch",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정말 감동적인",
+    "en": "really touching",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "주도권, 계획",
+    "en": "initiative",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "계획, 방안",
+    "en": "plan",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "무관심, 냉담",
+    "en": "apathy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자, 시작한다",
+    "en": "Here we go",
+    "pos": "phr.(구)"
+  },
+  {
+    "ko": "출시했다, 발사했다",
+    "en": "launched",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "초록색의, 환경 친화적인",
+    "en": "green",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "지구, 흙",
+    "en": "earth",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "피하다, 회피다",
+    "en": "avoid",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "피했다, 회피했다",
+    "en": "avoided",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "피한다, 회피한다",
+    "en": "avoids",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "회피하다, 모면하다",
+    "en": "evade",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "직면하다, 맞서다 ",
+    "en": "confront ",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "막힘이 없는 도로",
+    "en": "a clear road",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "혼잡한 도로",
+    "en": "a busy road",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "교통 체증, 혼잡",
+    "en": "traffic jam ",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "또 다른, 다른 하나의",
+    "en": "another",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "먹기, 식사",
+    "en": "eating",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "인스턴트 음식",
+    "en": "junk food",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "아,이런!, 젠장",
+    "en": "darn it",
+    "pos": "int.(감탄사)"
+  },
+  {
+    "ko": "아, 이런!, 젠장",
+    "en": "puddle",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "거리, 도로",
+    "en": "street",
+    "pos": "n.(명사)"
+  }
+]
