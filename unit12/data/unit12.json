@@ -1,0 +1,227 @@
+[
+  {
+    "ko": "자격증, 증명서, 인증",
+    "en": "certification",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "인가, 허가, 승인",
+    "en": "authorization",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "실격, 자격 박탈",
+    "en": "disqualification",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "취득했다, 얻었다",
+    "en": "earned",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "교육, 가르치는 것",
+    "en": "teaching",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "받았다, 수신했다",
+    "en": "received",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "건강, 보건",
+    "en": "health",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "건강하게 지내다",
+    "en": "stay healthy",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "빵집, 제과점",
+    "en": "bakery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유기농의, 본질적인",
+    "en": "organic",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "빵, 식빵",
+    "en": "bread",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "줄을 서서 기다리다",
+    "en": "wait in line",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "줄 서다, 줄",
+    "en": "queue",
+    "pos": "v.(동사) / n.(명사)"
+  },
+  {
+    "ko": "새치기 하다",
+    "en": "cut in line ",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "엄청 인기 있는",
+    "en": "all the rage",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "들어가기",
+    "en": "entering",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "하자마자, 곧",
+    "en": "as soon as",
+    "pos": "conj. phr.(접속사구)"
+  },
+  {
+    "ko": "광란의 돌진, 쇄도",
+    "en": "mad rush",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "기부자, 헌혈자",
+    "en": "donor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기부자, 기여자 ",
+    "en": "contributor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수령자, 수혜자",
+    "en": "recipient",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "금액, 돈의 총합",
+    "en": "sum of money",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "좋은 일들, 이로운 것들",
+    "en": "good things",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "관대한, 풍부한",
+    "en": "generous",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "자선, 기부",
+    "en": "charity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "나에게 알려줘",
+    "en": "just let me know",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "명판, 치석",
+    "en": "plaque",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기부했다, 증여했다",
+    "en": "donated",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "불행히도, 안타깝게도",
+    "en": "unfortunately",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "유감스럽게도",
+    "en": "regrettably",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "다행히",
+    "en": "fortunately",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "놓쳤다, 그리워했다",
+    "en": "missed",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "망쳤다, 파괴했다",
+    "en": "ruined",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "소풍, 야유회",
+    "en": "picnic",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전혀, 조금도",
+    "en": "at all",
+    "pos": "adv. phr.(부사구)"
+  },
+  {
+    "ko": "치우다, 제거하다",
+    "en": "remove",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "치웠다, 제거했다",
+    "en": "removed",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "치운다, 제거한다",
+    "en": "removes",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "제거하다, 없애다",
+    "en": "eliminate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "유지하다, 보존하다",
+    "en": "retain ",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "치우다, 넣다",
+    "en": "put away",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "구식의",
+    "en": "outdated",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "갱신하는 중",
+    "en": "updating",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "줄을 섰다, 대기했다",
+    "en": "waited in line",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "줄을 선다, 대기한다",
+    "en": "waits in line",
+    "pos": "v.s(3인칭 단수 동사)"
+  }
+]

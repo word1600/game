@@ -86,7 +86,7 @@ git push origin main
 
 ### **4단계: 온라인 접속 확인**
 ```
-https://word1600.github.io/game/unit7/
+ㅏhttps://word1600.github.io/game/unit7/
 ```
 
 ---
