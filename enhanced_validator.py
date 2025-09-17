@@ -36,7 +36,7 @@ def validate_basic_structure(data):
             errors.append(f"Line {i+1}: 한글 단어 형식 오류: {word['ko']}")
         
         # 품사 형식 검증
-        valid_pos = ['n.', 'v.', 'adj.', 'adv.', 'prep.', 'conj.', 'interj.', 'int.', 'phr.', 'past', 's', 'ing']
+        valid_pos = ['n.', 'v.', 'adj.', 'adv.', 'prep.', 'conj.', 'interj.', 'int.', 'phr.', 'past', 's', 'ing', 'to inf.']
         pos_valid = any(word['pos'].startswith(p) for p in valid_pos)
         if not pos_valid:
             errors.append(f"Line {i+1}: 품사 형식 오류: {word['pos']}")

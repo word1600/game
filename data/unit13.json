@@ -1,0 +1,227 @@
+[
+  {
+    "ko": "흘끗 봄, 흘끗 보다",
+    "en": "glance",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "흘끗 보았다",
+    "en": "glanced",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "흘끗 본다",
+    "en": "glances",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "흘끗 봄, 흘끗 보다",
+    "en": "peek",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "응시, 응시하다",
+    "en": "stare",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "잠깐 보다",
+    "en": "glimpse",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "오래 바라보다",
+    "en": "gaze",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "사진, 사진작품",
+    "en": "photo",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "벽, 담",
+    "en": "wall",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "할당하다, 배정하다, 지정하다",
+    "en": "assign",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "할당했다, 배정했다, 지정했다",
+    "en": "assigned",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "할당한다, 배정한다, 지정한다",
+    "en": "assigns",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "할당하다, 배분하다",
+    "en": "allocate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "철회하다, 취소하다",
+    "en": "revoke",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "일, 업무, 과제",
+    "en": "task",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "관리자, 경영자",
+    "en": "manager",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "역할, 임무",
+    "en": "role",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기자회견, 공식 발표",
+    "en": "press conference",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "기자회견, 기자간담회",
+    "en": "news conference ",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "비공식 회의, 비밀 회의",
+    "en": "closed-door session ",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "대통령, 회장",
+    "en": "president",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "어제, 지난날",
+    "en": "yesterday",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "참석하다, 출석하다",
+    "en": "attend",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "곧, 머지않아",
+    "en": "soon",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "자리에 앉다, 착석하다",
+    "en": "take a seat",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "열릴 것이다, 개최될 것이다",
+    "en": "will be held ",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "중요한, 결정적인",
+    "en": "crucial",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "중대한, 비판적인",
+    "en": "critical",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "사소한, 하찮은",
+    "en": "trivial ",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "회의, 만남",
+    "en": "meeting",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "따르는 것",
+    "en": "to follow ",
+    "pos": "to inf.(부정사)"
+  },
+  {
+    "ko": "안전 규칙, 안전 수칙",
+    "en": "safety rules",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "요점, 점",
+    "en": "point",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "토론, 논의",
+    "en": "discussion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "모이다, 조립하다",
+    "en": "assemble",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "모았다, 조립했다",
+    "en": "assembled",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "모은다, 조립한다",
+    "en": "assembles",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "모으다",
+    "en": "gather",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "흩어지다, 해산하다",
+    "en": "disperse",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "연습, 실행",
+    "en": "practice",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "내일, 장래",
+    "en": "tomorrow",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "체육관, 헬스장",
+    "en": "gym",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "가구, 집기",
+    "en": "furniture",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "매우 쉬운, 식은 죽 먹기",
+    "en": "easy as pie",
+    "pos": "adj. phr.(형용사구)"
+  },
+  {
+    "ko": "조금 어려운, 약간 힘든",
+    "en": "a little difficult",
+    "pos": "adj. phr.(형용사구)"
+  }
+]
