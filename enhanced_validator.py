@@ -27,8 +27,8 @@ def validate_basic_structure(data):
         if not word['ko'].strip() or not word['en'].strip() or not word['pos'].strip():
             errors.append(f"Line {i+1}: 빈 값 발견")
         
-        # 영문 단어 형식 검증
-        if not re.match(r'^[a-zA-Z\s\-\']+$', word['en']):
+        # 영문 단어 형식 검증 (품사 표시 허용)
+        if not re.match(r'^[a-zA-Z\s\-\'().]+$', word['en']):
             errors.append(f"Line {i+1}: 영문 단어 형식 오류: {word['en']}")
         
         # 한글 단어 형식 검증
@@ -36,7 +36,7 @@ def validate_basic_structure(data):
             errors.append(f"Line {i+1}: 한글 단어 형식 오류: {word['ko']}")
         
         # 품사 형식 검증
-        valid_pos = ['n.', 'v.', 'adj.', 'adv.', 'prep.', 'conj.', 'interj.', 'int.', 'phr.', 'past', 's', 'ing', 'to inf.']
+        valid_pos = ['n.', 'v.', 'adj.', 'adv.', 'prep.', 'conj.', 'interj.', 'int.', 'phr.', 'pron.', 'past', 's', 'ing', 'to inf.']
         pos_valid = any(word['pos'].startswith(p) for p in valid_pos)
         if not pos_valid:
             errors.append(f"Line {i+1}: 품사 형식 오류: {word['pos']}")
