@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "광범위한, 대규모의, 다양한",
+    "en": "extensive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "포괄적인",
+    "en": "comprehensive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "제한적인",
+    "en": "limited",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기능, 특성",
+    "en": "feature",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "장갑 차량",
+    "en": "armored vehicle ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "산책로, 도보길",
+    "en": "walking trails",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "많은, 다수의",
+    "en": "tons of",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "교통, 운송",
+    "en": "transportation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "선택지, 선택사항",
+    "en": "options",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보증금, 예금하다",
+    "en": "deposit",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "계약금, 선금",
+    "en": "down payment ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "인출",
+    "en": "withdrawal",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "맡기다",
+    "en": "entrust",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "인출하다",
+    "en": "withdraw",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "요구하다, 필요로 하다",
+    "en": "require",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "막다, 예방하다",
+    "en": "prevent",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "예약부도",
+    "en": "no-show",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "요즘, 현재",
+    "en": "nowdays",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "계좌, 설명",
+    "en": "account",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "귀중품, 값비싼 물건",
+    "en": "valuables",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "금고, 안전 보관함",
+    "en": "safe deposit box",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "은행 보관함, 금고",
+    "en": "bank locker",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소매, 소매의, 소매하다",
+    "en": "retail",
+    "pos": "n.(명사), adj.(형용사), v.(동사)"
+  },
+  {
+    "ko": "소매업, 소매의",
+    "en": "consumer-facing ",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "도매, 도매의, 도매로 팔다",
+    "en": "wholesale",
+    "pos": "n.(명사), adj.(형용사), v.(동사)"
+  },
+  {
+    "ko": "접근, 이용하다",
+    "en": "access",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "증가하다, 증가",
+    "en": "increase",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "지난달에, 지난달",
+    "en": "last month",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "신선한 과일, 생과일",
+    "en": "fresh fruit ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "매일, 날마다",
+    "en": "every day",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "가격이 알맞은, 부담없는 가격의",
+    "en": "affordable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "합리적인, 적절한",
+    "en": "reasonable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "비싼, 고가의",
+    "en": "expensive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "인기 있는, 대중적인",
+    "en": "popular",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "선택하다, 고르다",
+    "en": "choose",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "현재로서, 지금까지",
+    "en": "as of now",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "인근의, 근처에",
+    "en": "nearby",
+    "pos": "adj.(형용사), adv.(부사)"
+  },
+  {
+    "ko": "보조금, 허가하다",
+    "en": "grant",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "보조금, 장려금",
+    "en": "subsidy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예산, 저렴한",
+    "en": "budget",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "허가하다, 허용하다",
+    "en": "allow",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "거절하다, 거부하다",
+    "en": "refuse",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "박물관, 미술관",
+    "en": "museum",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "받다, 수령하다",
+    "en": "receive",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "보수, 개조",
+    "en": "renovation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기원하는, 바라다",
+    "en": "wishing",
+    "pos": "adj.(형용사), v.(동사)"
+  },
+  {
+    "ko": "개선, 향상",
+    "en": "improvement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "위원회, 위원단",
+    "en": "committee",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "승인, 인가",
+    "en": "approval",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "행운, 잘 되길 바람",
+    "en": "good luck",
+    "pos": "n.(명사)"
+  }
+]
