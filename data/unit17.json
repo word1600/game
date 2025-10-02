@@ -1,0 +1,257 @@
+[
+  {
+    "ko": "임원, 간부, 경영진",
+    "en": "executive",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "이사, 감독",
+    "en": "director",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "직원, 사원",
+    "en": "employee",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "관리의, 행정의",
+    "en": "administrative",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "현장의, 분야",
+    "en": "field",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "최상층, 꼭대기층",
+    "en": "top floor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "재정, 금융",
+    "en": "finance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "직책, 위치",
+    "en": "position",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "재고, 물품 목록",
+    "en": "inventory",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "재고, 주식",
+    "en": "stock",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "재고 소진, 품절 ",
+    "en": "stockout ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전자제품, 전자공학",
+    "en": "electronics",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "장소, 배치하다",
+    "en": "place",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "포함하다, 포함시키다",
+    "en": "include",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "판매용, 매물",
+    "en": "for sale",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "카운트 했다, 세었다",
+    "en": "counted",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "지난주에, 지난주",
+    "en": "last week",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "인정하다, 인지하다, 확인하다",
+    "en": "acknowledge",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "인정했다, 인지했다, 확인했다",
+    "en": "acknowledged",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "인정하다, 인지하다, 확인하다",
+    "en": "acknowledges",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "인정하다, (입장)허가하다",
+    "en": "admit",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "부인하다, 거절하다",
+    "en": "deny",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "문제, 난제",
+    "en": "problem",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기계, 기계장치",
+    "en": "machine",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "운전자, 기사",
+    "en": "driver",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고객, 손님",
+    "en": "customer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "요청, 요구하다",
+    "en": "request",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "완전히, 전적으로",
+    "en": "totally",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "영수증, 수령",
+    "en": "receipt",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "상품, 물품",
+    "en": "goods",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "모든 것, 모든 일",
+    "en": "everything",
+    "pos": "pron.(대명사)"
+  },
+  {
+    "ko": "상품권, 교환권",
+    "en": "voucher",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "쿠폰, 할인권",
+    "en": "coupon",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "현금, 현찰",
+    "en": "cash",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "할인, 깎다",
+    "en": "discount",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "받았다, 수령했다",
+    "en": "received",
+    "pos": "v.past(동사), adj.(형용사)"
+  },
+  {
+    "ko": "항공권, 비행기표",
+    "en": "flight ticket",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "견적, 추정하다",
+    "en": "estimate",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "추정된, 예상된",
+    "en": "estimated",
+    "pos": "adj.(형용사), v.past(동사)"
+  },
+  {
+    "ko": "추정치, 견적",
+    "en": "estimates",
+    "pos": "n.(명사), v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "견적서",
+    "en": "quotation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "확실성, 확신",
+    "en": "certainty",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "평가하다, 판단하다",
+    "en": "evaluate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "결정하다, 규명하다",
+    "en": "determine",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "보수, 개조",
+    "en": "renovation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예상된, 기대되는",
+    "en": "expected",
+    "pos": "adj.(형용사), v.past(동사)"
+  },
+  {
+    "ko": "수리, 수리하다",
+    "en": "repair",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "주변에, 대략",
+    "en": "around",
+    "pos": "adv.(부사), prep.(전치사)"
+  },
+  {
+    "ko": "어쩌면, 아마",
+    "en": "maybe",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "아마, 대개",
+    "en": "probably",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "도착하다, 도달하다",
+    "en": "arrive",
+    "pos": "v.(동사)"
+  }
+]

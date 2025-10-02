@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "상당히, 현저하게",
+    "en": "significantly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "상당히, 꽤",
+    "en": "considerably",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "약간, 조금",
+    "en": "slightly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "예전에, 옛날에",
+    "en": "back in the day",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "더 빠른, 더 빨리",
+    "en": "faster",
+    "pos": "adj.(형용사), adv.(부사)"
+  },
+  {
+    "ko": "더 싼, 더 저렴한",
+    "en": "cheaper",
+    "pos": "adj.(형용사), adv.(부사)"
+  },
+  {
+    "ko": "하곤 했다, 이던",
+    "en": "used to",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "성능, 공연, 성과",
+    "en": "performance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "개선했다",
+    "en": "improved",
+    "pos": "v.past(동사 과거)"
+  },
+  {
+    "ko": "비축, 예약, 예약하다, 비축하다",
+    "en": "reserve",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "비축물, 재고, 주식",
+    "en": "stock",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고갈, 탈진",
+    "en": "exhaustion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예약하다, 책",
+    "en": "book",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "취소하다, 무효로 하다",
+    "en": "cancel",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "거대한, 엄청난",
+    "en": "huge",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "거대한, 대규모의",
+    "en": "massive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "가장 아늑한",
+    "en": "coziest",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "편리한, 간편한",
+    "en": "convenient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "신청서, 용도, 응용프로그램",
+    "en": "application",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "신청, 요구하다",
+    "en": "request",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "철회, 인출, 철수",
+    "en": "withdrawal",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제출하다, 복종하다",
+    "en": "submit",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "입사지원서, 구직신청서",
+    "en": "job application",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제출했다, 제출된",
+    "en": "submitted",
+    "pos": "v.past(동사), adj.(형용사)"
+  },
+  {
+    "ko": "가전제품, 기구",
+    "en": "appliance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "다수의, 다양한",
+    "en": "multiple",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "다양한, 폭넓은",
+    "en": "a wide range of",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "이동식의, 휴대전화",
+    "en": "mobile",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "무선 안테나, 송신기",
+    "en": "wireless antenna",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "주소, 연설하다, 다루다",
+    "en": "address",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "위치, 장소",
+    "en": "location",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "처리하다, 다루다",
+    "en": "deal with",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "무시하다, 소홀히 하다",
+    "en": "ignore",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "봉투, 봉지",
+    "en": "envelope",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "오랜만이야, 오래간만",
+    "en": "long time no see",
+    "pos": "int.(감탄사)"
+  },
+  {
+    "ko": "최고경영자, 대표이사",
+    "en": "CEO",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "최고경영자, 대표이사",
+    "en": "chief executive officer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "청중, 관객",
+    "en": "audience",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "관리자, 매니저",
+    "en": "manager",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고객, 손님",
+    "en": "customer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "조치를 취하다",
+    "en": "take action",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "지금 당장, 즉시",
+    "en": "right now",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "불만, 항의",
+    "en": "complaints",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "생각하다, 추정하다",
+    "en": "suppose",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "가정하다, 추정하다",
+    "en": "assume",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "의심, 의심하다",
+    "en": "doubt",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "배송, 발송품",
+    "en": "shipment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "도착하다, 도달하다",
+    "en": "arrive",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "깨진, 고장난",
+    "en": "broken",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "내일, 내일은",
+    "en": "tomorrow",
+    "pos": "n.(명사), adv.(부사)"
+  }
+]

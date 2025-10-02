@@ -1,0 +1,242 @@
+[
+  {
+    "ko": "특징, 특징으로 하다",
+    "en": "feature",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "특징지었다, 특집으로 다뤘다",
+    "en": "featured",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "특징으로 한다, 특집으로 다루다",
+    "en": "features",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "특성, 기질",
+    "en": "trait",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "평범함",
+    "en": "plainness",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "강조하다",
+    "en": "highlight",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "제외하다",
+    "en": "exclude",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "차지하다",
+    "en": "take up",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "휴대전화",
+    "en": "cell-phone",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유용한, 쓸모 있는",
+    "en": "useful",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "최신의",
+    "en": "the latest",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "잡지, 간행물",
+    "en": "magazine",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "몇몇의, 다양한",
+    "en": "several",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "유명한, 저명한",
+    "en": "famous",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "유명인들, 연예인들",
+    "en": "celebrities",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고급의",
+    "en": "advanced",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "안전, 보호",
+    "en": "safety",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기술, 공학",
+    "en": "technology",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "최첨단의, 최신식의",
+    "en": "state-of-the-art",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "수익금, 수입",
+    "en": "proceeds",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수입",
+    "en": "earnings",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "손실",
+    "en": "loss",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "올렸다, 모았다",
+    "en": "raised",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "중요한, 상당한",
+    "en": "significant",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "경매, 매각",
+    "en": "auction",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "다과, 음료",
+    "en": "refreshments",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "간식, 과자",
+    "en": "snacks",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "단식, 금식",
+    "en": "fasting",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "포함된, 포함했다",
+    "en": "included",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "언급하다, 참조하다",
+    "en": "refer to",
+    "pos": "v. phr.(동사구)"
+  },
+  {
+    "ko": "언급했다, 참조했다",
+    "en": "referred to",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "언급한다, 참조한다",
+    "en": "refers to",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "언급하다, 말하다",
+    "en": "mention",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "무시하다",
+    "en": "ignore",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "설명서",
+    "en": "manual",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지시, 설명",
+    "en": "instructions",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자주, 빈번히",
+    "en": "often",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "조언, 충고",
+    "en": "advice",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "문서, 서류",
+    "en": "document",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "초청 연사, 외부 강연자",
+    "en": "guest speaker",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "발표자",
+    "en": "presenter",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정규 강사",
+    "en": "regular lecturer",
+    "pos": "n. phr.(명사구)"
+  },
+  {
+    "ko": "전문가, 숙련자",
+    "en": "expert",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연설하다, 주소",
+    "en": "address",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "청중, 관객",
+    "en": "audience",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "곧, 머지않아",
+    "en": "soon",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "초대했다",
+    "en": "invited",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "행사, 사건",
+    "en": "event",
+    "pos": "n.(명사)"
+  }
+]
