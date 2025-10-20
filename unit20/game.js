@@ -76,11 +76,29 @@ function speakWordTTSUS(word) {
         const utter = new SpeechSynthesisUtterance(word);
         utter.lang = 'en-US';
         const voices = window.speechSynthesis.getVoices();
-        let voice = voices.find(v => v.lang === 'en-US' && (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem')));
-        if (!voice) voice = voices.find(v => v.lang === 'en-US');
+        let voice = voices.find(v => (
+          (v.lang && v.lang.toLowerCase().startsWith('en-us')) ||
+          (v.lang && v.lang.toLowerCase().includes('en-us'))
+        ) && (v.name && (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem'))));
+        if (!voice) voice = voices.find(v => v.lang && (v.lang.toLowerCase().startsWith('en-us') || v.lang.toLowerCase().includes('en-us')));
         if (voice) utter.voice = voice;
         utter.pitch = 1.2;
         utter.rate = 1.0;
+        // Reduce BGM during TTS to avoid audio glitches on some Android tablets
+        const bgm = document.getElementById('bgm');
+        let previousBgmState = { playing: false, volume: 0 };
+        utter.onstart = () => {
+          if (bgm && !bgm.paused) {
+            previousBgmState.playing = true;
+            previousBgmState.volume = bgm.volume;
+            try { bgm.pause(); } catch (_) {}
+          }
+        };
+        utter.onend = () => {
+          if (bgm && previousBgmState.playing) {
+            try { bgm.volume = previousBgmState.volume; bgm.play(); } catch (_) {}
+          }
+        };
         lastTtsUtterance = utter;
         window.speechSynthesis.speak(utter);
       };
@@ -93,7 +111,9 @@ function speakWordTTSUS(word) {
           window.speechSynthesis.speak(warm);
         } catch (_) {}
         hasTtsWarmedUp = true;
-        setTimeout(speakReal, 200);
+        // Android Chrome 일부 기기에서 약간 더 긴 초기 지연이 안정적
+        const isAndroid = /android/i.test(navigator.userAgent || '');
+        setTimeout(speakReal, isAndroid ? 450 : 200);
       } else {
         speakReal();
       }
@@ -114,11 +134,27 @@ function speakWordTTSGB(word) {
       const utter = new SpeechSynthesisUtterance(word);
       utter.lang = 'en-GB';
       const voices = window.speechSynthesis.getVoices();
-      let voice = voices.find(v => v.lang === 'en-GB' && (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem')));
-      if (!voice) voice = voices.find(v => v.lang === 'en-GB');
+      let voice = voices.find(v => (
+        v.lang && (v.lang.toLowerCase().startsWith('en-gb') || v.lang.toLowerCase().includes('en-gb'))
+      ) && (v.name && (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem'))));
+      if (!voice) voice = voices.find(v => v.lang && (v.lang.toLowerCase().startsWith('en-gb') || v.lang.toLowerCase().includes('en-gb')));
       if (voice) utter.voice = voice;
       utter.pitch = 1.2;
       utter.rate = 1.0;
+      const bgm = document.getElementById('bgm');
+      let previousBgmState = { playing: false, volume: 0 };
+      utter.onstart = () => {
+        if (bgm && !bgm.paused) {
+          previousBgmState.playing = true;
+          previousBgmState.volume = bgm.volume;
+          try { bgm.pause(); } catch (_) {}
+        }
+      };
+      utter.onend = () => {
+        if (bgm && previousBgmState.playing) {
+          try { bgm.volume = previousBgmState.volume; bgm.play(); } catch (_) {}
+        }
+      };
       lastTtsUtterance = utter;
       window.speechSynthesis.speak(utter);
     } catch (_) {}
