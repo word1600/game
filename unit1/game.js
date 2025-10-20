@@ -16,6 +16,15 @@ let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 
 let ttsInterval = null;
 let lastTtsUtterance = null;
+let tabletFirstWordHandled = false; // tablet only: suppress first word, then GB-only
+
+function isTabletDevice() {
+  const ua = (navigator.userAgent || '').toLowerCase();
+  const isIPad = /ipad/.test(ua) || (/macintosh/.test(ua) && 'ontouchend' in document);
+  const isAndroid = /android/.test(ua);
+  const isMobile = /mobile/.test(ua);
+  return (isAndroid && !isMobile) || isIPad;
+}
 
 let selectedUnit = 'unit1'; // 기본값: Unit 1
 
@@ -130,10 +139,21 @@ function pickNewProblemWord() {
   // 게임이 일시정지 상태가 아닐 때만 TTS 설정
   if (!isPaused) {
     window.ttsTimeout1 = setTimeout(() => {
-      if (!isPaused) speakWordTTSUS(currentWord.en);
-      window.ttsTimeout2 = setTimeout(() => {
-        if (!isPaused) speakWordTTSGB(currentWord.en);
-      }, 2000);
+      if (!isPaused) {
+        if (isTabletDevice()) {
+          // Tablet: first word suppressed entirely; from second word speak GB once
+          if (!tabletFirstWordHandled) {
+            tabletFirstWordHandled = true;
+            return;
+          }
+          speakWordTTSGB(currentWord.en);
+        } else {
+          speakWordTTSUS(currentWord.en);
+          window.ttsTimeout2 = setTimeout(() => {
+            if (!isPaused) speakWordTTSGB(currentWord.en);
+          }, 2000);
+        }
+      }
     }, 2000);
   }
 }
