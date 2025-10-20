@@ -211,10 +211,7 @@ function spawnUFO(forceAnswerUFO = false) {
 
   const ufoImg = document.createElement('img');
   ufoImg.className = 'ufo-img';
-  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const assetsPath = isLocal ? './assets/' : '/game/unit11/assets/';
-  ufoImg.src = assetsPath + 'ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
+  ufoImg.src = 'assets/ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
   ufo.appendChild(ufoImg);
 
   const ufoWord = document.createElement('div');
@@ -287,10 +284,7 @@ function showFeedback(text, scoreText, type) {
 function createExplosion(x, y) {
   // 기존 파티클 제거, 이미지로 대체
   const explosion = document.createElement('img');
-  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const assetsPath = isLocal ? './assets/' : '/game/unit11/assets/';
-  explosion.src = assetsPath + 'explosion.png';
+  explosion.src = 'assets/explosion.png';
   explosion.className = 'explosion-effect';
   explosion.style.position = 'absolute';
   explosion.style.left = (x - 90) + 'px'; // 이미지 중심 정렬 (180px 기준)
@@ -379,7 +373,7 @@ function pauseGameAndStartChallenge(word) {
     <div class="challenge-word-container">
       <p>${word}</p>
     </div>
-    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="text" placeholder="Type here...">
+    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="url">
   `;
   document.getElementById('game-area').appendChild(challengeBox);
   const challengeInput = document.getElementById('challenge-input');
@@ -413,15 +407,6 @@ function pauseGameAndStartChallenge(word) {
   challengeInput.addEventListener('input', () => {
     if (challengeInput.value.trim().toLowerCase() === wordToChallenge.trim().toLowerCase()) {
       endChallenge(true);
-    }
-  });
-  
-  // 스페이스바 입력을 위한 특별한 이벤트 핸들러 추가
-  challengeInput.addEventListener('keydown', (e) => {
-    // 스페이스바가 눌렸을 때 기본 동작을 허용하되, 다른 이벤트와의 충돌 방지
-    if (e.code === 'Space') {
-      // 기본 동작은 허용하되, 이벤트 전파는 중단
-      e.stopPropagation();
     }
   });
   function endChallenge(success) {
@@ -637,6 +622,16 @@ document.addEventListener('DOMContentLoaded', () => {
     bgm.volume = parseFloat(bgmVolumeSlider.value);
     bgm.play().catch(() => console.log("BGM auto-play failed."));
   }
+  
+  // 배경 음악이 끝나면 자동으로 다시 재생
+  if (bgm) {
+    bgm.addEventListener('ended', () => {
+      if (!isPaused && !isMuted) {
+        bgm.currentTime = 0;
+        bgm.play().catch(() => console.log("BGM loop failed."));
+      }
+    });
+  }
   function initializeGame() {
     startScreen.style.display = 'none';
     topBar.style.display = 'flex';
@@ -698,10 +693,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // bullet div 대신 이미지 사용
     const bullet = document.createElement('img');
     bullet.className = 'bullet';
-    // 로컬 환경과 온라인 환경을 구분하여 경로 설정
-    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    const assetsPath = isLocal ? './assets/' : '/game/unit11/assets/';
-    bullet.src = assetsPath + 'bullet1.png';
+    bullet.src = 'assets/bullet1.png';
     bullet.style.position = 'absolute';
     bullet.style.width = '36px';
     bullet.style.height = '80px';
@@ -814,15 +806,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('touchend', handleFireEnd, { passive: false });
   fireBtn.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
   window.addEventListener('keydown', (e) => {
-    // 타이핑 챌린지 중에는 총알 발사 비활성화
-    if (e.code === 'Space' && !isFiring && !document.getElementById('challenge-input')) {
+    if (e.code === 'Space' && !isFiring) {
       e.preventDefault();
       handleFireStart(e);
     }
   });
   window.addEventListener('keyup', (e) => {
-    // 타이핑 챌린지 중에는 총알 발사 비활성화
-    if (e.code === 'Space' && !document.getElementById('challenge-input')) {
+    if (e.code === 'Space') {
       e.preventDefault();
       handleFireEnd(e);
     }
@@ -838,33 +828,37 @@ function gameLoop() {
 }
 
 function getLatestUnitJsonFile() {
-  // data 폴더 내 unit11.json 파일을 사용
-  return fetch('/game/unit11/data/unit11.json')
-    .then(r => r.ok ? r.json() : null)
-    .catch(() => null)
-    .then(data => {
-      if (!data) throw new Error('단어 데이터를 불러오지 못했습니다.');
-      return data;
-    });
+  // data 폴더 내 unit1.json, unit2.json 중 최신 파일을 선택
+  // 브라우저 환경에서는 파일 시스템 접근이 불가하므로, 두 파일을 모두 fetch해서 최신 파일을 선택
+  // (실제 서버 환경에서는 서버에서 최신 파일을 알려주는 API가 필요)
+  // 여기서는 두 파일을 모두 fetch해서, 더 최근에 수정된 파일을 사용
+  return Promise.all([
+    fetch('data/unit1.json').then(r => r.ok ? r.json().then(data => ({name: 'unit1.json', data})) : null).catch(() => null),
+    fetch('data/unit2.json').then(r => r.ok ? r.json().then(data => ({name: 'unit2.json', data})) : null).catch(() => null)
+  ]).then(results => {
+    // 둘 다 성공하면, 더 많은 단어가 들어있는 파일을 우선 사용 (수정일 비교 불가하므로)
+    const valid = results.filter(Boolean);
+    if (valid.length === 0) throw new Error('단어 데이터를 불러오지 못했습니다.');
+    // 단어 수가 더 많은 파일을 우선 사용
+    valid.sort((a, b) => b.data.length - a.data.length);
+    return valid[0].data;
+  });
 }
 
 function loadWords() {
   // 로컬 환경과 온라인 환경을 구분하여 경로 설정
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const file = isLocal ? './data/unit11.json' : '/game/unit11/data/unit11.json';
-  console.log('🔍 Unit 11: 단어 데이터 로딩 시작:', file);
+  const file = 'data/unit11.json';
+  console.log('🔍 Unit 2: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
     .then(response => {
-      console.log('📡 Unit 11: 서버 응답:', response.status, response.ok);
       if (!response.ok) {
         throw new Error('단어 데이터를 불러오지 못했습니다.');
       }
       return response.json();
     })
     .then(data => {
-      console.log('✅ Unit 11: 데이터 로드 성공! 단어 수:', data.length);
-      console.log('📝 Unit 11: 첫 번째 단어:', data[0]);
       ufoWordsData = data;
       refillWordPool();
       pickNewProblemWord();
@@ -874,7 +868,7 @@ function loadWords() {
       ufoInterval = setInterval(spawnUFO, 1800);
     })
     .catch(err => {
-      console.error('❌ Unit 11: 데이터 로드 실패:', err);
-      alert('Unit 11 단어 데이터를 불러오지 못했습니다: ' + err.message);
+      alert('단어 데이터를 불러오지 못했습니다.');
+      console.error(err);
     });
 } 
