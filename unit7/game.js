@@ -211,10 +211,7 @@ function spawnUFO(forceAnswerUFO = false) {
 
   const ufoImg = document.createElement('img');
   ufoImg.className = 'ufo-img';
-  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const assetsPath = isLocal ? './assets/' : '/game/unit7/assets/';
-  ufoImg.src = assetsPath + 'ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
+  ufoImg.src = 'assets/ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
   ufo.appendChild(ufoImg);
 
   const ufoWord = document.createElement('div');
@@ -290,7 +287,7 @@ function createExplosion(x, y) {
   // 로컬 환경과 온라인 환경을 구분하여 경로 설정
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
   const assetsPath = isLocal ? './assets/' : '/game/unit7/assets/';
-  explosion.src = assetsPath + 'explosion.png';
+  explosion.src = 'assets/explosion.png';
   explosion.className = 'explosion-effect';
   explosion.style.position = 'absolute';
   explosion.style.left = (x - 90) + 'px'; // 이미지 중심 정렬 (180px 기준)
@@ -701,7 +698,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 로컬 환경과 온라인 환경을 구분하여 경로 설정
     const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     const assetsPath = isLocal ? './assets/' : '/game/unit7/assets/';
-    bullet.src = assetsPath + 'bullet1.png';
+    bullet.src = 'assets/bullet1.png';
     bullet.style.position = 'absolute';
     bullet.style.width = '36px';
     bullet.style.height = '80px';
@@ -851,7 +848,7 @@ function getLatestUnitJsonFile() {
 function loadWords() {
   // 로컬 환경과 온라인 환경을 구분하여 경로 설정
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const file = isLocal ? './data/unit7.json' : '/game/unit7/data/unit7.json';
+  const file = 'data/unit7.json';
   console.log('🔍 Unit 7: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
