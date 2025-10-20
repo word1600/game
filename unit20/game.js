@@ -17,6 +17,16 @@ let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 let ttsInterval = null;
 let lastTtsUtterance = null;
 let hasTtsWarmedUp = false;
+let tabletFirstWordHandled = false; // tablet 전용: 첫 단어만 US 발화 스킵
+
+function isTabletDevice() {
+  const ua = (navigator.userAgent || '').toLowerCase();
+  const isIPad = /ipad/.test(ua) || (/macintosh/.test(ua) && 'ontouchend' in document);
+  const isAndroid = /android/.test(ua);
+  const isMobile = /mobile/.test(ua);
+  // 안드로이드 태블릿: android && !mobile, 또는 iPad
+  return (isAndroid && !isMobile) || isIPad;
+}
 
 function ensureVoicesReady(timeoutMs = 3000) {
   return new Promise((resolve) => {
@@ -215,10 +225,18 @@ function pickNewProblemWord() {
   // 게임이 일시정지 상태가 아닐 때만 TTS 설정
   if (!isPaused) {
     window.ttsTimeout1 = setTimeout(() => {
-      if (!isPaused) speakWordTTSUS(currentWord.en);
-      window.ttsTimeout2 = setTimeout(() => {
-        if (!isPaused) speakWordTTSGB(currentWord.en);
-      }, 2000);
+      if (!isPaused) {
+        // 테블릿에서는 첫 단어만 미국식 스킵하고 영국식만 재생
+        if (isTabletDevice() && !tabletFirstWordHandled) {
+          speakWordTTSGB(currentWord.en);
+          tabletFirstWordHandled = true;
+        } else {
+          speakWordTTSUS(currentWord.en);
+          window.ttsTimeout2 = setTimeout(() => {
+            if (!isPaused) speakWordTTSGB(currentWord.en);
+          }, 2000);
+        }
+      }
     }, 2000);
   }
 }
@@ -763,6 +781,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1000);
     loadWords();
     bgm.volume = parseFloat(bgmVolumeSlider.value);
+    // tablet 전용 플래그 초기화 (게임 시작 시 첫 단어만 US 스킵)
+    tabletFirstWordHandled = false;
   }
   startGameBtn.addEventListener('click', initializeGame);
   startGameBtn.addEventListener('touchstart', function(e) {
