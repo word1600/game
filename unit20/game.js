@@ -211,10 +211,8 @@ function spawnUFO(forceAnswerUFO = false) {
 
   const ufoImg = document.createElement('img');
   ufoImg.className = 'ufo-img';
-  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const assetsPath = isLocal ? './assets/' : '/game/unit20/assets/';
-  ufoImg.src = assetsPath + 'ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
+  // 단순 상대 경로 사용: 로컬/랜/배포 모두 동작
+  ufoImg.src = 'assets/ufo_clean' + (Math.floor(Math.random() * 5)) + '.png';
   ufo.appendChild(ufoImg);
 
   const ufoWord = document.createElement('div');
@@ -287,10 +285,8 @@ function showFeedback(text, scoreText, type) {
 function createExplosion(x, y) {
   // 기존 파티클 제거, 이미지로 대체
   const explosion = document.createElement('img');
-  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const assetsPath = isLocal ? './assets/' : '/game/unit20/assets/';
-  explosion.src = assetsPath + 'explosion.png';
+  // 단순 상대 경로 사용
+  explosion.src = 'assets/explosion.png';
   explosion.className = 'explosion-effect';
   explosion.style.position = 'absolute';
   explosion.style.left = (x - 90) + 'px'; // 이미지 중심 정렬 (180px 기준)
@@ -731,10 +727,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // bullet div 대신 이미지 사용
     const bullet = document.createElement('img');
     bullet.className = 'bullet';
-    // 로컬 환경과 온라인 환경을 구분하여 경로 설정
-    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    const assetsPath = isLocal ? './assets/' : '/game/unit20/assets/';
-    bullet.src = assetsPath + 'bullet1.png';
+    // 단순 상대 경로 사용
+    bullet.src = 'assets/bullet1.png';
     bullet.style.position = 'absolute';
     bullet.style.width = '36px';
     bullet.style.height = '80px';
@@ -872,7 +866,7 @@ function gameLoop() {
 
 function getLatestUnitJsonFile() {
   // data 폴더 내 unit20.json 파일을 사용
-  return fetch('/game/unit20/data/unit20.json')
+  return fetch('data/unit20.json')
     .then(r => r.ok ? r.json() : null)
     .catch(() => null)
     .then(data => {
@@ -882,9 +876,8 @@ function getLatestUnitJsonFile() {
 }
 
 function loadWords() {
-  // 로컬 환경과 온라인 환경을 구분하여 경로 설정
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const file = isLocal ? './data/unit20.json' : '/game/unit20/data/unit20.json';
+  // 단순 상대 경로 사용: 로컬/랜/배포 모두 동작
+  const file = 'data/unit20.json';
   console.log('🔍 Unit 20: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
