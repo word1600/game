@@ -653,6 +653,39 @@ document.addEventListener('DOMContentLoaded', () => {
     if (goodjobSound) goodjobSound.volume = 0.5;
     
     tryStartBGM(true); // 강제 재생
+    // TTS warm-up for tablet/iOS: ensure voices are loaded and first utterance won't glitch
+    try {
+      if ('speechSynthesis' in window) {
+        // Cancel any pending speech to reset engine state
+        window.speechSynthesis.cancel();
+        const ensureVoicesReady = (resolve) => {
+          const voices = window.speechSynthesis.getVoices();
+          if (voices && voices.length > 0) {
+            resolve();
+            return;
+          }
+          const onVoices = () => {
+            window.speechSynthesis.onvoiceschanged = null;
+            resolve();
+          };
+          window.speechSynthesis.onvoiceschanged = onVoices;
+          // Fallback timeout in case event never fires
+          setTimeout(() => {
+            window.speechSynthesis.onvoiceschanged = null;
+            resolve();
+          }, 1200);
+        };
+        new Promise(ensureVoicesReady).then(() => {
+          // Perform a very short, nearly silent warm-up utterance inside user gesture
+          const warmup = new SpeechSynthesisUtterance(' ');
+          warmup.lang = 'en-US';
+          warmup.volume = 0.01;
+          warmup.rate = 1.0;
+          warmup.pitch = 1.0;
+          try { window.speechSynthesis.speak(warmup); } catch (_) {}
+        });
+      }
+    } catch (_) {}
     isPaused = false;
     ufoSinceLastAnswer = 0;
     answerUfoSpawnCount = 0;

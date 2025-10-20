@@ -298,6 +298,26 @@ body {
   to { opacity: 0; transform: translate(-50%, -250%) scale(1.2); filter: blur(4px); }
 }
 
+/* Tablet-only typography stabilization to avoid glyph corruption on start screen */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+  }
+  .game-title,
+  .game-title .unit-text,
+  #start-game-btn,
+  #game-over-screen .title {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* keep existing family but ensure strong weight rendering */
+    font-weight: 900;
+  }
+}
+
 .feedback button {
   font-size: 0.3em;
   padding: 10px 20px;
