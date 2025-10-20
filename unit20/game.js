@@ -16,6 +16,44 @@ let answeredThisProblem = false; // 현재 문제에서 정답을 맞췄는지
 
 let ttsInterval = null;
 let lastTtsUtterance = null;
+let hasTtsWarmedUp = false;
+
+function ensureVoicesReady(timeoutMs = 3000) {
+  return new Promise((resolve) => {
+    try {
+      const check = () => {
+        const voices = window.speechSynthesis ? window.speechSynthesis.getVoices() : [];
+        if (voices && voices.length > 0) {
+          resolve(true);
+          return true;
+        }
+        return false;
+      };
+      if (check()) return;
+      const onVoices = () => {
+        window.speechSynthesis.onvoiceschanged = null;
+        resolve(true);
+      };
+      if (window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = onVoices;
+      }
+      setTimeout(() => {
+        if (window.speechSynthesis) window.speechSynthesis.onvoiceschanged = null;
+        resolve(true);
+      }, timeoutMs);
+    } catch (_) { resolve(false); }
+  });
+}
+
+function resumeSynthIfNeeded() {
+  try {
+    if (!('speechSynthesis' in window)) return;
+    // iOS/iPadOS Safari에서 종종 초기 상태가 paused처럼 동작
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+    }
+  } catch (_) {}
+}
 
 let selectedUnit = 'unit20'; // 기본값: Unit 20
 
@@ -27,53 +65,64 @@ function setupUnitSelect() {
 // 미국식 발음 TTS
 function speakWordTTSUS(word) {
   if (!window.speechSynthesis || isPaused) return;
-  if (lastTtsUtterance) {
-    window.speechSynthesis.cancel();
-    lastTtsUtterance = null;
-  }
-  const utter = new SpeechSynthesisUtterance(word);
-  utter.lang = 'en-US';
-  // 미국식 여성 목소리 우선 선택
-  const voices = window.speechSynthesis.getVoices();
-  let voice = voices.find(v =>
-    v.lang === 'en-US' &&
-    (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem'))
-  );
-  if (!voice) {
-    // 그래도 없으면 미국식 영어 음성 아무거나
-    voice = voices.find(v => v.lang === 'en-US');
-  }
-  if (voice) utter.voice = voice;
-  utter.pitch = 1.2; // 여성스럽게, 약간 높게
-  utter.rate = 1.0;
-  lastTtsUtterance = utter;
-  window.speechSynthesis.speak(utter);
+  ensureVoicesReady().then(() => {
+    try {
+      if (lastTtsUtterance) {
+        window.speechSynthesis.cancel();
+        lastTtsUtterance = null;
+      }
+      resumeSynthIfNeeded();
+      const speakReal = () => {
+        const utter = new SpeechSynthesisUtterance(word);
+        utter.lang = 'en-US';
+        const voices = window.speechSynthesis.getVoices();
+        let voice = voices.find(v => v.lang === 'en-US' && (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem')));
+        if (!voice) voice = voices.find(v => v.lang === 'en-US');
+        if (voice) utter.voice = voice;
+        utter.pitch = 1.2;
+        utter.rate = 1.0;
+        lastTtsUtterance = utter;
+        window.speechSynthesis.speak(utter);
+      };
+      if (!hasTtsWarmedUp) {
+        // 첫 발화 전에 매우 짧은 워밍업으로 엔진 안정화
+        const warm = new SpeechSynthesisUtterance('.');
+        warm.lang = 'en-US';
+        warm.volume = 0.01;
+        try {
+          window.speechSynthesis.speak(warm);
+        } catch (_) {}
+        hasTtsWarmedUp = true;
+        setTimeout(speakReal, 200);
+      } else {
+        speakReal();
+      }
+    } catch (_) {}
+  });
 }
 
 // 영국식 발음 TTS
 function speakWordTTSGB(word) {
   if (!window.speechSynthesis || isPaused) return;
-  if (lastTtsUtterance) {
-    window.speechSynthesis.cancel();
-    lastTtsUtterance = null;
-  }
-  const utter = new SpeechSynthesisUtterance(word);
-  utter.lang = 'en-GB';
-  // 영국식 여성 목소리 우선 선택
-  const voices = window.speechSynthesis.getVoices();
-  let voice = voices.find(v =>
-    v.lang === 'en-GB' &&
-    (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem'))
-  );
-  if (!voice) {
-    // 그래도 없으면 영국식 영어 음성 아무거나
-    voice = voices.find(v => v.lang === 'en-GB');
-  }
-  if (voice) utter.voice = voice;
-  utter.pitch = 1.2; // 여성스럽게, 약간 높게
-  utter.rate = 1.0;
-  lastTtsUtterance = utter;
-  window.speechSynthesis.speak(utter);
+  ensureVoicesReady().then(() => {
+    try {
+      if (lastTtsUtterance) {
+        window.speechSynthesis.cancel();
+        lastTtsUtterance = null;
+      }
+      resumeSynthIfNeeded();
+      const utter = new SpeechSynthesisUtterance(word);
+      utter.lang = 'en-GB';
+      const voices = window.speechSynthesis.getVoices();
+      let voice = voices.find(v => v.lang === 'en-GB' && (v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('woman') || v.name.toLowerCase().includes('girl') || v.name.toLowerCase().includes('fem')));
+      if (!voice) voice = voices.find(v => v.lang === 'en-GB');
+      if (voice) utter.voice = voice;
+      utter.pitch = 1.2;
+      utter.rate = 1.0;
+      lastTtsUtterance = utter;
+      window.speechSynthesis.speak(utter);
+    } catch (_) {}
+  });
 }
 
 function refillWordPool() {
@@ -649,36 +698,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (goodjobSound) goodjobSound.volume = 0.5;
     
     tryStartBGM(true); // 강제 재생
-    // TTS warm-up for tablet/iOS: ensure voices are loaded and first utterance won't glitch
+    // TTS warm-up for tablet/iOS inside user gesture
     try {
       if ('speechSynthesis' in window) {
-        // Cancel any pending speech to reset engine state
         window.speechSynthesis.cancel();
-        const ensureVoicesReady = (resolve) => {
-          const voices = window.speechSynthesis.getVoices();
-          if (voices && voices.length > 0) {
-            resolve();
-            return;
-          }
-          const onVoices = () => {
-            window.speechSynthesis.onvoiceschanged = null;
-            resolve();
-          };
-          window.speechSynthesis.onvoiceschanged = onVoices;
-          // Fallback timeout in case event never fires
-          setTimeout(() => {
-            window.speechSynthesis.onvoiceschanged = null;
-            resolve();
-          }, 1200);
-        };
-        new Promise(ensureVoicesReady).then(() => {
-          // Perform a very short, nearly silent warm-up utterance inside user gesture
-          const warmup = new SpeechSynthesisUtterance(' ');
+        resumeSynthIfNeeded();
+        ensureVoicesReady().then(() => {
+          const warmup = new SpeechSynthesisUtterance('.');
           warmup.lang = 'en-US';
           warmup.volume = 0.01;
-          warmup.rate = 1.0;
-          warmup.pitch = 1.0;
           try { window.speechSynthesis.speak(warmup); } catch (_) {}
+          hasTtsWarmedUp = true;
         });
       }
     } catch (_) {}
