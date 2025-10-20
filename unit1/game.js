@@ -409,6 +409,14 @@ function pauseGameAndStartChallenge(word) {
       endChallenge(true);
     }
   });
+  
+  // 스페이스 바 입력 허용
+  challengeInput.addEventListener('keydown', (e) => {
+    // 스페이스 바를 포함한 모든 키 입력 허용
+    if (e.code === 'Space') {
+      e.stopPropagation(); // 상위 이벤트 전파 방지
+    }
+  });
   function endChallenge(success) {
     clearInterval(challengeTimerInterval);
     challengeBox.remove();
