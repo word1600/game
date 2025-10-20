@@ -227,9 +227,12 @@ function pickNewProblemWord() {
     window.ttsTimeout1 = setTimeout(() => {
       if (!isPaused) {
         if (isTabletDevice()) {
-          // 테블릿: 모든 단어를 1회만 발화(영국식)
+          // 테블릿: 첫 단어는 완전히 스킵(무음), 두 번째부터 1회(영국식)
+          if (!tabletFirstWordHandled) {
+            tabletFirstWordHandled = true;
+            return; // 첫 단어는 발화하지 않음
+          }
           speakWordTTSGB(currentWord.en);
-          tabletFirstWordHandled = true; // 유지하되, 모든 단어 1회 정책
         } else {
           // PC/핸드폰: 미국식 후 2초 뒤 영국식
           speakWordTTSUS(currentWord.en);
