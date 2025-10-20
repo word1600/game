@@ -25,7 +25,9 @@ function isTabletDevice() {
   const isAndroid = /android/.test(ua);
   const isMobile = /mobile/.test(ua);
   // 안드로이드 태블릿: android && !mobile, 또는 iPad
-  return (isAndroid && !isMobile) || isIPad;
+  const result = (isAndroid && !isMobile) || isIPad;
+  try { console.log('[TTS] Tablet detect:', { ua, isIPad, isAndroid, isMobile, result }); } catch (_) {}
+  return result;
 }
 
 function ensureVoicesReady(timeoutMs = 3000) {
