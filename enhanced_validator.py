@@ -31,8 +31,8 @@ def validate_basic_structure(data):
         if not re.match(r'^[a-zA-Z\s\-\'().]+$', word['en']):
             errors.append(f"Line {i+1}: 영문 단어 형식 오류: {word['en']}")
         
-        # 한글 단어 형식 검증
-        if not re.match(r'^[가-힣a-zA-Z0-9\s,()!]+$', word['ko']):
+        # 한글 단어 형식 검증 (틸드 ~ 포함)
+        if not re.match(r'^[가-힣a-zA-Z0-9\s,()!~]+$', word['ko']):
             errors.append(f"Line {i+1}: 한글 단어 형식 오류: {word['ko']}")
         
         # 품사 형식 검증
