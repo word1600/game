@@ -1,0 +1,267 @@
+[
+  {
+    "ko": "비밀의,기밀의 ",
+    "en": "confidential",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "비밀, 비밀의",
+    "en": "secret",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "수치, 인물, 도형",
+    "en": "figure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공공의, 공개적인",
+    "en": "public",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "변호사, 법률가",
+    "en": "lawyer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고객, 의뢰인",
+    "en": "client",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정보, 자료",
+    "en": "information",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유지했다, 보관했다 ",
+    "en": "kept",
+    "pos": "v.past(동사)"
+  },
+  {
+    "ko": " 비밀유지, 기밀성",
+    "en": "confidentiality ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "엄격히, 엄밀히",
+    "en": "strictly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "유지했다, 유지된",
+    "en": "maintained.",
+    "pos": "v.past(동사), adj.(형용사)"
+  },
+  {
+    "ko": "처리하다, 다루다",
+    "en": "handle",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "문서들, 서류",
+    "en": "documents",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "직원들, 종업원들",
+    "en": "employees",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "합의, 계약",
+    "en": "agreement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "비밀유지계약, 비밀계약",
+    "en": "NDA",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공개, 공개 사항",
+    "en": "disclosure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "계산하다, 산출하다",
+    "en": "calculate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "무시하다, 간과하다",
+    "en": "ignore",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "증가, 증가하다",
+    "en": "increase",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "급격히, 날카롭게",
+    "en": "sharply",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "지도적 인물, 거물",
+    "en": "leading figure ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "저명한, 두드러진 ",
+    "en": "prominent",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "총비용, 전체 비용",
+    "en": "total cost ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지불, 납부",
+    "en": "payment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "분명히, 명확히",
+    "en": "clearly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "알아내다, 해결하다",
+    "en": "figure out ",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "수리, 수리하다",
+    "en": "repair",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "수리하다, 고정하다",
+    "en": "fix",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "점유하다, 차지하다",
+    "en": "occupy",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "차지하다, 시작하다",
+    "en": "take up ",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "비우다, 퇴거하다",
+    "en": "vacate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "전체의, 전부의",
+    "en": "entire",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "강제로, 억지로",
+    "en": "forcibly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "토지 점유, 토지 점거",
+    "en": "land occupancy ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "사적인, 개인의",
+    "en": "private",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "개인의, 개인",
+    "en": "individual",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "군의, 군대",
+    "en": "military",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "점령군, 점거 부대",
+    "en": "occupying forces",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "약, 거의, 대략",
+    "en": "approximately",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "정확히, 바로",
+    "en": "exactly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "지속했다, 계속되었다",
+    "en": "lasted",
+    "pos": "v.past(동사)"
+  },
+  {
+    "ko": "계속되었다, 계속한",
+    "en": "continued",
+    "pos": "v.past(동사), adj.(형용사)"
+  },
+  {
+    "ko": "쉬지 않고, 연속으로",
+    "en": "without a break",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "거리, 간격",
+    "en": "distance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "편도, 일방의",
+    "en": "one way",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "무료의, 칭찬의",
+    "en": "complimentary",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "칭찬하는, 찬양하는",
+    "en": "praiseful",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "비판적인, 중대한",
+    "en": "critical",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "유료의, 지불했다",
+    "en": "paid",
+    "pos": "adj.(형용사), v.past(동사)"
+  },
+  {
+    "ko": "무료 시음, 무료 시식",
+    "en": "complimentary tasting",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "발언, 논평하다",
+    "en": "remark",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "제안하다, 제공",
+    "en": "offer",
+    "pos": "v.(동사), n.(명사)"
+  }
+]
