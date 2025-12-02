@@ -1,0 +1,292 @@
+[
+  {
+    "ko": "진행하다, 계속하다",
+    "en": "proceed",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "계속하다, 지속하다",
+    "en": "continue",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "멈추다, 중단",
+    "en": "halt",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "수정된, 개정된",
+    "en": "revised",
+    "pos": "adj.(형용사), v.past(동사)"
+  },
+  {
+    "ko": "제안, 제안서",
+    "en": "proposal",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "새로, 최근에",
+    "en": "newly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "작업반, 승무원",
+    "en": "crew",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~ 하고 나서, 일단 ~하면",
+    "en": "once ",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "기계, 기계장치",
+    "en": "machinery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보정한, 보정했다",
+    "en": "calibrated",
+    "pos": "adj.(형용사), v.past(동사)"
+  },
+  {
+    "ko": "완료된, 끝마쳤다",
+    "en": "completed",
+    "pos": "adj.(형용사), v.past(동사)"
+  },
+  {
+    "ko": "등산객, 도보 여행자",
+    "en": "hiker",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "점검, 확인하는",
+    "en": "checking",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "등산로, 길, 경로, 자국",
+    "en": "trail",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~을 따라, 함께",
+    "en": "along",
+    "pos": "prep.(전치사), adv.(부사)"
+  },
+  {
+    "ko": "편의시설, 부대시설",
+    "en": "amenity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "편의시설들, 부대시설들",
+    "en": "amenities",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "시설, 편의",
+    "en": "facility",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "사업, 업무",
+    "en": "business",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "여행자, 출장자",
+    "en": "traveler",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "거주자들,주민들 ",
+    "en": "residents",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공유된, 함께 쓰는",
+    "en": "shared",
+    "pos": "adj.(형용사), v.past(동사)"
+  },
+  {
+    "ko": "~을 포함하여, ~을 포함한",
+    "en": "including ",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "체력, 건강",
+    "en": "fitness ",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "현대의, 최신의",
+    "en": "modern",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "끌어들이다, 유치하다",
+    "en": "attract ",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "전문직 종사자들, 전문가들",
+    "en": "professionals",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "이주하는, 이전하는",
+    "en": "relocating",
+    "pos": "adj.(형용사), v.(동사)"
+  },
+  {
+    "ko": "자주, 빈번히",
+    "en": "frequently",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "유명한, 명성이 높은",
+    "en": "renowned",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "유명한, 잘 알려진",
+    "en": "famous",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "알려지지 않은, 미지의",
+    "en": "unknown",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "건축가, 설계자",
+    "en": "architect",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기업의, 법인의",
+    "en": "corporate",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "본사, 본부",
+    "en": "headquarters",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "계곡, 골짜기",
+    "en": "valley",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "남다, 여전히 ~이다",
+    "en": "remain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "일출 경치, 해돋이 전망",
+    "en": "sunrise views",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~사이에, ~중에",
+    "en": "among ",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "안목 있는, 분별력 있는",
+    "en": "discerning",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "전 세계 고객, 해외 고객",
+    "en": "global clients",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보존하다, 지키다",
+    "en": "preserve",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "보호하다, 지키다",
+    "en": "protect",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "파괴하다, 없애다",
+    "en": "destroy",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "회계 감사, 감사하다",
+    "en": "audit",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "필수적인, 매우 중요한",
+    "en": "essential",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "빙하, 만년설",
+    "en": "glacier",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고대의, 오래된",
+    "en": "ancient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "안정된, 견고한",
+    "en": "stable",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "온도, 기온",
+    "en": "temperature",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일 년 내내, 사계절 내내",
+    "en": "year-round",
+    "pos": "adj.(형용사), adv.(부사)"
+  },
+  {
+    "ko": "존재, 풍모, 영향력, 참석",
+    "en": "presence",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "참석, 출석",
+    "en": "attendance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부재, 결석",
+    "en": "absence",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "개선하다, 향상시키다",
+    "en": "improve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "등대, 신호탑",
+    "en": "lighthouse",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "강렬한, 인상적인",
+    "en": "striking",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "운영 중인, 가동 중인",
+    "en": "operational",
+    "pos": "adj.(형용사)"
+  }
+]
