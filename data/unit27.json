@@ -1,0 +1,232 @@
+[
+  {
+    "ko": "촉진하다, 용이하게 하다",
+    "en": "facilitate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "촉진하다, 장려하다",
+    "en": "promote",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "방해하다, 저해하다",
+    "en": "hinder",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "전략적인, 계획적인",
+    "en": "strategic",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "협력, 공동 작업",
+    "en": "collaboration",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~사이에, ~사이에서",
+    "en": "among",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "부서, 학과",
+    "en": "department",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "플랫폼, 기반, 승강장",
+    "en": "platform",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전달, 전송",
+    "en": "transmission",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "강우, 강수량",
+    "en": "rainfall",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "빠른, 신속한",
+    "en": "rapid",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "식생, 초목",
+    "en": "vegetation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "성장, 증가",
+    "en": "growth",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "습지, 습지대",
+    "en": "wetlands",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수수료, 위원회",
+    "en": "commission",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수수료, 요금",
+    "en": "fee",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "협상하다, 교섭하다",
+    "en": "negotiate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "상당한, 규모가 큰",
+    "en": "substantial",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "규제의, 규정의",
+    "en": "regulatory",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "이에 따라, 이로써",
+    "en": "hereby",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "할당하다, 배분하다",
+    "en": "allocate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "배정하다, 맡기다",
+    "en": "assign",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "보류하다, 억제하다",
+    "en": "withhold",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "자원, 재원",
+    "en": "resource",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "우선권, 우선 사항",
+    "en": "priority",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "대역폭, 통신 용량",
+    "en": "bandwidth",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정점, 최고치",
+    "en": "peak",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "충분한, 넉넉한",
+    "en": "sufficient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "야생 동식물",
+    "en": "wildlife",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "준수하다, 규정에 따르다",
+    "en": "comply",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "복종하다, 따르다",
+    "en": "obey",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "위반하다, 침해하다",
+    "en": "violate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "국제적인, 국제의",
+    "en": "international",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "장비, 설비",
+    "en": "equipment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기준, 표준",
+    "en": "standard",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "규정, 규제",
+    "en": "regulation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "환경의, 환경적인",
+    "en": "environmental",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "보호, 보호 행위",
+    "en": "protection",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "법, 법률",
+    "en": "law",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "후보자, 지원자",
+    "en": "candidate",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지원자, 신청자",
+    "en": "applicant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지도력, 리더십",
+    "en": "leadership",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자동으로, 기계적으로",
+    "en": "automatically",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "심사하다, 화면",
+    "en": "screen",
+    "pos": "v.(동사) n.(명사)"
+  },
+  {
+    "ko": "행진 행사, 퍼레이드",
+    "en": "parade",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "장교, 임원",
+    "en": "officer",
+    "pos": "n.(명사)"
+  }
+]
