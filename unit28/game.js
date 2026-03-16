@@ -927,8 +927,10 @@ function gameLoop() {
 }
 
 function getLatestUnitJsonFile() {
-  // data 폴더 내 unit28.json 파일을 사용 (상대 경로: 로컬/온라인 공통)
-  return fetch('data/unit28.json')
+  // data 폴더 내 unit28.json 파일을 사용
+  // - 로컬:   http://localhost:8000/unit28/../data/unit28.json -> /data/unit28.json
+  // - 온라인: https://word1600.github.io/game/unit28/../data/unit28.json -> /game/data/unit28.json
+  return fetch('../data/unit28.json')
     .then(r => r.ok ? r.json() : null)
     .catch(() => null)
     .then(data => {
@@ -938,8 +940,8 @@ function getLatestUnitJsonFile() {
 }
 
 function loadWords() {
-  // 단순 상대 경로 사용: 로컬/랜/배포 모두 동작
-  const file = 'data/unit28.json';
+  // 단순 상대 경로 사용: 로컬/랜/배포 모두 동작 (위 getLatestUnitJsonFile와 동일 규칙)
+  const file = '../data/unit28.json';
   console.log('🔍 Unit 28: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
