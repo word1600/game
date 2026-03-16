@@ -67,7 +67,7 @@ function resumeSynthIfNeeded() {
   } catch (_) {}
 }
 
-let selectedUnit = 'unit27'; // 기본값: Unit 27
+let selectedUnit = 'unit28'; // 기본값: Unit 28
 
 // 유닛 선택 버튼 핸들러
 function setupUnitSelect() {
@@ -929,7 +929,7 @@ function gameLoop() {
 function getLatestUnitJsonFile() {
   // 로컬 환경과 온라인 환경을 구분하여 경로 설정
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const file = isLocal ? './data/unit27.json' : '/game/unit27/data/unit27.json';
+  const file = isLocal ? './data/unit28.json' : '/game/unit28/data/unit28.json';
   return fetch(file)
     .then(r => r.ok ? r.json() : null)
     .catch(() => null)
@@ -942,8 +942,8 @@ function getLatestUnitJsonFile() {
 function loadWords() {
   // 로컬 환경과 온라인 환경을 구분하여 경로 설정
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const file = isLocal ? './data/unit27.json' : '/game/unit27/data/unit27.json';
-  console.log('🔍 Unit 27: 단어 데이터 로딩 시작:', file);
+  const file = isLocal ? './data/unit28.json' : '/game/unit28/data/unit28.json';
+  console.log('🔍 Unit 28: 단어 데이터 로딩 시작:', file);
   
   fetch(file)
     .then(response => {
@@ -954,8 +954,8 @@ function loadWords() {
       return response.json();
     })
     .then(data => {
-      console.log('✅ Unit 27: 데이터 로드 성공! 단어 수:', data.length);
-      console.log('📝 Unit 27: 첫 번째 단어:', data[0]);
+      console.log('✅ Unit 28: 데이터 로드 성공! 단어 수:', data.length);
+      console.log('📝 Unit 28: 첫 번째 단어:', data[0]);
       ufoWordsData = data;
       refillWordPool();
       pickNewProblemWord();
@@ -965,7 +965,7 @@ function loadWords() {
       ufoInterval = setInterval(spawnUFO, 1800);
     })
     .catch(err => {
-      console.error('❌ Unit 27: 데이터 로드 실패:', err);
-      alert('Unit 27 단어 데이터를 불러오지 못했습니다: ' + err.message);
+      console.error('❌ Unit 28: 데이터 로드 실패:', err);
+      alert('Unit 28 단어 데이터를 불러오지 못했습니다: ' + err.message);
     });
 }
