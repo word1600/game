@@ -1,0 +1,232 @@
+[
+  {
+    "ko": "적절한, 알맞은",
+    "en": "suitable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "적절한, 적합한",
+    "en": "appropriate",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "부적절한, 적합하지 않은",
+    "en": "unsuitable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "판매원, 영업사원",
+    "en": "salesperson",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지원자, 신청자",
+    "en": "applicant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "화물, 짐",
+    "en": "cargo",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "운송, 운송하다",
+    "en": "transport",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "무거운, 많은",
+    "en": "heavy",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "바위가 많은, 험한",
+    "en": "rocky",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "해안, 연안",
+    "en": "coast",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "둥지를 트는, 산란하는",
+    "en": "nesting",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "동의, 승낙",
+    "en": "consent",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "승인, 허가",
+    "en": "approval",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "거절, 거부",
+    "en": "refusal",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "설치하는, 장착하는",
+    "en": "installing",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "즉시, 곧바로",
+    "en": "right away",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "채용, 고용",
+    "en": "hiring",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연구원, 조사원",
+    "en": "researcher",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "돌고래, 해양 동물",
+    "en": "dolphin",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "잠정적인, 임시의",
+    "en": "tentative",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "임시의, 잠정적인",
+    "en": "provisional",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "확실한, 명확한",
+    "en": "definite",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "발표하다, 알리다",
+    "en": "announce",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "승진, 홍보",
+    "en": "promotion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "등산가, 산악인",
+    "en": "mountaineer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "산길, 등산로 ",
+    "en": "trail",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "시작하다, 발사하다",
+    "en": "launch",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "설정하다, 놓다",
+    "en": "set",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "각각의, 각자의",
+    "en": "respective",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "분리된, 별개의",
+    "en": "separate",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "공통의, 흔한 ",
+    "en": "common",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기술자, 정비사",
+    "en": "technician",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "점검하다, 검사하다",
+    "en": "inspect",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "굴, 은신처",
+    "en": "dens",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "숲, 삼림",
+    "en": "forest",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "도급업자, 계약업체",
+    "en": "contractor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공급업자, 납품업자",
+    "en": "supplier",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "하청업자, 하도급업자",
+    "en": "subcontractor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "개조, 보수",
+    "en": "renovation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수리, 보수",
+    "en": "repair",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "피해, 손상",
+    "en": "damage",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "안전벨트, 장비끈",
+    "en": "harness",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~하는 동안, ~인 반면에",
+    "en": "while",
+    "pos": "conj.(접속사)"
+  },
+  {
+    "ko": "대피소, 피난처",
+    "en": "shelter",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "악천후, 심한 기상",
+    "en": "severe weather",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지역의, 현지의",
+    "en": "local",
+    "pos": "adj.(형용사)"
+  }
+]
