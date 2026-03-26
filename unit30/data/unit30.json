@@ -1,0 +1,232 @@
+[
+  {
+    "ko": "출시하다, 공개하다",
+    "en": "release",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "출시하다",
+    "en": "launch",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "개발, 발전",
+    "en": "development",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "통하여, ~을 지나서",
+    "en": "through",
+    "pos": "prep.(전치사), adv.(부사)"
+  },
+  {
+    "ko": "협업, 협력",
+    "en": "collaboration",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전통적인, 전통의",
+    "en": "traditional",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "고급스러운, 호화로운",
+    "en": "luxurious",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "여행사",
+    "en": "travel agency",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "해마다의, 연간의",
+    "en": "yearly",
+    "pos": "adj.(형용사), adv.(부사)"
+  },
+  {
+    "ko": "평가하다, 판단하다",
+    "en": "assess",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "평가하다, 검토하다",
+    "en": "evaluate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "감독자, 관리자",
+    "en": "supervisor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "성과, 수행",
+    "en": "performance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정기적으로, 규칙적으로",
+    "en": "regularly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "정확성, 정밀성",
+    "en": "accuracy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자동으로, 자동적으로",
+    "en": "automatically",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "빽빽한, 밀집한",
+    "en": "dense",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "숲, 산림",
+    "en": "forest",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "완전히, 전적으로",
+    "en": "completely",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "다른, 상이한",
+    "en": "different",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "책임, 의무",
+    "en": "responsibility",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의무, 직무",
+    "en": "duty",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "무책임, 무성의",
+    "en": "irresponsibility",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "위험한, 위험이 있는",
+    "en": "dangerous",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "지휘관, 사령관",
+    "en": "commander",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "안전, 무사",
+    "en": "safety",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "시도하다, 시도",
+    "en": "attempt",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "생태학자, 환경학자",
+    "en": "ecologist",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "생태계, 생태 시스템",
+    "en": "ecosystem",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "효율적인, 능률적인",
+    "en": "efficient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "생산적인, 생산성이 높은",
+    "en": "productive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "비효율적인, 능률이 낮은",
+    "en": "inefficient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "구조, 배치",
+    "en": "setup",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "심지어, 평평한",
+    "en": "even",
+    "pos": "adv.(부사), adj.(형용사)"
+  },
+  {
+    "ko": "대량의, 덩어리",
+    "en": "mass",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "대량 생산하는, 계속 내보내는",
+    "en": "pumping out",
+    "pos": "phr.v.(구동사)"
+  },
+  {
+    "ko": "전환하다, 바꾸다",
+    "en": "convert",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "전기, 전력",
+    "en": "electricity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "초기의, 선불의",
+    "en": "upfront",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "확인하다, 검증하다",
+    "en": "verify",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "확인하다, 확정하다",
+    "en": "confirm",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "단골 고객, 고정 고객",
+    "en": "regular customer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "신원들, 정체성들",
+    "en": "identities",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "성공적으로, 무사히",
+    "en": "successfully",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "산업의, 공업의",
+    "en": "industrial",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "공기 질, 대기 질",
+    "en": "air quality",
+    "pos": "n.(명사)"
+  }
+]
