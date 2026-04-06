@@ -417,10 +417,15 @@ function pauseGameAndStartChallenge(word) {
     <div class="challenge-word-container">
       <p>${word}</p>
     </div>
-    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" lang="en" inputmode="text">
+    <input type="text" id="challenge-input" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" lang="en-US" inputmode="latin" translate="no" dir="ltr" placeholder="Type in English...">
   `;
   document.getElementById('game-area').appendChild(challengeBox);
   const challengeInput = document.getElementById('challenge-input');
+  challengeInput.setAttribute('lang', 'en-US');
+  challengeInput.setAttribute('inputmode', 'latin');
+  challengeInput.setAttribute('translate', 'no');
+  challengeInput.setAttribute('dir', 'ltr');
+  challengeInput.setAttribute('autocorrect', 'off');
   challengeInput.focus();
   let challengeTimeLeft = 10;
   const timerDisplay = document.getElementById('challenge-timer-display');
@@ -461,11 +466,24 @@ function pauseGameAndStartChallenge(word) {
     }
   });
 
-  challengeInput.addEventListener('input', () => {
+  const onChallengeInput = () => {
+    const v = challengeInput.value;
+    const cleaned = v.replace(/[\u3131-\u318E\uAC00-\uD7A3]/g, '');
+    if (cleaned !== v) {
+      const pos = challengeInput.selectionStart;
+      challengeInput.value = cleaned;
+      const removed = v.length - cleaned.length;
+      const newPos = Math.max(0, (pos == null ? cleaned.length : pos) - removed);
+      try {
+        challengeInput.setSelectionRange(newPos, newPos);
+      } catch (_) {}
+    }
     if (challengeInput.value.trim().toLowerCase() === wordToChallenge.trim().toLowerCase()) {
       endChallenge(true);
     }
-  });
+  };
+  challengeInput.addEventListener('input', onChallengeInput);
+  challengeInput.addEventListener('compositionend', onChallengeInput);
   function endChallenge(success) {
     clearInterval(challengeTimerInterval);
     challengeBox.remove();
