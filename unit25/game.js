@@ -96,21 +96,7 @@ function speakWordTTSUS(word) {
         if (voice) utter.voice = voice;
         utter.pitch = 1.2;
         utter.rate = 1.0;
-        // Reduce BGM during TTS to avoid audio glitches on some Android tablets
-        const bgm = document.getElementById('bgm');
-        let previousBgmState = { playing: false, volume: 0 };
-        utter.onstart = () => {
-          if (bgm && !bgm.paused) {
-            previousBgmState.playing = true;
-            previousBgmState.volume = bgm.volume;
-            try { bgm.pause(); } catch (_) {}
-          }
-        };
-        utter.onend = () => {
-          if (bgm && previousBgmState.playing) {
-            try { bgm.volume = previousBgmState.volume; bgm.play(); } catch (_) {}
-          }
-        };
+        // Unit 19 방식: TTS 시 BGM 건드리지 않음 (끊김 원인 제거)
         lastTtsUtterance = utter;
         window.speechSynthesis.speak(utter);
       };
@@ -153,20 +139,7 @@ function speakWordTTSGB(word) {
       if (voice) utter.voice = voice;
       utter.pitch = 1.2;
       utter.rate = 1.0;
-      const bgm = document.getElementById('bgm');
-      let previousBgmState = { playing: false, volume: 0 };
-      utter.onstart = () => {
-        if (bgm && !bgm.paused) {
-          previousBgmState.playing = true;
-          previousBgmState.volume = bgm.volume;
-          try { bgm.pause(); } catch (_) {}
-        }
-      };
-      utter.onend = () => {
-        if (bgm && previousBgmState.playing) {
-          try { bgm.volume = previousBgmState.volume; bgm.play(); } catch (_) {}
-        }
-      };
+      // Unit 19 방식: TTS 시 BGM 건드리지 않음 (끊김 원인 제거)
       lastTtsUtterance = utter;
       window.speechSynthesis.speak(utter);
     } catch (_) {}
@@ -195,6 +168,36 @@ function getWordKey(word) {
   return `${word.ko}|${word.en}|${word.pos}`;
 }
 
+// 짧은 품사 표기 → 화면 표시용 한글 병기 (JSON은 n./v. 등 그대로 둬도 됨)
+function normalizePosForDisplay(pos) {
+  if (pos == null || String(pos).trim() === '') return '';
+  const POS_MAP = {
+    'phr.v.': 'phr.v.(구동사)',
+    'n.': 'n.(명사)',
+    'v.': 'v.(동사)',
+    'adj.': 'adj.(형용사)',
+    'adv.': 'adv.(부사)',
+    'prep.': 'prep.(전치사)',
+    'conj.': 'conj.(접속사)',
+    'pron.': 'pron.(대명사)',
+    'interj.': 'interj.(감탄사)',
+    'num.': 'num.(수사)',
+    'det.': 'det.(한정사)',
+  };
+  return String(pos)
+    .trim()
+    .split(',')
+    .map((part) => {
+      const raw = part.trim();
+      if (!raw) return '';
+      if (/\([가-힣·]/.test(raw)) return raw;
+      const key = raw.toLowerCase();
+      return POS_MAP[key] || raw;
+    })
+    .filter(Boolean)
+    .join(', ');
+}
+
 // 문제(상단 박스)용 단어를 랜덤하게 선택
 function pickNewProblemWord() {
   if (!wordPool.length) refillWordPool();
@@ -209,7 +212,7 @@ function pickNewProblemWord() {
   usedWords.add(getWordKey(currentWord));
   let posKo = '';
   document.getElementById('word-ko').textContent = currentWord.ko;
-  document.getElementById('word-pos').textContent = currentWord.pos;
+  document.getElementById('word-pos').textContent = normalizePosForDisplay(currentWord.pos);
   answeredThisProblem = false;
   // 새로운 문제 시작 시 카운터 리셋
   ufoSinceLastAnswer = 0;
@@ -685,6 +688,7 @@ function resetGame() {
   // 단어 데이터가 비어있으면 로드
   if (!ufoWordsData.length) loadWords();
 
+  // Unit 1과 동일: 재개 시 BGM 처음부터 재생
   const bgm = document.getElementById('bgm');
   if (bgm) {
     bgm.currentTime = 0;
@@ -742,6 +746,15 @@ document.addEventListener('DOMContentLoaded', () => {
     bgm.volume = parseFloat(bgmVolumeSlider.value);
     bgm.play().catch(() => console.log("BGM auto-play failed."));
   }
+  // Unit 1과 동일: BGM 끝나면 처음부터 다시 재생 (loop 보강)
+  if (bgm) {
+    bgm.addEventListener('ended', () => {
+      if (!isPaused && !isMuted) {
+        bgm.currentTime = 0;
+        bgm.play().catch(() => console.log("BGM loop failed."));
+      }
+    });
+  }
   function initializeGame() {
     startScreen.style.display = 'none';
     topBar.style.display = 'flex';
@@ -758,20 +771,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (goodjobSound) goodjobSound.volume = 0.5;
     
     tryStartBGM(true); // 강제 재생
-    // TTS warm-up for tablet/iOS inside user gesture
-    try {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        resumeSynthIfNeeded();
-        ensureVoicesReady().then(() => {
-          const warmup = new SpeechSynthesisUtterance('.');
-          warmup.lang = 'en-US';
-          warmup.volume = 0.01;
-          try { window.speechSynthesis.speak(warmup); } catch (_) {}
-          hasTtsWarmedUp = true;
-        });
-      }
-    } catch (_) {}
+    // Unit 1과 동일: 게임 시작 시 TTS 워밍업 없음 (BGM과 충돌 가능성 제거)
     isPaused = false;
     ufoSinceLastAnswer = 0;
     answerUfoSpawnCount = 0;

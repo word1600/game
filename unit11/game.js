@@ -98,6 +98,36 @@ function getWordKey(word) {
   return `${word.ko}|${word.en}|${word.pos}`;
 }
 
+// 짧은 품사 표기 → 화면 표시용 한글 병기 (JSON은 n./v. 등 그대로 둬도 됨)
+function normalizePosForDisplay(pos) {
+  if (pos == null || String(pos).trim() === '') return '';
+  const POS_MAP = {
+    'phr.v.': 'phr.v.(구동사)',
+    'n.': 'n.(명사)',
+    'v.': 'v.(동사)',
+    'adj.': 'adj.(형용사)',
+    'adv.': 'adv.(부사)',
+    'prep.': 'prep.(전치사)',
+    'conj.': 'conj.(접속사)',
+    'pron.': 'pron.(대명사)',
+    'interj.': 'interj.(감탄사)',
+    'num.': 'num.(수사)',
+    'det.': 'det.(한정사)',
+  };
+  return String(pos)
+    .trim()
+    .split(',')
+    .map((part) => {
+      const raw = part.trim();
+      if (!raw) return '';
+      if (/\([가-힣·]/.test(raw)) return raw;
+      const key = raw.toLowerCase();
+      return POS_MAP[key] || raw;
+    })
+    .filter(Boolean)
+    .join(', ');
+}
+
 // 문제(상단 박스)용 단어를 랜덤하게 선택
 function pickNewProblemWord() {
   if (!wordPool.length) refillWordPool();
@@ -112,7 +142,7 @@ function pickNewProblemWord() {
   usedWords.add(getWordKey(currentWord));
   let posKo = '';
   document.getElementById('word-ko').textContent = currentWord.ko;
-  document.getElementById('word-pos').textContent = currentWord.pos;
+  document.getElementById('word-pos').textContent = normalizePosForDisplay(currentWord.pos);
   answeredThisProblem = false;
   // 새로운 문제 시작 시 카운터 리셋
   ufoSinceLastAnswer = 0;
