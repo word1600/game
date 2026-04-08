@@ -459,24 +459,11 @@ function pauseGameAndStartChallenge(word) {
       endChallenge(false);
     }
   }, 1000);
-  const onChallengeInput = () => {
-    const v = challengeInput.value;
-    const cleaned = v.replace(/[\u3131-\u318E\uAC00-\uD7A3]/g, '');
-    if (cleaned !== v) {
-      const pos = challengeInput.selectionStart;
-      challengeInput.value = cleaned;
-      const removed = v.length - cleaned.length;
-      const newPos = Math.max(0, (pos == null ? cleaned.length : pos) - removed);
-      try {
-        challengeInput.setSelectionRange(newPos, newPos);
-      } catch (_) {}
-    }
+  challengeInput.addEventListener('input', () => {
     if (challengeInput.value.trim().toLowerCase() === wordToChallenge.trim().toLowerCase()) {
       endChallenge(true);
     }
-  };
-  challengeInput.addEventListener('input', onChallengeInput);
-  challengeInput.addEventListener('compositionend', onChallengeInput);
+  });
   
   // 스페이스바 입력을 위한 특별한 이벤트 핸들러 추가
   challengeInput.addEventListener('keydown', (e) => {
