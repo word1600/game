@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "매출액, 이직률",
+    "en": "turnover",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수익, 매출",
+    "en": "revenue",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "증가, 늘리다",
+    "en": "increase",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "연간의, 매년의",
+    "en": "annual",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "정책, 방침",
+    "en": "policies",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "줄이다, 감소시키다",
+    "en": "reduce",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "상당히, 크게",
+    "en": "significantly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "개선하다, 향상시키다",
+    "en": "improve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "전반적인, 전체적으로",
+    "en": "overall",
+    "pos": "adj.(형용사), adv.(부사)"
+  },
+  {
+    "ko": "필수의, 의무적인",
+    "en": "mandatory",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "요구되는, 필수의",
+    "en": "required",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "선택의, 선택 가능한",
+    "en": "optional",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "완료하다, 완전한",
+    "en": "complete",
+    "pos": "v.(동사), adj.(형용사)"
+  },
+  {
+    "ko": "양식, 형성하다",
+    "en": "form",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "작성하다, 기입하다",
+    "en": "fill out",
+    "pos": "phr.(숙어)"
+  },
+  {
+    "ko": "시행하다, 강제하다",
+    "en": "enforce",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "정기적으로, 규칙적으로",
+    "en": "regularly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "방문객, 참관자",
+    "en": "visitor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "들어가는, 입장하는",
+    "en": "entering",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "초기의, 사전의",
+    "en": "preliminary",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "초기의, 처음의",
+    "en": "initial",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "최종의, 마지막의",
+    "en": "final",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "예측하다, 예상하다",
+    "en": "predict",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "심각한, 혹독한",
+    "en": "severe",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "날씨, 기상",
+    "en": "weather",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소총, 라이플",
+    "en": "rifle",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지시, 설명, 교육",
+    "en": "instruction",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "매우 힘든, 요구가 많은",
+    "en": "demanding",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "정신 바짝 차려",
+    "en": "Stay sharp",
+    "pos": "phr.(숙어)"
+  },
+  {
+    "ko": "전시하다, 보여 주다",
+    "en": "display",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "결과, 성과",
+    "en": "result",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "즉시, 바로",
+    "en": "immediately",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "수집하다, 정리하다",
+    "en": "compile",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "수집하다, 모으다",
+    "en": "collect",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "이동, 이주",
+    "en": "migration",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "금융의, 재정의",
+    "en": "financial",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기자, 언론인",
+    "en": "journalist",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정보, 자료",
+    "en": "information",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "여러 개의, 다수의",
+    "en": "multiple",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "다른, 서로 다른",
+    "en": "different",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "유지하다, 보유하다",
+    "en": "retain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "유지하다, 보관하다",
+    "en": "keep",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "출시하다, 공개하다",
+    "en": "release",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "제조업체, 제조사",
+    "en": "manufacturer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "숙련된, 능숙한",
+    "en": "skilled",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기간, 시기",
+    "en": "period",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "베테랑, 경험 많은 사람",
+    "en": "veteran",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "미래, 미래의",
+    "en": "future",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "토양, 흙",
+    "en": "soil",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수분, 습기",
+    "en": "moisture",
+    "pos": "n.(명사)"
+  }
+]
