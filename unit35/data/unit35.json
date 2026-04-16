@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "의무, 책임",
+    "en": "obligation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의무, 직무",
+    "en": "duty",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "안내하다, 안내서",
+    "en": "guide",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "성인, 어른",
+    "en": "adult",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "시민, 국민",
+    "en": "citizen",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "취약한, 상처받기 쉬운",
+    "en": "vulnerable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "장려책, 보상",
+    "en": "incentive",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보너스, 성과급",
+    "en": "bonus",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "벌금, 불이익",
+    "en": "penalty",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "발표하다, 알리다",
+    "en": "announce",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "증가, 증가하다",
+    "en": "increase",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "연구소, 연구실",
+    "en": "research lab",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기술들, 기술",
+    "en": "technologies",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제공하다, 제안하다",
+    "en": "offer",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "환경의, 환경적인",
+    "en": "environmental",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "촉진하다, 신속히 처리하다",
+    "en": "expedite",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "가속하다, 촉진하다",
+    "en": "accelerate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "지연, 지연시키다",
+    "en": "delay",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "채용 과정, 채용 절차",
+    "en": "hiring process",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "후속 조치",
+    "en": "follow-up action",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "사고, 우연한 일",
+    "en": "accident",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "견인차, 토잉 트럭",
+    "en": "tow truck",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "즉시, 곧바로",
+    "en": "right away",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "성장, 증가",
+    "en": "growth",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "통합하다, 강화하다",
+    "en": "consolidate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "결합하다, 합치다",
+    "en": "combine",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "분리하다, 별도의",
+    "en": "separate",
+    "pos": "v.(동사), adj.(형용사)"
+  },
+  {
+    "ko": "투자자, 투자자들",
+    "en": "investor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자금, 기금",
+    "en": "funds",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "투자하다, 출자하다",
+    "en": "invest",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "회사, 단단한",
+    "en": "firm",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "경쟁적인, 경쟁력 있는",
+    "en": "competitive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "이점, 장점",
+    "en": "advantage",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "그것의, 그것의 것",
+    "en": "its",
+    "pos": "det.(한정사)"
+  },
+  {
+    "ko": "기병대, 기마부대",
+    "en": "cavalry",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "엄격한, 엄중한",
+    "en": "stringent",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "엄격한, 엄한",
+    "en": "strict",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "관대한, 느슨한",
+    "en": "lenient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "반도체, 반도체 장치",
+    "en": "semiconductor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제조업체, 제조사",
+    "en": "manufacturer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "집행하다, 시행하다",
+    "en": "enforce",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "품질, 질",
+    "en": "quality",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기준, 표준",
+    "en": "standard",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "문제, 발행하다",
+    "en": "issue",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "경고, 주의",
+    "en": "warning",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "용서, 관용",
+    "en": "forgiveness",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유괴, 납치",
+    "en": "kidnapping",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유지하다, 관리하다",
+    "en": "maintain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "시험, 검사",
+    "en": "exam",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "감독관, 시험 감독관",
+    "en": "proctor",
+    "pos": "n.(명사)"
+  }
+]
