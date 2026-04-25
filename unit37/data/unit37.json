@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "규정, 규제",
+    "en": "regulation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "규칙, 원칙",
+    "en": "rule",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "준수한다, 따른다",
+    "en": "complies",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "안전, 안전성",
+    "en": "safety",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "엄격하게, 철저히",
+    "en": "strictly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "복종하다, 따르다",
+    "en": "obey",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "강제하다, 시행하다",
+    "en": "enforce",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "주요 고속도로들",
+    "en": "major highways",
+    "pos": "phr.(구)"
+  },
+  {
+    "ko": "상당한, 무거운",
+    "en": "hefty",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "벌금, 과태료",
+    "en": "fine",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고수하다, 준수하다",
+    "en": "adhere",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "가로질러, 전역에",
+    "en": "across",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "사냥꾼들, 수렵인들",
+    "en": "hunters",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "배송물, 출하",
+    "en": "shipment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "배송, 배달",
+    "en": "delivery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "나가는, 외부로 향하는",
+    "en": "outbound",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "우체국 배달, 우체국 배송",
+    "en": "post office deliver",
+    "pos": "phr.(구)"
+  },
+  {
+    "ko": "창고, 물류창고",
+    "en": "warehouse",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "처리했다, 가공했다",
+    "en": "processed",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "물류 회사, 운송 업체",
+    "en": "logistics firm",
+    "pos": "phr.(구)"
+  },
+  {
+    "ko": "다루다, 처리하다",
+    "en": "handle",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "전 세계적으로, 세계 곳곳에",
+    "en": "worldwide",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "해협, 좁은 수로",
+    "en": "strait",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "시행하다, 실행하다",
+    "en": "implement",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "무시하다, 묵살하다",
+    "en": "ignore",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "보안관, 치안관",
+    "en": "sheriff",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "서부 마을, 개척지 마을",
+    "en": "frontier town",
+    "pos": "phr.(구)"
+  },
+  {
+    "ko": "가뭄, 물 부족",
+    "en": "drought",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "절수의, 물 절약의",
+    "en": "water-saving",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "무단 판매상, 잡상인",
+    "en": "unauthorized vendor",
+    "pos": "phr.(구)"
+  },
+  {
+    "ko": "출입, 입장",
+    "en": "entry",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "겪다, 받다",
+    "en": "undergo",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "경험하다, 겪다",
+    "en": "experience",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "해안의, 연안의",
+    "en": "coastal",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "피해, 손상",
+    "en": "damage",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "암, 악성 종양",
+    "en": "cancer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "환자, 병자",
+    "en": "patient",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "방사선, 방사능",
+    "en": "radiation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "치료, 요법",
+    "en": "therapy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "강인한, 회복력이 있는",
+    "en": "resilient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "동백꽃, 동백나무",
+    "en": "camellia",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "혹독한, 가혹한",
+    "en": "harsh",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "충분한, 조건에 맞는",
+    "en": "sufficient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "불충분한, 부족한",
+    "en": "insufficient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "추가의, 부가적인",
+    "en": "additional",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "자금, 기금",
+    "en": "funds",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수집했다, 모았다",
+    "en": "collected",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "증거, 근거",
+    "en": "evidence",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "주장, 청구",
+    "en": "claim",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "급여, 월급",
+    "en": "salary",
+    "pos": "n.(명사)"
+  }
+]
