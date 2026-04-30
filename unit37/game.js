@@ -969,7 +969,7 @@ function gameLoop() {
  */
 const UNIT37_DATA_URLS = ['data/unit37.json', '../data/unit37.json'];
 
-function fetchUnit36WordJson() {
+function fetchUnit37WordJson() {
   return (async () => {
     let lastErr = null;
     for (const url of UNIT37_DATA_URLS) {
@@ -990,7 +990,7 @@ function fetchUnit36WordJson() {
 }
 
 function getLatestUnitJsonFile() {
-  return fetchUnit36WordJson().then(data => {
+  return fetchUnit37WordJson().then(data => {
     if (!data) throw new Error('단어 데이터를 불러오지 못했습니다.');
     return data;
   });
@@ -999,7 +999,7 @@ function getLatestUnitJsonFile() {
 function loadWords() {
   console.log('🔍 Unit 37: 단어 데이터 로딩 (순서대로 시도):', UNIT37_DATA_URLS.join(' → '));
 
-  fetchUnit36WordJson()
+  fetchUnit37WordJson()
     .then(data => {
       console.log('✅ Unit 37: 데이터 로드 성공! 단어 수:', data.length);
       console.log('📝 Unit 37: 첫 번째 단어:', data[0]);
