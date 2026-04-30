@@ -1,0 +1,252 @@
+[
+  {
+    "ko":"제안서, 제안",
+    "en":"proposal",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"제안, 의견",
+    "en":"suggestion",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"거절, 거부",
+    "en":"rejection",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"개발, 발전",
+    "en":"development",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"평가하다, 산정하다",
+    "en":"evaluate",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"마무리하다, 끝내다",
+    "en":"wrap up",
+    "pos":"v.(동사구)"
+  },
+  {
+    "ko":"개선하다, 향상시키다",
+    "en":"improve",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"품질, 질",
+    "en":"quality",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"포함하다, 넣다",
+    "en":"include",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"시설들, 설비들",
+    "en":"facilities",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"환불, 환급",
+    "en":"refund",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"상환, 갚음",
+    "en":"repayment",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"요금 부과, 청구액",
+    "en":"charge",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"응대 직원",
+    "en":"service staff",
+    "pos":"n.(명사구)"
+  },
+  {
+    "ko":"요구했다, 요청했다",
+    "en":"requested",
+    "pos":"v.(동사)과거"
+  },
+  {
+    "ko":"결함이 있는, 불량의",
+    "en":"defective",
+    "pos":"adj.(형용사)"
+  },
+  {
+    "ko":"물품, 항목",
+    "en":"item",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"세무서, 세무 당국",
+    "en":"tax office",
+    "pos":"n.(명사구)"
+  },
+  {
+    "ko":"제공하다, 공급하다",
+    "en":"provide",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"정책, 방침",
+    "en":"policy",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"이행하다, 충족시키다",
+    "en":"fulfill",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"충족하다, 만족시키다",
+    "en":"satisfy",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"실패하다, 하지 못하다",
+    "en":"fail",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"배송, 배달",
+    "en":"delivery",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"계약, 계약서",
+    "en":"contract",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"제때에, 정시에",
+    "en":"on time",
+    "pos":"adv.(부사구)"
+  },
+  {
+    "ko":"수송하다, 운송하다",
+    "en":"transport",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"안전 기준, 안전 표준",
+    "en":"safety standard",
+    "pos":"n.(명사구)"
+  },
+  {
+    "ko":"완벽하게, 정확히",
+    "en":"perfectly",
+    "pos":"adv.(부사)"
+  },
+  {
+    "ko":"즉시, 신속하게",
+    "en":"promptly",
+    "pos":"adv.(부사)"
+  },
+  {
+    "ko":"즉시, 바로",
+    "en":"immediately",
+    "pos":"adv.(부사)"
+  },
+  {
+    "ko":"처리하다, 가공하다",
+    "en":"process",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"처리하다, 다루다",
+    "en":"handle",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"처리, 가공",
+    "en":"processing",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"공장, 식물",
+    "en":"plant",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"신선한 과일, 생과일",
+    "en":"fresh fruit",
+    "pos":"n.(명사구)"
+  },
+  {
+    "ko":"안전하게, 단단히",
+    "en":"securely",
+    "pos":"adv.(부사)"
+  },
+  {
+    "ko":"중요한, 중대한",
+    "en":"important",
+    "pos":"adj.(형용사)"
+  },
+  {
+    "ko":"관리, 경영진",
+    "en":"management",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"고객, 손님",
+    "en":"customer",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"정확한, 세밀한",
+    "en":"accurate",
+    "pos":"adj.(형용사)"
+  },
+  {
+    "ko":"정확한, 정밀한",
+    "en":"precise",
+    "pos":"adj.(형용사)"
+  },
+  {
+    "ko":"부정확한, 틀린",
+    "en":"inaccurate",
+    "pos":"adj.(형용사)"
+  },
+  {
+    "ko":"재정의, 금융의",
+    "en":"financial",
+    "pos":"adj.(형용사)"
+  },
+  {
+    "ko":"정확한, 딱 맞는",
+    "en":"spot on",
+    "pos":"adj.(형용사구)"
+  },
+  {
+    "ko":"판매 수치, 매출 수치",
+    "en":"sales figures",
+    "pos":"n.(명사구)"
+  },
+  {
+    "ko":"정밀, 정확성",
+    "en":"precision",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"계측기, 기구, 악기",
+    "en":"instrument",
+    "pos":"n.(명사)"
+  },
+  {
+    "ko":"전달하다, 제공하다",
+    "en":"deliver",
+    "pos":"v.(동사)"
+  },
+  {
+    "ko":"측정값, 판독값",
+    "en":"readings",
+    "pos":"n.(명사)"
+  }
+]
