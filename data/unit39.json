@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "진단, 문제 원인 분석",
+    "en": "diagnosis",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "분석, 해석",
+    "en": "analysis",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "종양 전문의, 암 전문의",
+    "en": "Oncologist",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정확한, 정밀한",
+    "en": "accurate",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "초기의, 이른",
+    "en": "early",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "연구원, 조사원",
+    "en": "researcher",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "실패, 고장",
+    "en": "failure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "원인, 이유",
+    "en": "cause",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "질병, 병",
+    "en": "disease",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보건 당국, 보건 기관",
+    "en": "health authorities",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "책임감, 소유권",
+    "en": "ownership",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "책임, 의무",
+    "en": "responsibility",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "장려하다, 촉진하다",
+    "en": "promotes",
+    "pos": "v.s(3인칭 단수 동사)"
+  },
+  {
+    "ko": "~사이에, ~중에",
+    "en": "among",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "계약, 계약서",
+    "en": "contract",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "이전했다, 이양했다",
+    "en": "transferred",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "기분 좋은, 쾌적한",
+    "en": "pleasant",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "줄이다, 감소시키다",
+    "en": "reduce",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "지연, 연기",
+    "en": "delay",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "명확히 하다",
+    "en": "clarify",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "설명하다, 해설하다",
+    "en": "explain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "혼란스럽게 하다",
+    "en": "confuse",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "계약자, 도급업체",
+    "en": "contractor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지불 조건, 결제 조건",
+    "en": "payment term",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "재무 보고서, 회계 보고서",
+    "en": "financial report",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "서비스 요금, 수수료",
+    "en": "service fee",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "사무 보조원, 사무 직원",
+    "en": "office assistant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일정, 스케줄",
+    "en": "schedule",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제한하다, 규제하다",
+    "en": "restrict",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "제한하다, 제한",
+    "en": "limit",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "허용하다, 인정하다",
+    "en": "allow",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "보안 직원, 경비 인력",
+    "en": "security staff",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "직원, 종업원",
+    "en": "employee",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "접근, 이용",
+    "en": "access",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "민감한 데이터, 기밀 정보",
+    "en": "sensitive data",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "규제의, 관리상의",
+    "en": "regulatory",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "위원회, 심의회",
+    "en": "committee",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "총기, 화기",
+    "en": "firearm",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전혀, 조금도",
+    "en": "at all",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "강설, 폭설",
+    "en": "snowfall",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "교통 흐름, 차량 흐름",
+    "en": "traffic flow",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "도시의, 도시적인",
+    "en": "urban",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기어가는, 느리게 움직이는",
+    "en": "crawling",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "다양한, 여러 가지의",
+    "en": "diverse",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "여러 가지의, 다양한",
+    "en": "various",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "획일적인, 제복",
+    "en": "uniform",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "개발도상국, 신흥국",
+    "en": "developing country",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "원자재, 원료",
+    "en": "raw material",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "배경, 배후",
+    "en": "background",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "생태계, 환경 체계",
+    "en": "ecosystem",
+    "pos": "n.(명사)"
+  }
+]
