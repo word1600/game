@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "안건, 의제",
+    "en": "agenda",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일정표",
+    "en": "schedule",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제작자, 생산자",
+    "en": "producer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "촬영, 영화제작",
+    "en": "filming",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기후, 분위기",
+    "en": "climate",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정상회담, 정상",
+    "en": "summit",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "후손들, 미래 세대",
+    "en": "future generations",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "로비 예산, 홍보 예산",
+    "en": "lobbying budget",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "필요한, 필수적인",
+    "en": "necessary",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "논의, 토론",
+    "en": "discussion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "경기 침체, 불황",
+    "en": "recession",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "경기 하강, 하락세",
+    "en": "downturn",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "경기 회복, 복구",
+    "en": "recovery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "경제학자",
+    "en": "economist",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예측하다, 전망하다",
+    "en": "predict",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "졸라맨다, 조이다",
+    "en": "tighten",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "꼭 필요한, 필수적인",
+    "en": "essential",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "영향을 준다, 작용하다",
+    "en": "affect",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "투자, 출자",
+    "en": "investment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전 세계의, 세계적인",
+    "en": "worldwide",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "요청하다, 모집하다",
+    "en": "solicit",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "요청하다, 요구",
+    "en": "request",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "거절하다, 거부하다",
+    "en": "reject",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "소매업자, 판매업체",
+    "en": "retailer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "피드백, 의견",
+    "en": "feedback",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "설문조사, 조사",
+    "en": "survey",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지원자, 자원봉사자",
+    "en": "volunteer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "작성하다, 기입하다",
+    "en": "fill out",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "인사 담당자, 인사 책임자",
+    "en": "HR director",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제안, 의견",
+    "en": "suggestion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "완화하다, 경감하다",
+    "en": "alleviate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "완화하다, 덜어주다",
+    "en": "relieve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "악화시키다",
+    "en": "worsen",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "심리치료사",
+    "en": "psychotherapist",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "상담, 조언",
+    "en": "counseling",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지방 자치단체",
+    "en": "county",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "세금, 과세",
+    "en": "tax",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부담, 짐",
+    "en": "burden",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소상공인",
+    "en": "small businesses",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "사람들, 국민",
+    "en": "people",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전례 없는, 유례없는",
+    "en": "unprecedented",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "이례적인",
+    "en": "exceptional",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "평범한, 보통의",
+    "en": "ordinary",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "점성술사, 점성가",
+    "en": "astrologer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예측하다, 전망하다",
+    "en": "forecast",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "비범한, 특별한",
+    "en": "extraordinary",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "달성하다, 이루다",
+    "en": "achieve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "매출 성장, 판매 증가",
+    "en": "sales growth",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "피해, 손상",
+    "en": "damage",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "거대한, 막대한",
+    "en": "massive",
+    "pos": "adj.(형용사)"
+  }
+]
