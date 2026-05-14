@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "결함, 흠",
+    "en": "flaw",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "결함, 하자",
+    "en": "defect",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "완벽, 완전함",
+    "en": "perfection",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "선박 기관사, 해양 엔지니어",
+    "en": "marine engineer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "중요한, 결정적인",
+    "en": "critical",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "선박, 용기",
+    "en": "vessel",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "비싼, 고가의",
+    "en": "expensive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "보석",
+    "en": "jewel",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "표면, 수면",
+    "en": "surface",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "구조 검사관",
+    "en": "structural inspector",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "확인된, 식별된",
+    "en": "identified",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "대출, 융자",
+    "en": "loan",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자금 조달, 금융",
+    "en": "financing",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "상환",
+    "en": "repayment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "승인하다, 찬성하다",
+    "en": "approve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "융합",
+    "en": "fusion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소기업, 영세 사업체",
+    "en": "Small business",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "상업의, 광고",
+    "en": "commercial",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "유가 위기",
+    "en": "oil price crisis",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "저금리의",
+    "en": "low-interest",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "지구, 구역",
+    "en": "district",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "동반하다, 수반하다",
+    "en": "accompany",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "호위하다, 동행하다",
+    "en": "escort",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "분리하다, 별개의",
+    "en": "separate",
+    "pos": "v.(동사), adj.(형용사)"
+  },
+  {
+    "ko": "외교관",
+    "en": "diplomat",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "외국의, 해외의",
+    "en": "foreign",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "의식, 행사",
+    "en": "ceremony",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의료 기록, 진료 기록",
+    "en": "medical record",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "양식, 서식",
+    "en": "form",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "큐레이터, 학예사",
+    "en": "curator",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "미술관",
+    "en": "art museum",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "걸작, 명작",
+    "en": "masterpiece",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "직접, 대면으로",
+    "en": "in person",
+    "pos": "phr.(숙어)"
+  },
+  {
+    "ko": "통근하다",
+    "en": "commute",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "통신, 텔레콤",
+    "en": "telecom",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "매일의, 일상의",
+    "en": "daily",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "구조하다, 구출하다",
+    "en": "rescue",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "해안 기지, 해안 관측소",
+    "en": "coastal station",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정수장, 수처리 시설",
+    "en": "water plant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수질 분석가",
+    "en": "water analyst",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "번영하는, 부유한",
+    "en": "prosperous",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "성공적인",
+    "en": "successful",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "가난한, 열악한",
+    "en": "poor",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "끌어들이다, 유치하다",
+    "en": "attract",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "글로벌 투자자",
+    "en": "global investors",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "항구",
+    "en": "harbor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "관광 지역",
+    "en": "tourist area",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~이 되었다",
+    "en": "became",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "상인, 머천트",
+    "en": "merchant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "철도",
+    "en": "railway",
+    "pos": "n.(명사)"
+  }
+]
