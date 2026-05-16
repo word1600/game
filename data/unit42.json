@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "조정, 조절",
+    "en": "adjustment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수정, 변경",
+    "en": "modification",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "안정, 안정성",
+    "en": "stability",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "시행하다, 실행하다",
+    "en": "implement",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "부대, 병력",
+    "en": "troop",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "규모 축소",
+    "en": "downsizing",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "작곡가, 창작자",
+    "en": "composer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "음량, 양",
+    "en": "volume",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "발표하다, 알리다",
+    "en": "announce",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "휴일, 휴가",
+    "en": "holidays",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "뒤엉킨, 복잡하게 꼬인",
+    "en": "messy",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "상태, 지위",
+    "en": "status",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "상태, 조건",
+    "en": "condition",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "외과 의사, 수술 의사",
+    "en": "surgeon",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "환자, 인내심 있는",
+    "en": "patient",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "관찰하다, 모니터",
+    "en": "monitor",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "어려운, 복합 시설, 단지",
+    "en": "complex",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "수술, 외과",
+    "en": "surgery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "혈압",
+    "en": "blood pressure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "맥박, 고동",
+    "en": "pulse",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "구축함, 파괴자",
+    "en": "destroyer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "분리하다, 따로 떨어진",
+    "en": "separate",
+    "pos": "v.(동사), adj.(형용사)"
+  },
+  {
+    "ko": "식당, 엉망",
+    "en": "mess",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "실시간의, 실시간",
+    "en": "real-time",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "농작물, 수확물",
+    "en": "crop",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "후회하다, 유감을 표하다",
+    "en": "regret",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "후회하다, 한탄하다, 애도하다",
+    "en": "lament",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "여객선, 나룻배",
+    "en": "ferry",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "비상사태, 응급 상황",
+    "en": "emergency",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "회항, 우회, 전환",
+    "en": "diversion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "폭풍 경보, 폭풍 주의보",
+    "en": "storm warning",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "경쟁하다, 겨루다",
+    "en": "compete",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "경쟁자, 경쟁하는",
+    "en": "rival",
+    "pos": "n.(명사), adj.(형용사)"
+  },
+  {
+    "ko": "협력하다, 협조하다",
+    "en": "cooperate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "판매업체, 노점상",
+    "en": "vendor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "계약 입찰, 수주 경쟁",
+    "en": "contract bidding",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지역 시장, 지역권 시장",
+    "en": "regional market",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "궁금해하다, 경이",
+    "en": "wonder",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "요리사, 주방장",
+    "en": "chef",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소매업체, 소매상",
+    "en": "retailer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "적극적으로, 치열하게",
+    "en": "aggressively",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "책임을 져야 하는",
+    "en": "accountable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "책임이 있는, 담당하는",
+    "en": "responsible",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "무책임한, 부주의한",
+    "en": "irresponsible",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "놀이공원, 유원지",
+    "en": "amusement park",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "뚫렸다, 위반했다",
+    "en": "breached",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "경계 실패, 보안 실패",
+    "en": "security failure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "해안 경찰, 해안 경비대",
+    "en": "coast guard",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "밀수, 밀매",
+    "en": "smuggling",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "체포하다, 체포",
+    "en": "arrest",
+    "pos": "v.(동사), n.(명사)"
+  }
+]
