@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "인정, 인식",
+    "en": "recognition",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "인정, 승인",
+    "en": "acknowledgment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "무지, 무시",
+    "en": "ignorance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "하사, 병장",
+    "en": "sergeant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "얻다, 증가하다",
+    "en": "gain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "명사수, 특등 사수",
+    "en": "sharpshooter",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~쪽으로, ~에 대하여",
+    "en": "toward",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "익숙한, 친숙한",
+    "en": "familiar",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "음악가, 연주자",
+    "en": "musician",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "훌륭한, 뛰어난",
+    "en": "excellent",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기립 박수, 기립 갈채",
+    "en": "standing ovation",
+    "pos": "n.(명사구)"
+  },
+  {
+    "ko": "고용, 취업",
+    "en": "employment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "채용, 고용",
+    "en": "hiring",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "실업, 실직",
+    "en": "unemployment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "방위산업체, 방산 계약업체",
+    "en": "defense contractor",
+    "pos": "n.(명사구)"
+  },
+  {
+    "ko": "증가, 인상",
+    "en": "increase",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "군비 증강, 무기 증강",
+    "en": "arms buildup",
+    "pos": "n.(명사구)"
+  },
+  {
+    "ko": "거대한, 막대한",
+    "en": "huge",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "십 대의, 청소년의",
+    "en": "teenage",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "가장, 생계 부양자",
+    "en": "breadwinner",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "확보하다, 안전하게 하다",
+    "en": "secure",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "시골의, 농촌의",
+    "en": "rural",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "주민, 거주자",
+    "en": "resident",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "노출시키다, 드러내다",
+    "en": "expose",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "드러내다, 밝히다",
+    "en": "reveal",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "숨기다, 감추다",
+    "en": "conceal",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "저격수, 저격병",
+    "en": "sniper",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "발전하다, 발전된, 고도의",
+    "en": "advance",
+    "pos": "v.(동사), adj.(형용사)"
+  },
+  {
+    "ko": "위장, 위장하다",
+    "en": "camouflage",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "목격자, 증인",
+    "en": "witness",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "증거, 근거",
+    "en": "evidence",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "북극의, 극지방의",
+    "en": "arctic",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기후, 풍토",
+    "en": "climate",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "북유럽의, 북유럽 사람의",
+    "en": "nordic",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "극심한, 극단적인",
+    "en": "extreme",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "완화하다, 교대하다",
+    "en": "relieve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "완화하다, 덜어주다",
+    "en": "ease",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "악화시키다, 더 나쁘게 하다",
+    "en": "worsen",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "약사, 약제사",
+    "en": "pharmacist",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "적절한, 올바른",
+    "en": "proper",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "약, 약물 치료",
+    "en": "medication",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "통증, 고통",
+    "en": "pain",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기진맥진하게 하다",
+    "en": "exhaust",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "바닷바람, 해풍",
+    "en": "ocean breeze",
+    "pos": "n.(명사구)"
+  },
+  {
+    "ko": "믿을 수 있는, 신뢰할 수 있는",
+    "en": "reliable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "믿을 수 있는, 의지할 수 있는",
+    "en": "dependable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "신뢰할 수 없는",
+    "en": "unreliable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "정비소, 수리점",
+    "en": "repair shop",
+    "pos": "n.(명사구)"
+  },
+  {
+    "ko": "공급업체, 공급자",
+    "en": "supplier",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "항법사, 항해사",
+    "en": "navigator",
+    "pos": "n.(명사)"
+  }
+]
