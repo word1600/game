@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "결론, 결말",
+    "en": "conclusion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "결말, 끝",
+    "en": "ending",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "시작, 초반",
+    "en": "beginning",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "사고 보고서, 사고 기록",
+    "en": "accident report",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "도달했다, 이르렀다",
+    "en": "reached",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "브레이크 고장, 제동 장치 고장",
+    "en": "brake failure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보통, 대개",
+    "en": "usually",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "철학자, 사상가",
+    "en": "philosopher",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "추상적인, 관념적인",
+    "en": "abstract",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "토론, 논쟁",
+    "en": "debate",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "근무 환경, 자연 환경",
+    "en": "environment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "주변 환경, 주위",
+    "en": "surroundings",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "잠수함, 해저 선박",
+    "en": "submarine",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "승조원, 승무원",
+    "en": "crew",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "비좁은, 답답한",
+    "en": "cramped",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "피하다, 방지하다",
+    "en": "avoid",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "놀라운, 굉장한",
+    "en": "amazing",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "자연의, 타고난",
+    "en": "natural",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "축복하다, 은혜를 베풀다",
+    "en": "bless",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "선임의, 상급의",
+    "en": "senior",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "만들다, 창출하다",
+    "en": "create",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "편안한, 쾌적한",
+    "en": "comfortable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "인턴, 실습생",
+    "en": "intern",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "조정하다, 조율하다",
+    "en": "coordinate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "정리하다, 준비하다",
+    "en": "arrange",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "방해하다, 중단시키다",
+    "en": "disrupt",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "물류, 군수",
+    "en": "logistics",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "배송, 배달",
+    "en": "delivery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "신중하게, 조심스럽게",
+    "en": "carefully",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "상인, 무역상",
+    "en": "merchant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의장, 회장",
+    "en": "chairman",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의견, 견해",
+    "en": "opinion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유지보수, 정비",
+    "en": "maintenance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "업무, 과제",
+    "en": "task",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "알리다, 통보하다",
+    "en": "notify",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "알리다, 알려주다",
+    "en": "inform",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "보류하다, 숨기다",
+    "en": "withhold",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "관광객, 여행객",
+    "en": "tourist",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "여행 일정, 여정",
+    "en": "itinerary",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소아과 의사, 소아과 전문의",
+    "en": "pediatrician",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "갑자기, 돌연",
+    "en": "suddenly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "철수하다, 물러나다",
+    "en": "retreat",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "적절한, 올바른",
+    "en": "proper",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "미리, 사전에",
+    "en": "beforehand",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "명망 있는, 권위 있는",
+    "en": "prestigious",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "존경받는, 평판이 좋은",
+    "en": "respected",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "보통의, 평범한",
+    "en": "ordinary",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "조직, 단체",
+    "en": "organization",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "신경과학, 뇌과학",
+    "en": "neuroscience",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연구소, 기관",
+    "en": "institute",
+    "pos": "n.(명사)"
+  }
+]
