@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "생산성",
+    "en": "productivity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "효율성, 능률",
+    "en": "efficiency",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "비효율, 비능률",
+    "en": "inefficiency",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일정 관리, 일정 계획",
+    "en": "scheduling",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "개선하다, 향상시키다",
+    "en": "improve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "개인의, 개별적인",
+    "en": "individual",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "매우 피곤하게 하는, 빡빡한",
+    "en": "exhausting",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "낙농장, 젖소 농장",
+    "en": "dairy farm",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "증가하다, 증가시키다",
+    "en": "increase",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "~을 통해, ~을 거쳐",
+    "en": "through",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "자동화",
+    "en": "automation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "끌어올렸다, 향상시켰다",
+    "en": "boosted",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "분명히, 확실히",
+    "en": "definitely",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "상당히, 현저하게",
+    "en": "significantly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "평가, 감정평가",
+    "en": "appraisal",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "평가, 판단",
+    "en": "evaluation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제독, 해군 장군",
+    "en": "admiral",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수행하다, 실시하다",
+    "en": "conduct",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "함대, 차량단",
+    "en": "fleet",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "골동품 전문가",
+    "en": "antique expert",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유물, 인공물",
+    "en": "artifact",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "검사관, 조사관",
+    "en": "inspector",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "허가하다, 허가증",
+    "en": "permit",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "허락하다, 허용하다",
+    "en": "allow",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "금지하다, 막다",
+    "en": "prohibit",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "항공기, 비행기",
+    "en": "aircraft",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "착륙, 상륙",
+    "en": "landing",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "활주로",
+    "en": "runway",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "착륙을 허가, 착륙 허가 완료",
+    "en": "cleared to land",
+    "pos": "phr.(표현)"
+  },
+  {
+    "ko": "임시의, 일시적인",
+    "en": "temporary",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "방문자, 방문객",
+    "en": "visitor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보이는, 눈에 띄는",
+    "en": "visible",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "면밀히 조사하다",
+    "en": "scrutinize",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "검사하다, 점검하다",
+    "en": "inspect",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "무시하다, 못 본 척하다",
+    "en": "ignore",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "천문학자",
+    "en": "astronomer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "위성, 인공위성",
+    "en": "satellite",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "들어오는, 다가오는",
+    "en": "incoming",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "행성",
+    "en": "planet",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수상한, 의심스러운",
+    "en": "suspicious",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "비정상적인, 특이한",
+    "en": "unusual",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "활동, 움직임",
+    "en": "activity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "충분한",
+    "en": "adequate",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "충분한",
+    "en": "sufficient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "불충분한, 부족한",
+    "en": "insufficient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "유조선, 유류 운반선",
+    "en": "fuel tanker",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "남극 기지",
+    "en": "antarctic base",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "탄약, 군수품",
+    "en": "ammunition",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "포병, 대포",
+    "en": "artillery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부패 수사, 비리 조사",
+    "en": "corruption inquiry",
+    "pos": "n.(명사)"
+  }
+]
