@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "인식, 자각",
+    "en": "awareness",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자각, 의식",
+    "en": "consciousness",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "무지, 모름",
+    "en": "ignorance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "진짜의, 진품의",
+    "en": "authentic",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "위조의, 모조품, 짝퉁",
+    "en": "counterfeit",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "진짜임, 진정성",
+    "en": "authenticity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "캠페인, 운동",
+    "en": "campaign",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "산불, 들불",
+    "en": "wildfire",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유출, 쏟아짐",
+    "en": "spill",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "간신히, 거의 ~않다",
+    "en": "barely",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "높였다, 제기했다",
+    "en": "raised",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "억제했다, 막았다",
+    "en": "contained",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "유지, 보유",
+    "en": "retention",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지속, 계속",
+    "en": "continuation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "손실, 상실",
+    "en": "loss",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "저가 항공사",
+    "en": "budget airline",
+    "pos": "n.phr.(명사구)"
+  },
+  {
+    "ko": "감사 기관",
+    "en": "audit agency",
+    "pos": "n.phr.(명사구)"
+  },
+  {
+    "ko": "파일에 보관된, 기록되어 있는",
+    "en": "on file",
+    "pos": "phr.(구)"
+  },
+  {
+    "ko": "대형 병원, 큰 병원",
+    "en": "large hospital",
+    "pos": "n.phr.(명사구)"
+  },
+  {
+    "ko": "안정적인, 꾸준한",
+    "en": "stable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "환자 진료, 환자 관리",
+    "en": "patient care",
+    "pos": "n.phr.(명사구)"
+  },
+  {
+    "ko": "요약, 개요",
+    "en": "summary",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "개요, 개관",
+    "en": "overview",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "세부 사항, 상세 내용",
+    "en": "detail",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "준비했다, 작성했다",
+    "en": "prepared",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "임무, 사명",
+    "en": "mission",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "큐레이터, 전시 기획자",
+    "en": "curator",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유명한, 잘 알려진",
+    "en": "famous",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "박물관, 미술관",
+    "en": "museum",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "국민참여재판, 배심재판",
+    "en": "jury trial",
+    "pos": "n.phr.(명사구)"
+  },
+  {
+    "ko": "획득하다, 인수하다",
+    "en": "acquire",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "얻다, 획득하다",
+    "en": "obtain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "잃다, 놓치다",
+    "en": "lose",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "귀중한, 가치 있는",
+    "en": "valuable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "연구, 조사",
+    "en": "research",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "실험, 시험",
+    "en": "experiment",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "소매업체, 소매상",
+    "en": "retailer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "최근에, 얼마 전에",
+    "en": "recently",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "유리한 조건, 좋은 조건",
+    "en": "favorable terms",
+    "pos": "n.phr.(명사구)"
+  },
+  {
+    "ko": "두드러지다, 눈에 띄다",
+    "en": "stand out",
+    "pos": "phr.v.(구동사)"
+  },
+  {
+    "ko": "경험, 체험",
+    "en": "experience",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "집중적인, 강도 높은",
+    "en": "intensive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "결과, 성과",
+    "en": "outcome",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "결과, 성과",
+    "en": "result",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "실패, 실패작",
+    "en": "failure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정찰병, 정찰하다",
+    "en": "scout",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "분대, 조",
+    "en": "squad",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "축하하다, 기념하다",
+    "en": "celebrate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "공공의, 대중",
+    "en": "public",
+    "pos": "adj.(형용사), n.(명사)"
+  },
+  {
+    "ko": "간절히, 열심히",
+    "en": "eagerly",
+    "pos": "adv.(부사)"
+  }
+]
