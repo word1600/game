@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "잠재적인, 잠재력",
+    "en": "potential",
+    "pos": "adj./n.(형용사/명사)"
+  },
+  {
+    "ko": "가능한",
+    "en": "possible",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "가능성 없는",
+    "en": "unlikely",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "화장품의, 화장품",
+    "en": "cosmetic",
+    "pos": "adj./n.(형용사/명사)"
+  },
+  {
+    "ko": "투자자",
+    "en": "investor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "찾다, 추구하다",
+    "en": "seek",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "신흥의, 떠오르는",
+    "en": "emerging",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "혁신적인",
+    "en": "innovative",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "드러냈다, 밝혔다",
+    "en": "revealed",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "성장",
+    "en": "growth",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "거대한, 엄청난",
+    "en": "huge",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "끌어들이다, 유치하다",
+    "en": "attract",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "개발업자, 개발자",
+    "en": "developer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "차질, 퇴보",
+    "en": "setback",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "장애물, 방해물",
+    "en": "obstacle",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "진전, 진행",
+    "en": "progress",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예상치 못한",
+    "en": "unexpected",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "확장, 확대",
+    "en": "expansion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일이 너무 많은, 압도된",
+    "en": "swamped",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "겪었다, 피해를 입었다",
+    "en": "suffered",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "회복, 복구",
+    "en": "recovery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "극복하다",
+    "en": "overcome",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "결국, 마침내",
+    "en": "eventually",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "유익한, 도움이 되는",
+    "en": "beneficial",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "유리한, 이로운",
+    "en": "advantageous",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "해로운",
+    "en": "harmful",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "영양",
+    "en": "nutrition",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지원, 도움",
+    "en": "assistance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "직장, 근무지",
+    "en": "workplace",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "효과, 영향",
+    "en": "effect",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "혜택, 이익",
+    "en": "benefit",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "봉인하다,밀봉,물개",
+    "en": "seal",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "변호사",
+    "en": "attorney",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기밀의, 비밀의",
+    "en": "confidential",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "증거",
+    "en": "evidence",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "재판, 시도",
+    "en": "trial",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "새다, 누출되다",
+    "en": "leak",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "암호화",
+    "en": "encryption",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "손상되지 않은, 온전한",
+    "en": "intact",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "떨어지다, 벗겨지다",
+    "en": "comes off",
+    "pos": "phr.v.(구동사)"
+  },
+  {
+    "ko": "이어지다, 이끌다",
+    "en": "lead",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "위반, 침해",
+    "en": "breach",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "창고",
+    "en": "warehouse",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일시적으로, 임시로",
+    "en": "temporarily",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "잠시, 간단히",
+    "en": "briefly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "영구적으로",
+    "en": "permanently",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "개조, 보수 공사",
+    "en": "renovation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "죄수, 포로",
+    "en": "prisoner",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수용했다, 거주하게 했다",
+    "en": "housed",
+    "pos": "v.past(과거 동사)"
+  },
+  {
+    "ko": "이용할 수 없는",
+    "en": "unavailable",
+    "pos": "adj.(형용사)"
+  }
+]
