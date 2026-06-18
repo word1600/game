@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "문서화, 서류",
+    "en": "documentation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기록, 기록물",
+    "en": "records",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "구두 진술",
+    "en": "verbal statement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "증빙 서류",
+    "en": "supporting documents",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공식 기록",
+    "en": "official records",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지원자",
+    "en": "applicant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제출하다",
+    "en": "submit",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "보관하다, 기록보관소",
+    "en": "archive",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "보관된",
+    "en": "stored",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "감사관, 조사관",
+    "en": "inspector",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "감사, 회계 감사",
+    "en": "audit",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "검토하다, 검토",
+    "en": "review",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "서신, 연락",
+    "en": "correspondence",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의사소통, 연락",
+    "en": "communication",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의견 차이, 불일치",
+    "en": "disagreement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "대사관",
+    "en": "embassy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "처리하다",
+    "en": "handles",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "외교 행낭",
+    "en": "diplomatic pouch",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "즉시",
+    "en": "immediately",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "확인된",
+    "en": "confirmed",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "설계하다",
+    "en": "designs",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "편집자",
+    "en": "editor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유지하다",
+    "en": "maintains",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "저술하다",
+    "en": "authors",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "알림 이메일",
+    "en": "reminder email",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일관성",
+    "en": "consistency",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "균일성, 통일성",
+    "en": "uniformity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "변화, 차이",
+    "en": "variation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "강조하다",
+    "en": "emphasizes",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "사격장",
+    "en": "firing range",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "혼합물",
+    "en": "mixture",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "가치",
+    "en": "value",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "품질",
+    "en": "quality",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정체된, 침체된",
+    "en": "stagnant",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "부진한, 둔화된",
+    "en": "sluggish",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "성장하는",
+    "en": "growing",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "여행 산업",
+    "en": "travel industry",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "되살리다, 회복시키다",
+    "en": "revives",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "수요",
+    "en": "demand",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "개선하다",
+    "en": "improves",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "전투 준비태세",
+    "en": "combat readiness",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "증진시키다, 증가",
+    "en": "boost",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "수업 참여",
+    "en": "classroom participation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "악천후의, 궂은",
+    "en": "inclement",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "폭풍우가 치는",
+    "en": "stormy",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "건설 작업반",
+    "en": "construction crew",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "중단했다",
+    "en": "paused",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "관중들",
+    "en": "spectators",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~에도 불구하고",
+    "en": "despite",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "어선들",
+    "en": "fishing vessels",
+    "pos": "n.(명사)"
+  }
+]
