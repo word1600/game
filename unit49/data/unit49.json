@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "치수, 규모",
+    "en": "dimension",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "측정치",
+    "en": "measurement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기술자",
+    "en": "technician",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "장비, 설비",
+    "en": "equipment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "임원, 경영진",
+    "en": "executive",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "논의하다",
+    "en": "discuss",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "합병",
+    "en": "merger",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "거대한, 막대한",
+    "en": "enormous",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "재단사, 맞추다",
+    "en": "tailor",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "측정하다, 조치",
+    "en": "measure",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "정확하게, 정밀하게",
+    "en": "precisely",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "분위기, 대기",
+    "en": "atmosphere",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "환경",
+    "en": "environment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "진공, 공백",
+    "en": "vacuum",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전통적인",
+    "en": "traditional",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "아늑한, 편안한",
+    "en": "cozy",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "날씨, 기상",
+    "en": "weather",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "풍선, 기구",
+    "en": "balloon",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "들어가다, 입력하다",
+    "en": "enter",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "위쪽의, 상위의",
+    "en": "upper",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "유지하다, 관리하다",
+    "en": "maintain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "연중의, 일 년 내내",
+    "en": "year-round",
+    "pos": "adj./adv.(형용사/부사)"
+  },
+  {
+    "ko": "조용한, 한산한",
+    "en": "quiet",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "예상, 투영",
+    "en": "projection",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예측, 예보",
+    "en": "forecast",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "결과, 성과",
+    "en": "result",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "재무 분석가",
+    "en": "financial analyst",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "검토하다, 검토",
+    "en": "review",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "주의 깊게, 신중하게",
+    "en": "carefully",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "공룡",
+    "en": "dinosaur",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "현실적인, 사실적인",
+    "en": "realistic",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "중앙은행",
+    "en": "central bank",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "성장, 증가",
+    "en": "growth",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "협력하다, 공동 작업하다",
+    "en": "collaborate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "협력하다",
+    "en": "cooperate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "경쟁하다",
+    "en": "compete",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "지역 진료소",
+    "en": "local clinics",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "대형 병원",
+    "en": "large hospital",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "건축가",
+    "en": "architect",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기관, 연구소",
+    "en": "institute",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연구하다, 연구",
+    "en": "research",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "멸종 위기의, 위험에 처한",
+    "en": "endangered",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "위협받는",
+    "en": "threatened",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "부족, 종족",
+    "en": "tribe",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "언어",
+    "en": "language",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "구조하다, 구조",
+    "en": "rescue",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "강도",
+    "en": "robber",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "유산, 전통",
+    "en": "heritage",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기관, 대행사",
+    "en": "agency",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전통",
+    "en": "tradition",
+    "pos": "n.(명사)"
+  }
+]
