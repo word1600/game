@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "명세서, 규격",
+    "en": "specification",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "요구 사항",
+    "en": "requirement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "모호함",
+    "en": "ambiguity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "항공기",
+    "en": "aircraft",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "인수, 받아들임",
+    "en": "acceptance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전투 헬멧",
+    "en": "combat helmet",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "충족하다, 만나다",
+    "en": "meet",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "엄격한",
+    "en": "strict",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "군대의, 군사적인",
+    "en": "military",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "시공사, 계약업체",
+    "en": "contractor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "철저히",
+    "en": "thoroughly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "구조, 조직",
+    "en": "structure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "구조, 체계",
+    "en": "framework",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "무질서",
+    "en": "disorder",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "잠수함",
+    "en": "submarine",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "극도로, 매우",
+    "en": "extremely",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "강한",
+    "en": "strong",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "내부의",
+    "en": "internal",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "견디다",
+    "en": "withstand",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "막대한, 거대한",
+    "en": "enormous",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "압력, 압박",
+    "en": "pressure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지자체, 카운티",
+    "en": "county",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "재조직하다",
+    "en": "reorganized",
+    "pos": "v.(동사, 과거)"
+  },
+  {
+    "ko": "자문가, 상담가",
+    "en": "consultant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "풍부하게 하다, 풍요롭게 하다",
+    "en": "enrich",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "향상시키다",
+    "en": "improve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "고갈시키다",
+    "en": "deplete",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "모의의, 가상의",
+    "en": "simulated",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "훈련, 훈련 연습",
+    "en": "training exercise",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "경험, 경험하다",
+    "en": "experience",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "관개, 물 공급",
+    "en": "irrigation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "농지, 경작지",
+    "en": "farmland",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "주요한, 대규모의",
+    "en": "major",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "철도",
+    "en": "railroad",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "운송하다, 운송",
+    "en": "transport",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "지식",
+    "en": "knowledge",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "발명하다, 고안하다",
+    "en": "invent",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "창조하다, 만들다",
+    "en": "create",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "모방하다",
+    "en": "imitate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "치료, 대우, 대접",
+    "en": "treatment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "최첨단의, 고급의, 상급의",
+    "en": "advanced",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "구조하다, 구조",
+    "en": "rescue",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "방법",
+    "en": "method",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "농업, 농사",
+    "en": "farming",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연체된, 체납한, 연체자, 체납자",
+    "en": "delinquent",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "기한이 지난, 연체된",
+    "en": "overdue",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "제때의, 시기적절한",
+    "en": "timely",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "대출 계좌",
+    "en": "loan account",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부채, 빚",
+    "en": "debt",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "회의, 기간",
+    "en": "session",
+    "pos": "n.(명사)"
+  }
+]
