@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "영감, 자극",
+    "en": "inspiration",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "동기 부여",
+    "en": "motivation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "낙담, 좌절",
+    "en": "discouragement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "그렸다, 끌어당겼다",
+    "en": "drew",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "움직임, 동작",
+    "en": "motion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공기 저항",
+    "en": "air resistance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수락, 수용",
+    "en": "acceptance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "언젠가",
+    "en": "someday",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "건축가",
+    "en": "architect",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고대의",
+    "en": "ancient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "사원, 신전",
+    "en": "temple",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "명성",
+    "en": "renown",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "평판, 명성",
+    "en": "reputation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "명성, 위신",
+    "en": "prestige",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "불명예, 망신",
+    "en": "disgrace",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "주유소",
+    "en": "gas station",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "매혹적인, 황홀한",
+    "en": "mesmerizing",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "사막 전역",
+    "en": "desert campaign",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "별명",
+    "en": "nickname",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "개발했다, 형성했다",
+    "en": "developed",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "끔찍한, 엉망진창인",
+    "en": "terrible",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기여하다, 기부하다",
+    "en": "contribute",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "간단히, 단순히, 너무",
+    "en": "simply",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "보류하다",
+    "en": "withhold",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "공격, 공격적인",
+    "en": "offensive",
+    "pos": "n./adj.(명사/형용사)"
+  },
+  {
+    "ko": "전념하다",
+    "en": "commit",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "재능, 인재",
+    "en": "talent",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자선, 자선 단체",
+    "en": "charity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부유한 남자",
+    "en": "wealthy man",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "사회 복지",
+    "en": "social welfare",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기부, 기부금",
+    "en": "donation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "산출하다, 수익을 내다",
+    "en": "yield",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "먼, 멀리 떨어진",
+    "en": "distant",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "소비하다, 섭취하다",
+    "en": "consume",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "농작물 수확량",
+    "en": "crop yield",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "정보, 지능",
+    "en": "intelligence",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "군대, 군사의",
+    "en": "military",
+    "pos": "n./adj.(명사/형용사)"
+  },
+  {
+    "ko": "믿을 수 있는",
+    "en": "reliable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "적, 적군",
+    "en": "enemy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "임대 부동산",
+    "en": "rental property",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "이익, 수익",
+    "en": "profit",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공실, 결원",
+    "en": "vacancy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "고고도의",
+    "en": "high-altitude",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "태양의, 태양열의",
+    "en": "solar",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "뛰어난, 훌륭한",
+    "en": "superb",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "훌륭한, 우수한",
+    "en": "excellent",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "열등한, 하위의",
+    "en": "inferior",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "곡예비행의",
+    "en": "aerobatic",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "숨 막히는, 놀라운",
+    "en": "breathtaking",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "망원경",
+    "en": "telescope",
+    "pos": "n.(명사)"
+  }
+]
