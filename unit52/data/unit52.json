@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "환급금, 구매 환급",
+    "en": "rebate",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "환불, 환불하다",
+    "en": "refund",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "추가 요금, 할증료",
+    "en": "surcharge",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "뇌물",
+    "en": "kickback",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "뇌물, 매수하다",
+    "en": "bribe",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "납세자",
+    "en": "taxpayer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "신속히, 즉시",
+    "en": "promptly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "제출, 정리, 신고",
+    "en": "filing",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소매업체, 소매상",
+    "en": "retailer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "판촉 행사, 승진",
+    "en": "promotion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자격이 있는, 적격의",
+    "en": "eligible",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "보험 계약자",
+    "en": "policyholder",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보험사, 보험업자",
+    "en": "insurer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연금",
+    "en": "pension",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "퇴직 급여, 퇴직 혜택",
+    "en": "retirement benefit",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "임금, 급여",
+    "en": "wage",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "퇴역 군인, 베테랑",
+    "en": "veteran",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "병역, 국가 봉사",
+    "en": "national service",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "안도, 구호",
+    "en": "relief",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "은퇴자, 퇴직자",
+    "en": "retiree",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "적극적으로, 활발히",
+    "en": "actively",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "찾다, 추구하다",
+    "en": "seek",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "경력, 직업",
+    "en": "career",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "드물게, 좀처럼 ~않다",
+    "en": "rarely",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "편안한, 쾌적한",
+    "en": "comfortable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "그 밖에, 다른",
+    "en": "else",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "예약, 유보",
+    "en": "reservation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예약",
+    "en": "booking",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "취소",
+    "en": "cancellation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "여행자, 승객",
+    "en": "traveler",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "확인하다, 확정하다",
+    "en": "confirm",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "출발, 떠남",
+    "en": "departure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "비서, 장관",
+    "en": "secretary",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "빨리, 신속히",
+    "en": "quickly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "겸손한, 초라한",
+    "en": "humble",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "회의실",
+    "en": "meeting room",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "미리, 사전에",
+    "en": "in advance",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "상응하는, 비례한",
+    "en": "commensurate",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "비례하는",
+    "en": "proportional",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "불균형한, 지나친",
+    "en": "disproportionate",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "출시하다, 발사하다, 감행하다",
+    "en": "launch",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "으스러뜨리다, 압도하다",
+    "en": "crush",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "시장 수요",
+    "en": "market demand",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기업, 회사, 확고한",
+    "en": "firm",
+    "pos": "n./adj.(명사/형용사)"
+  },
+  {
+    "ko": "헌신, 전념",
+    "en": "dedication",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일관되게, 꾸준히",
+    "en": "consistently",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "꾸준히, 안정적으로",
+    "en": "steadily",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "일관성 없이, 불규칙하게",
+    "en": "inconsistently",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "재료, 성분, 식자재",
+    "en": "ingredient",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "평가, 등급",
+    "en": "rating",
+    "pos": "n.(명사)"
+  }
+]
