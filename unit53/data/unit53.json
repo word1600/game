@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "억제하다, 제한하다",
+    "en": "curb",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "억제하다, 제지하다",
+    "en": "restrain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "장려하다, 격려하다",
+    "en": "encourage",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "첨단 무기",
+    "en": "advanced weapon",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "크게, 대단히",
+    "en": "greatly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "공격성, 도발 의욕",
+    "en": "aggression",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공식적인, 공무원, 당국",
+    "en": "official",
+    "pos": "adj./n.(형용사/명사)"
+  },
+  {
+    "ko": "산불",
+    "en": "wildfire",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "앞으로, 앞서",
+    "en": "ahead",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "불법적으로",
+    "en": "illegally",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "경찰서, 경찰청",
+    "en": "police department",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "종료하다, 종결시키다",
+    "en": "terminate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "계속하다",
+    "en": "continue",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "탑승",
+    "en": "boarding",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "발표, 공지",
+    "en": "announcement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "최종의, 결승",
+    "en": "final",
+    "pos": "adj./n.(형용사/명사)"
+  },
+  {
+    "ko": "선임 판사",
+    "en": "senior judge",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "긴, 장황한",
+    "en": "lengthy",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "법률의, 합법적인",
+    "en": "legal",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "분쟁, 논쟁",
+    "en": "dispute",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "활동하지 않는, 비활성의",
+    "en": "inactive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "자동으로",
+    "en": "automatically",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "피로, 피로감",
+    "en": "fatigue",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "탈진, 고갈",
+    "en": "exhaustion",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "에너지, 활력",
+    "en": "energy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "교대하다, 회전하다",
+    "en": "rotate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "장비 피로",
+    "en": "equipment fatigue",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연장하다, 확장하다",
+    "en": "extend",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "나이 많은, 노인",
+    "en": "elderly",
+    "pos": "adj./n.(형용사/명사)"
+  },
+  {
+    "ko": "등산, 오르기",
+    "en": "climbing",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "완화하다, 덜어주다",
+    "en": "relieve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "직장, 작업장",
+    "en": "workplace",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "상당히, 크게",
+    "en": "significantly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "합의, 의견 일치",
+    "en": "consensus",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "합의, 계약",
+    "en": "agreement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "불일치, 의견 차이",
+    "en": "disagreement",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "거의",
+    "en": "nearly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "배심원단",
+    "en": "jury",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "격렬한, 열띤",
+    "en": "heated",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "숙의, 심의",
+    "en": "deliberation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "토론, 논쟁",
+    "en": "debate",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "주민, 거주자",
+    "en": "resident",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "타협, 타협하다",
+    "en": "compromise",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "급락하다, 곤두박질치다",
+    "en": "plummet",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "급락하다, 뛰어들다",
+    "en": "plunge",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "치솟다, 급등하다",
+    "en": "soar",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "강화하다",
+    "en": "strengthen",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "공중전",
+    "en": "aerial battle",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "질병",
+    "en": "disease",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "화난, 미친",
+    "en": "mad",
+    "pos": "adj.(형용사)"
+  }
+]
