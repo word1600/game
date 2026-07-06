@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "증상",
+    "en": "symptom",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "징후, 표시",
+    "en": "sign",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "회복, 복구",
+    "en": "recovery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부유한",
+    "en": "wealthy",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "나이가 지긋한, 노인",
+    "en": "elderly",
+    "pos": "adj./n.(형용사/명사)"
+  },
+  {
+    "ko": "경미한, 가벼운, 온화한",
+    "en": "mild",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "치매",
+    "en": "dementia",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "심각한, 진지한",
+    "en": "serious",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "고장, 오작동",
+    "en": "malfunction",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소, 가축",
+    "en": "cattle",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "나타냈다, 발병했다, 형성했다",
+    "en": "developed",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "구제역",
+    "en": "foot-and-mouth disease",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "묻다, 매장하다",
+    "en": "bury",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "잉여, 흑자, 과잉",
+    "en": "surplus",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "초과, 과잉",
+    "en": "excess",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "부족, 결핍",
+    "en": "shortage",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "선진국",
+    "en": "developed country",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "개발도상국",
+    "en": "developing country",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "나누다, 공유하다",
+    "en": "share",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "예산",
+    "en": "budget",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "사회 복지",
+    "en": "social welfare",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "점차, 서서히",
+    "en": "gradually",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "낮추었다, 낮아진",
+    "en": "lowered",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "인건비, 노동 가격",
+    "en": "labor cost",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "변환하다, 전환하다",
+    "en": "convert",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "변환하다, 변형시키다",
+    "en": "transform",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "보존하다, 보호하다",
+    "en": "preserve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "바닷물, 해수",
+    "en": "seawater",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "담수, 민물",
+    "en": "fresh water",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기갑 여단",
+    "en": "armored brigade",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "방어, 국방",
+    "en": "defense",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공격, 공세",
+    "en": "offense",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "자동으로",
+    "en": "automatically",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "해결책, 바로잡다",
+    "en": "remedy",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "해결책, 해법",
+    "en": "solution",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "문제",
+    "en": "problem",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "약물, 약",
+    "en": "medication",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "효과가 있다",
+    "en": "do the trick",
+    "pos": "phr.(숙어)"
+  },
+  {
+    "ko": "효과적인",
+    "en": "effective",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "즉시, 바로",
+    "en": "immediately",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "위원회",
+    "en": "committee",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "실용적인, 현실적인",
+    "en": "practical",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "오염",
+    "en": "pollution",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "활용하다, 이용하다",
+    "en": "utilize",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "동굴",
+    "en": "cave",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "탐사, 탐험",
+    "en": "exploration",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "광범위하게, 널리",
+    "en": "extensively",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "지배하다, 주도하다",
+    "en": "dominate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "가축",
+    "en": "livestock",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "분뇨, 거름",
+    "en": "manure",
+    "pos": "n.(명사)"
+  }
+]
