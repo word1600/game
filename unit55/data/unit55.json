@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "목적지, 도착지",
+    "en": "destination",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "종착점, 끝점",
+    "en": "endpoint",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "출발지, 기원",
+    "en": "origin",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "폭격기",
+    "en": "bomber",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "비행편대",
+    "en": "squadron",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "구호, 안도",
+    "en": "relief",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~을 향하여, ~에 대하여",
+    "en": "toward",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "물자, 보급품",
+    "en": "supplies",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "선택하다, 엄선된",
+    "en": "select",
+    "pos": "v./adj.(동사/형용사)"
+  },
+  {
+    "ko": "가장 빠른",
+    "en": "fastest",
+    "pos": "adj.(형용사,최상급)"
+  },
+  {
+    "ko": "불만, 항의",
+    "en": "complaint",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "불만, 고충",
+    "en": "grievance",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "칭찬, 칭찬하다",
+    "en": "compliment",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "승객",
+    "en": "passenger",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제기했다, 제출했다",
+    "en": "filed",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "지연된, 연기된",
+    "en": "delayed",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "관세",
+    "en": "customs duty",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "~에 반대하여, ~에 맞서",
+    "en": "against",
+    "pos": "prep.(전치사)"
+  },
+  {
+    "ko": "몇몇의, 여러",
+    "en": "several",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "소음",
+    "en": "noise",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "배달하다, 전달하다",
+    "en": "deliver",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "운송하다, 운송",
+    "en": "transport",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "보류하다, 지급하지 않다",
+    "en": "withhold",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "응급, 비상사태, 긴급 상황",
+    "en": "emergency",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의료의, 의학의",
+    "en": "medical",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "섬",
+    "en": "island",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "중세의",
+    "en": "medieval",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "제국",
+    "en": "empire",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "매달, 매월",
+    "en": "each month",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "전서구, 통신용 비둘기",
+    "en": "carrier pigeon",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "동네, 지역",
+    "en": "neighborhood",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "신선함, 신선도",
+    "en": "freshness",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "제과점, 빵집",
+    "en": "bakery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공제하다, 차감하다",
+    "en": "deduct",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "빼다, 감하다",
+    "en": "subtract",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "더하다, 추가하다",
+    "en": "add",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "법률에 따라",
+    "en": "by law",
+    "pos": "phr.(숙어)"
+  },
+  {
+    "ko": "고용주",
+    "en": "employer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "무슨 일이 있어도, 얄짤없이",
+    "en": "no matter what",
+    "pos": "phr.(숙어)"
+  },
+  {
+    "ko": "회계사",
+    "en": "accountant",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "출장비, 여행 경비",
+    "en": "travel expense",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "급여, 급여 총액",
+    "en": "payroll",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보험료",
+    "en": "insurance premium",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "한 푼도 빠짐없이, 모든 돈",
+    "en": "every penny",
+    "pos": "phr.(숙어)"
+  },
+  {
+    "ko": "지급해야 하는, 지불 가능한",
+    "en": "payable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "받을 수 있는, 미수금",
+    "en": "receivable",
+    "pos": "adj./n.(형용사/명사)"
+  },
+  {
+    "ko": "무기 대금",
+    "en": "arms payment",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보증, 보장하다",
+    "en": "guarantee",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "주차 요금",
+    "en": "parking fee",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "편리한",
+    "en": "convenient",
+    "pos": "adj.(형용사)"
+  }
+]
