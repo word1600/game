@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "전임자, 이전 모델",
+    "en": "predecessor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "선구자, 전신",
+    "en": "forerunner",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "후임자, 후속 모델",
+    "en": "successor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "상의했다, 상담했다, 자문했다",
+    "en": "consulted",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "사전에, 미리",
+    "en": "beforehand",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "인수인계 브리핑",
+    "en": "transition briefing",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "능가하다, 더 좋은 성과를 내다",
+    "en": "outperform",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "상당히, 현저하게",
+    "en": "significantly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "경험, 경험하다",
+    "en": "experience",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "굉장한, 멋진",
+    "en": "awesome",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "대량, 대부분",
+    "en": "bulk",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "대량, 덩어리",
+    "en": "mass",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "소량",
+    "en": "small quantity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "구매하다, 구매",
+    "en": "purchase",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "포병, 포병대",
+    "en": "artillery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "포탄, 껍질",
+    "en": "shell",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기부, 기부금",
+    "en": "donation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "눈먼, 시각 장애가 있는",
+    "en": "blind",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "재료, 성분, 식자재",
+    "en": "ingredient",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "복을 받다, 축복받다",
+    "en": "be blessed",
+    "pos": "phr.(숙어)"
+  },
+  {
+    "ko": "잘 알려진, 유명한",
+    "en": "well-known",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "중단하다, 단종하다",
+    "en": "discontinue",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "중단하다, 끝내다",
+    "en": "terminate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "계속하다, 지속하다",
+    "en": "continue",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "우천 지연",
+    "en": "rain delay",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "사이버 공격",
+    "en": "cyberattack",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "예탁금, 보증금",
+    "en": "deposit",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전투, 싸우다",
+    "en": "combat",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "효과가 없는, 무능한",
+    "en": "ineffective",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "의료 시술, 의료 절차",
+    "en": "medical procedure",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의사, 내과 의사",
+    "en": "physician",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "의사, 박사",
+    "en": "doctor",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "환자, 참을성 있는",
+    "en": "patient",
+    "pos": "n./adj.(명사/형용사)"
+  },
+  {
+    "ko": "병력, 진료 기록",
+    "en": "medical history",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "더 나쁜, 악화된",
+    "en": "worse",
+    "pos": "adj.(형용사,비교급)"
+  },
+  {
+    "ko": "군의관",
+    "en": "military physician",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "병색이 있는, 아파 보이는",
+    "en": "sick-looking",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "검사했다, 진찰했다",
+    "en": "examined",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "추천하다, 권고하다",
+    "en": "recommend",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "건강검진",
+    "en": "health screening",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "검진, 점검",
+    "en": "checkup",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "만성적인, 고질적인",
+    "en": "chronic",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "끈질긴, 지속되는",
+    "en": "persistent",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "일시적인, 임시의",
+    "en": "temporary",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "폐질환",
+    "en": "lung disease",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "탄광부",
+    "en": "coal miner",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "해군의",
+    "en": "naval",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "항공모함 기반의",
+    "en": "carrier-based",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "전투기 조종사",
+    "en": "fighter pilot",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "인력 부족",
+    "en": "staff shortage",
+    "pos": "n.(명사)"
+  }
+]
