@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "교외, 도시 외곽 지역",
+    "en": "suburb",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "도시 외곽 지역, 변두리",
+    "en": "outskirts",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "도심, 시내",
+    "en": "downtown",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "주거비",
+    "en": "housing cost",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "중산층의, 중간 소득의",
+    "en": "middle-income",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "기갑사단",
+    "en": "armored division",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "주둔했다, 배치되었다",
+    "en": "stationed",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "강력한, 영향력 있는",
+    "en": "powerful",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "통근하다, 통근",
+    "en": "commute",
+    "pos": "v./n.(동사/명사)"
+  },
+  {
+    "ko": "정어리 통조림, 몹시 붐비는 곳",
+    "en": "sardine can",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "거의, 하마터면",
+    "en": "almost",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "중단, 혼란",
+    "en": "disruption",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "중단, 방해",
+    "en": "interruption",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연속성, 지속성",
+    "en": "continuity",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "해협",
+    "en": "strait",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "봉쇄, 봉쇄하다",
+    "en": "blockade",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "야기했다, 초래했다",
+    "en": "caused",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "주요한, 중대한, 대규모의",
+    "en": "major",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "물류",
+    "en": "logistics",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공습",
+    "en": "air raid",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "엄청난, 대규모의",
+    "en": "massive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "창조했다, 초래했다, 일으켰다",
+    "en": "created",
+    "pos": "v.(동사,과거)"
+  },
+  {
+    "ko": "화학의, 화학 물질",
+    "en": "chemical",
+    "pos": "adj./n.(형용사/명사)"
+  },
+  {
+    "ko": "실험실, 연구실",
+    "en": "laboratory",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "연구, 연구하다",
+    "en": "research",
+    "pos": "n./v.(명사/동사)"
+  },
+  {
+    "ko": "개선하다, 향상시키다",
+    "en": "improve",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "향상시키다, 강화하다",
+    "en": "enhance",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "악화시키다",
+    "en": "worsen",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "구식의, 낡은",
+    "en": "outdated",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "병영, 막사",
+    "en": "barrack",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "표적 정확도",
+    "en": "target accuracy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "공공 병원",
+    "en": "public hospital",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "비상사태, 응급의",
+    "en": "emergency",
+    "pos": "n./adj.(명사/형용사)"
+  },
+  {
+    "ko": "계속해서, 끊임없이",
+    "en": "continuously",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "교체하다, 대신하다",
+    "en": "replace",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "대체하다, 대신하다",
+    "en": "substitute",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "유지하다, 보유하다",
+    "en": "retain",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "철도, 철도의",
+    "en": "railroad",
+    "pos": "n./adj.(명사/형용사)"
+  },
+  {
+    "ko": "닳은, 마모된",
+    "en": "worn",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "식중독",
+    "en": "food poisoning",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "해적",
+    "en": "pirate",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "일등 항해사, 부선장",
+    "en": "first mate",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "지친, 기진맥진한",
+    "en": "exhausted",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "조타 장치, 키",
+    "en": "helm",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "생산 라인의",
+    "en": "production-line",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "쉽게 상하는",
+    "en": "easily spoiled",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "상하기 쉬운, 부패하기 쉬운",
+    "en": "perishable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "상하지 않는, 비부패성의",
+    "en": "nonperishable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "얼리다, 동결하다",
+    "en": "freeze",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "재료, 성분, 식자재",
+    "en": "ingredient",
+    "pos": "n.(명사)"
+  }
+]
