@@ -1,0 +1,252 @@
+[
+  {
+    "ko": "시도하다, 시도",
+    "en": "attempt",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "시도하다, 시도",
+    "en": "try",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "포기하다, 버리다",
+    "en": "abandon",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "공수부대의",
+    "en": "airborne",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "병력, 군대",
+    "en": "troop",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "적, 적군",
+    "en": "enemy",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "신생 기업, 스타트업",
+    "en": "startup",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "경기 침체, 불황",
+    "en": "recession",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "침투하다, 관통하다",
+    "en": "penetrate",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "틈새시장",
+    "en": "niche market",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "더 적은",
+    "en": "fewer",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "보증, 보증서",
+    "en": "warranty",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "보증, 보증하다",
+    "en": "guarantee",
+    "pos": "n.(명사), v.(동사)"
+  },
+  {
+    "ko": "책임 부인, 면책 조항",
+    "en": "disclaimer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전술적인",
+    "en": "tactical",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "내구성을 강화한",
+    "en": "ruggedized",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "노트북 컴퓨터",
+    "en": "laptop",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "통상, 보통, 대개",
+    "en": "usually",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "요구하다, 필요로 하다",
+    "en": "require",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "단골 고객",
+    "en": "regular customer",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "수리하다, 수리",
+    "en": "repair",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "구매하다, 구매",
+    "en": "purchase",
+    "pos": "v.(동사), n.(명사)"
+  },
+  {
+    "ko": "포함하다",
+    "en": "include",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "표준, 기준",
+    "en": "standard",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "견고한, 탄탄한",
+    "en": "solid",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "촉진하다, 육성하다",
+    "en": "foster",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "촉진하다, 장려하다",
+    "en": "promote",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "방해하다",
+    "en": "hinder",
+    "pos": "v.(동사)"
+  },
+  {
+    "ko": "광범위한, 폭넓은",
+    "en": "broad",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "숙련된, 능숙한",
+    "en": "skilled",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "세금 감면 혜택, 세제 혜택",
+    "en": "tax incentive",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "전국적인, 전국적으로",
+    "en": "nationwide",
+    "pos": "adj.(형용사), adv.(부사)"
+  },
+  {
+    "ko": "경제 성장",
+    "en": "economic growth",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "악랄한, 혹독한",
+    "en": "brutal",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "레인저 훈련, 유격 훈련",
+    "en": "ranger training",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "회복력이 있는, 강인한",
+    "en": "resilient",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "전사, 무사",
+    "en": "warrior",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "기술, 과학기술",
+    "en": "technology",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "작업 흐름, 업무 절차",
+    "en": "workflow",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "혁신, 혁신적인 발명",
+    "en": "innovation",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "빠르게, 급속히",
+    "en": "rapidly",
+    "pos": "adv.(부사)"
+  },
+  {
+    "ko": "주의 깊은, 세심한",
+    "en": "attentive",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "주의 깊은",
+    "en": "observant",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "부주의한, 조심성 없는",
+    "en": "careless",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "시각적 이미지, 영상 자료",
+    "en": "imagery",
+    "pos": "n.(명사)"
+  },
+  {
+    "ko": "탁월한, 뛰어난",
+    "en": "exceptional",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "뛰어난",
+    "en": "outstanding",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "평범한, 보통의",
+    "en": "ordinary",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "잊을 수 없는",
+    "en": "unforgettable",
+    "pos": "adj.(형용사)"
+  },
+  {
+    "ko": "범위, 영역, 항속 거리",
+    "en": "range",
+    "pos": "n.(명사)"
+  }
+]
